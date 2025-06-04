@@ -1,5 +1,6 @@
 import numpy as np
 import math
+from scipy.stats import rayleigh # NEW: For small-scale fading
 from sim_core.params import SimParams
 from sim_core.channel import ChannelModel
 from sim_core.resource import ResourceBlockPool
@@ -16,6 +17,7 @@ class BaseStation:
         self.ues_served_this_step = set() # UEs for which this BS allocated RBs
 
     def get_access_beam_rsrp_at_ue(self, ue_pos):
+        # This uses the calculate_path_loss method which includes path loss and shadowing
         path_loss_db = self.channel_model.calculate_path_loss(
             self.position, ue_pos
         )
@@ -28,6 +30,7 @@ class BaseStation:
         noise_w = self.channel_model.get_noise_power_linear(
             self.params.rb_bandwidth_hz
         )
+        # Get the path loss (which includes shadowing)
         signal_path_loss_db = self.channel_model.calculate_path_loss(
             self.position, target_ue.position
         )
@@ -35,7 +38,19 @@ class BaseStation:
             self.power_per_link_beam_dbm + self.params.bs_link_beam_gain_db
         )
         received_signal_power_dbm = signal_eirp_dbm - signal_path_loss_db
-        signal_power_w = dbm_to_linear(received_signal_power_dbm)
+        
+        # --- NEW: Apply small-scale fading gain to desired signal ---
+        # Rayleigh fading for amplitude, squared for power.
+        # Mean of rayleigh.rvs(scale=sigma)^2 is 2*sigma^2.
+        # To get a mean linear gain of 1 (0 dB), set sigma = 1/sqrt(2).
+        # This models the instantaneous linear power gain due to small-scale fading.
+        fading_gain_linear_signal = rayleigh.rvs(scale=1/np.sqrt(2))**2
+        
+        # Ensure it's not zero or extremely small which could lead to log errors later if converted to dB
+        fading_gain_linear_signal = max(fading_gain_linear_signal, 1e-10) 
+
+        signal_power_w = dbm_to_linear(received_signal_power_dbm) * fading_gain_linear_signal
+        # --- END NEW ---
 
         interference_w = 0.0
         for other_bs_id, other_bs in all_bss_map.items():
@@ -50,11 +65,17 @@ class BaseStation:
                     other_bs.power_per_link_beam_dbm
                     + self.params.bs_link_beam_gain_db
                 )
-                interference_w += dbm_to_linear(inter_eirp_dbm - inter_path_loss_db)
+                inter_power_w = dbm_to_linear(inter_eirp_dbm - inter_path_loss_db)
+                
+                # --- NEW: Apply small-scale fading gain to interference ---
+                fading_gain_linear_interference = rayleigh.rvs(scale=1/np.sqrt(2))**2
+                fading_gain_linear_interference = max(fading_gain_linear_interference, 1e-10)
+                interference_w += inter_power_w * fading_gain_linear_interference
+                # --- END NEW ---
 
         denominator = noise_w + interference_w
-        if denominator <= 1e-22:
-            denominator = 1e-22 # Prevent division by zero/very small number
+        if denominator <= 1e-22: # Prevent division by zero/very small number
+            denominator = 1e-22
         sinr_linear = signal_power_w / denominator
         return max(sinr_linear, dbm_to_linear(-20)) # Cap minimum SINR
 

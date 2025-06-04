@@ -1,3 +1,5 @@
+# runner.py
+
 import random
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,6 +8,8 @@ from datetime import datetime
 import time # For pausing if needed
 import collections # For defaultdict in aggregation
 import traceback # For detailed error logging
+import pandas as pd # Make sure pandas is imported here if you don't solely rely on saver.py
+import math # Needed for dynamic plot grid size and possibly scenario generation
 
 # Import core simulation components
 from sim_core.params import SimParams
@@ -229,26 +233,74 @@ else:
 
 # Define the base parameters for the simulation
 base_sim_params = SimParams()
-base_sim_params.total_sim_steps = 200 # Increased steps for better learning observation
+base_sim_params.total_sim_steps = 300 # Increased steps for more learning
 # Epsilon decay steps should be absolute steps, not a fraction of total_sim_steps,
 # as total_sim_steps can vary by experiment. Set it as a fixed large number or proportional
 # to the *default* total_sim_steps. Or, calculate it for each run based on *its* total_sim_steps.
-# Let's adjust rl_epsilon_decay_steps inside run_single_simulation_experiment based on its total_sim_steps
 # For now, we set it here in base_sim_params for initial value, but it's *overridden* within run_single_simulation_experiment
-base_sim_params.rl_epsilon_decay_steps = 160 # For a 200 step sim, decays over first 160 steps
+base_sim_params.rl_epsilon_decay_steps = 240 # Decay over 80% of 300 steps
 
 
 # Define different experiment scenarios (parameter variations)
 # Each item in the list is one experiment scenario.
 # The dict within each item specifies parameter overrides for that scenario.
 EXPERIMENT_SCENARIOS = {
-    "Default_Config": {}, # Use base_sim_params as is
-    "Increased_UE_Density": {"num_ues": 20, "lambda_ue": 20 / (1000*1000*1e-6), "placement_method": "PPP"}, # Using PPP for density
-    "Fewer_BSs": {"num_bss": 2, "lambda_bs": 2 / (1000*1000*1e-6), "placement_method": "PPP"}, # Using PPP for density
-    "Higher_UE_Speed": {"ue_speed_mps": 10.0},
-    "More_RBs_Total": {"num_total_rbs": 40},
-    "Tighter_Hysteresis": {"ho_hysteresis_db": 1.0, "ho_time_to_trigger_s": 0.2}, # Baseline only, but good to vary
-    "High_Load_High_Speed": {"num_ues": 25, "ue_speed_mps": 12.0, "num_total_rbs": 25, "placement_method": "Uniform Random"}
+    "Default_Config": {
+        "num_ues": 10,
+        "num_bss": 3,
+        "placement_method": "Uniform Random",
+        "ue_speed_mps": 5.0,
+        "num_total_rbs": 20,
+    },
+    "High_Density_Dynamic": {
+        "num_ues": 30, # High UE count
+        "num_bss": 5,  # More BSs
+        "lambda_ue": 30 / (1000*1000*1e-6), # For PPP placement
+        "lambda_bs": 5 / (1000*1000*1e-6),  # For PPP placement
+        "placement_method": "PPP",
+        "ue_speed_mps": 8.0, # Increased mobility
+        "num_total_rbs": 50, # More RBs to handle density
+        "shadowing_std_dev_db": 6.0, # More channel variability
+        "rl_learning_rate": 0.005 # Potentially faster learning rate for DRL
+    },
+    "BS_Hotspot_Uneven_Load": {
+        "num_ues": 25,
+        "num_bss": 4,
+        "placement_method": "Uniform Random",
+        # For this scenario, BS placement would ideally be clustered, but with random
+        # placement we simulate high demand in certain areas by increasing UE count.
+        "ue_speed_mps": 4.0, # Slower mobility to expose load issues
+        "num_total_rbs": 30,
+        "target_ue_throughput_mbps": 1.5, # Higher demands
+        "ho_hysteresis_db": 4.0, # Less aggressive baseline HO
+    },
+    "Sparse_Network_Challenging_Coverage": {
+        "num_ues": 15,
+        "num_bss": 2, # Fewer BSs for coverage challenge
+        "placement_method": "Uniform Random",
+        "ue_speed_mps": 7.0, # Faster mobility, harder to maintain connection
+        "num_total_rbs": 20,
+        "path_loss_exponent": 4.0, # More severe path loss
+        "shadowing_std_dev_db": 5.0, # More variability in coverage
+    },
+    "High_Traffic_Low_Resources": {
+        "num_ues": 20,
+        "num_bss": 3,
+        "placement_method": "Uniform Random",
+        "ue_speed_mps": 5.0,
+        "num_total_rbs": 15, # Limited resources
+        "target_ue_throughput_mbps": 1.2, # Higher demand per UE
+        "rb_bandwidth_mhz": 0.4, # Smaller RB bandwidth
+    },
+    "Extreme_Mobility": {
+        "num_ues": 10,
+        "num_bss": 3,
+        "placement_method": "Uniform Random",
+        "ue_speed_mps": 15.0, # Very high mobility
+        "time_step_duration": 0.1, # Shorter time steps to capture rapid changes
+        "total_sim_steps": 600, # More steps needed for high mobility
+        "rl_epsilon_decay_steps": 480, # Adjust decay for longer run
+    }
 }
 
 # Number of random seeds to run for each scenario-agent combination (for robustness)
@@ -271,6 +323,9 @@ if __name__ == "__main__":
     for scenario_name, overrides in EXPERIMENT_SCENARIOS.items():
         log_handler_runner.log(f"\n===== Running Scenario: {scenario_name} =====", level='info')
         
+        # This will store the aggregated metrics for each agent within this scenario
+        scenario_aggregated_metrics = collections.defaultdict(list) # {'agent_type': [aggregated_metric_dict_per_step]}
+
         # Iterate through each agent type
         for agent in AGENTS_TO_TEST:
             agent_metrics_across_seeds = []
@@ -283,8 +338,7 @@ if __name__ == "__main__":
                 
                 log_handler_runner.log(f"Starting run {i+1}/{NUM_SEEDS_PER_RUN} for {agent} in {scenario_name} (Seed: {seed})...", level='info')
                 
-                # Pass current base_sim_params (can be modified by runner if needed)
-                metrics, final_params_dict = run_single_simulation_experiment( # <-- Capture final_params_dict
+                metrics, final_params_dict = run_single_simulation_experiment(
                     agent, base_sim_params, overrides, seed, scenario_name
                 )
                 
@@ -293,7 +347,7 @@ if __name__ == "__main__":
                     # Save raw metrics for each individual run into its specific experiment subfolder
                     run_unique_id = f"{scenario_name}_run{i+1}_seed{seed}"
                     save_handler_runner.save_metrics(
-                        agent, metrics, final_params_dict, # <-- Use the captured final_params_dict
+                        agent, metrics, final_params_dict,
                         experiment_name=os.path.join(exp_folder_name, "raw_metrics_per_run", run_unique_id)
                     )
                 else:
@@ -301,68 +355,76 @@ if __name__ == "__main__":
             
             # --- Aggregate metrics across seeds for this agent and scenario ---
             if agent_metrics_across_seeds:
-                # Assuming all runs have the same number of steps or we'll pad/trim
-                # For simplicity, let's average the metrics for each time step.
-                # This requires all histories to have the same length.
-                # A more robust approach would align time steps or use interpolation.
-                
-                max_steps = max(len(h) for h in agent_metrics_across_seeds)
-                
                 # Use defaultdict of lists to collect all values for each metric at each step
-                aggregated_metrics_by_step = collections.defaultdict(lambda: collections.defaultdict(list))
+                # Temporarily store values by step number for averaging
+                temp_aggregated_by_step_and_metric = collections.defaultdict(lambda: collections.defaultdict(list))
 
+                # Aggregate all runs for this agent within this scenario
                 for history in agent_metrics_across_seeds:
                     for step_data in history:
-                        step_num = step_data.get("time_step", -1) # Use .get for safety, -1 if not found
+                        step_num = step_data.get("time_step", -1)
                         if step_num == -1: continue # Skip if time_step is somehow missing
 
                         for key, value in step_data.items():
-                            # Only aggregate numerical values that are not NaN/Inf
+                            # Only aggregate numerical values that are not NaN/Inf for averaging
                             if isinstance(value, (int, float)) and not np.isnan(value) and not np.isinf(value):
-                                aggregated_metrics_by_step[step_num][key].append(value)
-                            # Special handling for 'epsilon' which might be -1.0 or None initially
-                            elif key == "epsilon" and value is not None and value != -1.0 and not np.isnan(value):
-                                aggregated_metrics_by_step[step_num][key].append(value)
-                            # For non-numeric or other specific keys, just take the first value or a default
-                            elif key not in aggregated_metrics_by_step[step_num]:
-                                aggregated_metrics_by_step[step_num][key] = value
+                                temp_aggregated_by_step_and_metric[step_num][key].append(value)
+                            # Handle non-numeric or specific keys (e.g., ue_details, which shouldn't be averaged)
+                            elif key not in temp_aggregated_by_step_and_metric[step_num]:
+                                temp_aggregated_by_step_and_metric[step_num][key] = value # Just take the first if not for averaging
 
+                # Final averaging for each step
+                avg_metrics_history_for_agent = []
+                # Ensure we iterate through steps in order based on available data
+                sorted_step_nums = sorted(temp_aggregated_by_step_and_metric.keys())
 
-                avg_metrics_history = []
-                # Ensure we iterate through steps in order
-                for step_num in sorted(aggregated_metrics_by_step.keys()):
+                for step_num in sorted_step_nums:
                     avg_step = {"time_step": step_num}
                     
                     # Get a reference list of keys from the first available history for this agent type
                     # This helps ensure all metrics are considered, even if some have no data to average
-                    if agent_metrics_across_seeds[0]:
-                        reference_keys = agent_metrics_across_seeds[0][0].keys()
-                    else:
-                        reference_keys = [] # Fallback if no history for this agent
+                    reference_keys = agent_metrics_across_seeds[0][0].keys() if agent_metrics_across_seeds and agent_metrics_across_seeds[0] else []
 
                     for key in reference_keys:
-                        values = aggregated_metrics_by_step[step_num].get(key)
-                        if values and isinstance(values, list): # Check if it's a list of numbers to average
-                            avg_step[key] = np.mean(values)
-                        elif values is not None: # If it's a single non-list value (e.g., UE details or if only one run)
-                            avg_step[key] = values
-                        else: # If no data for this key at this step
-                            if key == "epsilon": avg_step[key] = -1.0
-                            elif isinstance(base_sim_params.to_dict().get(key), (int, float)): # Check if default param is numeric
+                        values_to_avg = temp_aggregated_by_step_and_metric[step_num].get(key)
+                        
+                        if isinstance(values_to_avg, list) and values_to_avg: # If it's a list of numbers to average
+                            avg_step[key] = np.mean(values_to_avg)
+                        elif values_to_avg is not None: # If it's a single non-list value (e.g., 'ue_details')
+                            avg_step[key] = values_to_avg
+                        else: # If no data for this key at this step or default value
+                            if key == "epsilon": avg_step[key] = -1.0 # Default for epsilon
+                            elif key == "ue_details": avg_step[key] = [] # Default for ue_details
+                            # Attempt to use a default for numeric types if possible, otherwise NaN
+                            elif isinstance(getattr(base_sim_params, key, None), (int, float)):
                                 avg_step[key] = np.nan
-                            else: # For non-numeric like ue_details
-                                avg_step[key] = None
-                    avg_metrics_history.append(avg_step)
+                            else:
+                                avg_step[key] = None # Or some other appropriate default
+                    avg_metrics_history_for_agent.append(avg_step)
                 
-                all_experiment_results[scenario_name][agent] = avg_metrics_history
+                scenario_aggregated_metrics[agent] = avg_metrics_history_for_agent
             else:
                 log_handler_runner.log(f"No successful runs for agent {agent} in scenario {scenario_name}. Skipping aggregation.", level='warning')
         
+        # Store the aggregated results for this scenario
+        all_experiment_results[scenario_name] = scenario_aggregated_metrics
+
+        # NEW: Save aggregated metrics for this scenario to CSV
+        if scenario_aggregated_metrics:
+            csv_filename = f"{scenario_name}_aggregated_metrics.csv"
+            save_handler_runner.save_to_csv(
+                scenario_aggregated_metrics,
+                csv_filename,
+                experiment_name=exp_folder_name # Save inside the main experiment run folder
+            )
+        else:
+            log_handler_runner.log(f"No aggregated data for scenario {scenario_name}. Skipping CSV save.", level='warning')
+
+
     # Generate and optionally save all comparison plots
     log_handler_runner.log("\n--- All Experiments Finished ---", level='info')
     
     # Prompt user for plot saving and display
-    # We display plots in a non-blocking way already.
     save_plots_choice = input("\nDo you want to save the comparison plots to disk? (y/n): ").lower()
     save_plots = save_plots_choice == 'y'
 
@@ -371,8 +433,9 @@ if __name__ == "__main__":
     else:
         log_handler_runner.log("Plots will not be saved to disk.", level='info')
     
+    # Generate and display plots for each scenario using the aggregated data
     for scenario_name, agents_data in all_experiment_results.items():
-        if agents_data: # Only generate if there is data for this scenario
+        if agents_data:
              generate_comparison_plots(
                 {scenario_name: agents_data}, # Pass a dictionary for just this scenario
                 save_plots=save_plots,
