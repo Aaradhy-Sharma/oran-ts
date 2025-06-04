@@ -1,5 +1,6 @@
 class SimParams:
     def __init__(self):
+        # General
         self.placement_method = "Uniform Random"
         self.num_ues = 10
         self.num_bss = 3
@@ -25,7 +26,7 @@ class SimParams:
         # RB Parameters
         self.num_total_rbs = 20
         self.rb_bandwidth_mhz = 0.5
-        self.rb_bandwidth_hz = self.rb_bandwidth_mhz * 1e6 # Will be calculated
+        self.rb_bandwidth_hz = self.rb_bandwidth_mhz * 1e6 # Will be calculated based on mhz
 
         # Channel Model
         self.path_loss_exponent = 3.7
@@ -50,8 +51,26 @@ class SimParams:
         self.rl_replay_buffer_size = 1000
         self.rl_n_step_sarsa = 3 # N-step for NStepSARSA
 
-        # To be calculated by simulation during setup
+        # To be calculated by simulation during setup (not direct user inputs)
         self.ho_time_to_trigger_steps = 0
-        self.num_ues_actual = self.num_ues
-        self.num_bss_actual = self.num_bss
-        self.channel_model = None # Will be linked from Simulation
+        self.num_ues_actual = self.num_ues # Will be updated by PPP if applicable
+        self.num_bss_actual = self.num_bss # Will be updated by PPP if applicable
+        self.channel_model = None # Will be linked from Simulation class
+
+    def to_dict(self):
+        """
+        Converts the SimParams object to a dictionary, making it suitable for
+        serialization (e.g., to JSON for saving).
+        Excludes callable attributes and dunder methods.
+        """
+        param_dict = {}
+        for attr_name in dir(self):
+            # Exclude private/protected attributes and methods
+            if not attr_name.startswith('_') and not callable(getattr(self, attr_name)):
+                value = getattr(self, attr_name)
+                # Handle special cases if any objects are not directly JSON serializable
+                # For example, if channel_model was an object, you might want to serialize its ID or skip it.
+                if attr_name == "channel_model" and value is not None:
+                    continue # Skip the object reference, it's not a parameter to save directly
+                param_dict[attr_name] = value
+        return param_dict
