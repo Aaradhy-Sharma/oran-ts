@@ -1,0 +1,26 @@
+o-ran-sim/
+├── main.py              # Entry point, orchestrates the simulation run
+├── sim_core/
+│   ├── __init__.py      # Makes sim_core a package
+│   ├── constants.py     # Global constants
+│   ├── helpers.py       # Math utility functions
+│   ├── params.py        # SimParams class
+│   ├── channel.py       # ChannelModel class
+│   ├── resource.py      # ResourceBlockPool class
+│   ├── entities.py      # BaseStation, UserEquipment classes
+│   └── simulation.py    # Main Simulation class logic (excluding agents)
+├── rl_agents/
+│   ├── __init__.py      # Makes rl_agents a package
+│   ├── base.py          # RLAgentBase class
+│   ├── baseline.py      # BaselineAgent class
+│   ├── tabular_q.py     # TabularQLearningAgent class
+│   ├── sarsa.py         # SARSAAgent class
+│   ├── expected_sarsa.py# ExpectedSARSAAgent class
+│   ├── nstep_sarsa.py   # NStepSARSAAgent class
+│   └── dqn.py           # DQNAgent class (if TF is installed)
+├── gui.py               # CellularSimApp class (Tkinter GUI)
+├── utils/
+│   ├── __init__.py      # Makes utils a package
+│   ├── logger.py        # New: LogHandler class
+│   └── saver.py         # New: SaveHandler class (for metrics)
+└── requirements.txt     # (Optional but good practice) List of Python dependencies
