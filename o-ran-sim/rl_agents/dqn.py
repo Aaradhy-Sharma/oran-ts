@@ -14,7 +14,7 @@ try:
     from tensorflow.keras.models import Sequential
     from tensorflow.keras.layers import Dense
     from tensorflow.keras.optimizers import Adam
-    TF_AVAILABLE_GLOBAL = True # Update global flag
+    TF_AVAILABLE_GLOBAL = True # Update global flag << IF TF is available
 except ImportError:
     TF_AVAILABLE_GLOBAL = False
     print("TensorFlow not available. DQL agent will not work.")

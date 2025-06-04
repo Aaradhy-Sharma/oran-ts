@@ -17,7 +17,7 @@ class BaselineAgent(RLAgentBase):
     def get_ue_actions_and_allocate(self, ues_map):
         handovers_this_step = 0
 
-        # 1. Handover Decisions (Simplified for single connectivity initially)
+        # 1. Handover Decisions (Simplifiedfor single connectivity initially)
         for ue in ues_map.values():
             if ue.serving_bs_1 is None: # Initial association
                 self._perform_initial_association(ue)
@@ -38,7 +38,7 @@ class BaselineAgent(RLAgentBase):
                     best_neighbor_id = bs_id
 
             if best_neighbor_id:
-                # A3 condition: Neighbor becomes offset better than serving
+                # A3 condition: Neighbor becomes offset better than serving << 
                 a3_condition_met = (
                     best_neighbor_rsrp > rsrp_serving + self.params.ho_hysteresis_db
                 )
@@ -49,12 +49,12 @@ class BaselineAgent(RLAgentBase):
                 else:
                     ue.time_in_a3_condition[best_neighbor_id] = 0
 
-                # Time to Trigger condition
+                # Time to Trigger condition (TTT condition) << 
                 ttt_met = (
                     ue.time_in_a3_condition.get(best_neighbor_id, 0)
                     >= self.params.ho_time_to_trigger_steps
                 )
-                # Acquisition threshold
+                # Acquisition threshold << 
                 acq_met = best_neighbor_rsrp > self.params.min_rsrp_for_acq_dbm
 
                 if a3_condition_met and ttt_met and acq_met:
@@ -110,7 +110,7 @@ class BaselineAgent(RLAgentBase):
 
                 for rb_id in available_rbs:
                     if len(ue.rbs_from_bs1) >= self.params.max_rbs_per_ue_per_bs:
-                        break # Reached max RBs from this BS
+                        break # Reached max RBs from this BS hence break the loop << 
                     
                     # Allocate and mark
                     ue.rbs_from_bs1.append(rb_id)

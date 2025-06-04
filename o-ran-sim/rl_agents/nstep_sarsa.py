@@ -17,7 +17,7 @@ class NStepSARSAAgent(RLAgentBase):
         self.log(f"NStepSARSAAgent initialized with N={self.n_step}.")
 
     def _get_state_representation(self, ue: UserEquipment, bss_map):
-        # Same as Tabular Q-Learning Agent
+        # Same as Tabular Q-Learning Agent << 
         is_satisfied = ue.current_total_rate_mbps >= self.params.target_ue_throughput_mbps
         satisfied_cat = 1 if is_satisfied else 0
         bs1_load_cat = 0

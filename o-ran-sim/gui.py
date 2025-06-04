@@ -10,7 +10,7 @@ import math
 # Import simulation components
 from sim_core.params import SimParams
 from sim_core.simulation import Simulation
-# Ensure TF_AVAILABLE_GLOBAL reflects the true TensorFlow availability from dqn.py
+# Ensure TF_AVAILABLE_GLOBAL reflects the true TensorFlow availability from dqn.py <<
 from sim_core.constants import TF_AVAILABLE as TF_AVAILABLE_GLOBAL
 
 # Import utilities

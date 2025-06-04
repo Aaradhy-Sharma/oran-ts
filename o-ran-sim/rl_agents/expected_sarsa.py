@@ -10,7 +10,7 @@ class ExpectedSARSAAgent(RLAgentBase):
         super().__init__(params, num_bss, num_ues, logger_func)
         self.q_table = collections.defaultdict(
             lambda: np.zeros(3)
-        ) # (stay, switch_single, try_dual)
+        ) # (stay, switch_single, try_dual) << 
         self.num_actions = 3
         self.log("ExpectedSARSAAgent initialized.")
 

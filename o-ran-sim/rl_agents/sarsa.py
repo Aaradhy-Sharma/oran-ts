@@ -55,7 +55,7 @@ class SARSAAgent(RLAgentBase):
         if done:
             target = r
         else:
-            target = r + self.params.rl_gamma * self.q_table[s_prime][a_prime] # Use Q(s',a')
+            target = r + self.params.rl_gamma * self.q_table[s_prime][a_prime] # Use Q(s',a')   <<
 
         new_value = old_value + self.params.rl_learning_rate * (target - old_value)
         self.q_table[s][a] = new_value

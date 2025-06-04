@@ -14,7 +14,7 @@ class NpEncoder(json.JSONEncoder):
             return int(obj)
         elif isinstance(obj, np.floating):
             if np.isnan(obj) or np.isinf(obj):
-                # JSON doesn't have NaN/Infinity, convert to string or null.
+                # JSON doesn't have NaN/Infinity, convert to string or null. << 
                 # String "NaN", "Infinity", "-Infinity" is a common convention.
                 return str(obj) # Or None, depends on desired JSON representation
             return float(obj)

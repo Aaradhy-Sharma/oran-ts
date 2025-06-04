@@ -5,6 +5,7 @@ from sim_core.params import SimParams
 from sim_core.entities import UserEquipment
 from rl_agents.base import RLAgentBase
 
+# type: class TabularQLearningAgent(RLAgentBase)
 class TabularQLearningAgent(RLAgentBase):
     def __init__(self, params: SimParams, num_bss, num_ues, logger_func):
         super().__init__(params, num_bss, num_ues, logger_func)

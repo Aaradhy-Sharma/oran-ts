@@ -14,7 +14,7 @@ class RLAgentBase:
         raise NotImplementedError
 
     def train(self, state, action, reward, next_state, done, ue_id=None):
-        pass # Not all agents might train this way (e.g. Baseline)
+        pass # pass since not all agents might train this way (e.g. Baseline)
 
     def update_epsilon(self):
         self.total_steps_taken += 1

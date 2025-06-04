@@ -6,7 +6,7 @@ from sim_core.params import SimParams
 from sim_core.channel import ChannelModel
 from sim_core.resource import ResourceBlockPool
 from sim_core.entities import BaseStation, UserEquipment
-# Import all RL Agents, dynamically loaded later
+# Import all RL Agents, dynamically loaded later <<
 from rl_agents.base import RLAgentBase
 from rl_agents.baseline import BaselineAgent
 from rl_agents.tabular_q import TabularQLearningAgent

@@ -14,7 +14,7 @@ class BaseStation:
         self.channel_model = channel_model
         self.power_per_link_beam_dbm = params.bs_tx_power_dbm
         self.load_factor_metric = 0.0 # From 0 to 1
-        self.ues_served_this_step = set() # UEs for which this BS allocated RBs
+        self.ues_served_this_step = set() # UEs for which this BS allocated RBs << 
 
     def get_access_beam_rsrp_at_ue(self, ue_pos):
         # This uses the calculate_path_loss method which includes path loss and shadowing

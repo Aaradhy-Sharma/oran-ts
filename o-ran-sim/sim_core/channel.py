@@ -4,6 +4,7 @@ from sim_core.params import SimParams
 from sim_core.constants import BOLTZMANN, TEMP_KELVIN
 from sim_core.helpers import db_to_linear
 
+# type: class ChannelModel(object)
 class ChannelModel:
     def __init__(self, params: SimParams):
         self.params = params

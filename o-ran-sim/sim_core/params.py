@@ -4,8 +4,8 @@ class SimParams:
         self.placement_method = "Uniform Random"
         self.num_ues = 10
         self.num_bss = 3
-        self.lambda_bs = 3 / (1000 * 1000 * 1e-6) # Per km^2
-        self.lambda_ue = 10 / (1000 * 1000 * 1e-6) # Per km^2
+        self.lambda_bs = 3 / (1000 * 1000 * 1e-6) # Per km^2 <<
+        self.lambda_ue = 10 / (1000 * 1000 * 1e-6) # Per km^2 <<    
         self.sim_area_x = 1000
         self.sim_area_y = 1000
         self.time_step_duration = 0.2

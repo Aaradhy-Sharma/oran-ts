@@ -7,7 +7,7 @@ class ResourceBlockPool:
         self.rb_status = {i: {"bs_id": None, "ue_id": None} for i in range(num_rbs)}
 
     def get_available_rbs_for_bs(self, bs_id, count):
-        # RBs not used by *any* BS
+        # RBs not used by *any* BS <<
         available = [
             rb_id for rb_id, status in self.rb_status.items() if status["bs_id"] is None
         ]

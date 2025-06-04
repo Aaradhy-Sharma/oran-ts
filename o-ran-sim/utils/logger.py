@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import scrolledtext
-import logging # Using standard logging for file output
+import logging # Using standard logging for file output << explained in README.md
 
 class LogHandler:
     """
