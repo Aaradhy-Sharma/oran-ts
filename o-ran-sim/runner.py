@@ -119,6 +119,7 @@ def generate_comparison_plots(all_experiments_metrics, save_plots=True, exp_fold
         ("sinr_avg_db", "Average SINR (dB)"),
         ("rbs_avg_per_ue", "Average RBs per UE"),
         ("epsilon", "Epsilon Decay"), # Only relevant for RL agents
+        ("dqn_loss", "DQN Loss"),  # Added for DQN monitoring
     ]
 
     for exp_name, agents_data in all_experiments_metrics.items():
@@ -233,24 +234,65 @@ else:
 
 # Define the base parameters for the simulation
 base_sim_params = SimParams()
-base_sim_params.total_sim_steps = 300 # Increased steps for more learning
-# Epsilon decay steps should be absolute steps, not a fraction of total_sim_steps,
-# as total_sim_steps can vary by experiment. Set it as a fixed large number or proportional
-# to the *default* total_sim_steps. Or, calculate it for each run based on *its* total_sim_steps.
-# For now, we set it here in base_sim_params for initial value, but it's *overridden* within run_single_simulation_experiment
-base_sim_params.rl_epsilon_decay_steps = 240 # Decay over 80% of 300 steps
+base_sim_params.total_sim_steps = 2000  # Increased steps for more learning
+base_sim_params.rl_epsilon_decay_steps = 1800  # Decay over 90% of total steps
+base_sim_params.rl_batch_size = 64
+base_sim_params.rl_learning_rate = 0.0005
+base_sim_params.rl_target_update_freq = 100
+base_sim_params.rl_replay_buffer_size = 20000
+base_sim_params.rl_num_hidden_layers = 3
+base_sim_params.rl_hidden_units = 128
+base_sim_params.rl_dropout_rate = 0.2
+base_sim_params.rl_use_soft_updates = True
+base_sim_params.rl_tau = 0.005  # Soft update parameter
 
 
 # Define different experiment scenarios (parameter variations)
-# Each item in the list is one experiment scenario.
-# The dict within each item specifies parameter overrides for that scenario.
 EXPERIMENT_SCENARIOS = {
     "Default_Config": {
         "num_ues": 10,
         "num_bss": 3,
-        "placement_method": "Uniform Random",
-        "ue_speed_mps": 5.0,
-        "num_total_rbs": 20,
+        "total_sim_steps": 2000,
+        "rl_epsilon_decay_steps": 1800,
+        "rl_batch_size": 64,
+        "rl_learning_rate": 0.0005,
+        "rl_target_update_freq": 100,
+        "rl_replay_buffer_size": 20000,
+        "rl_num_hidden_layers": 3,
+        "rl_hidden_units": 128,
+        "rl_dropout_rate": 0.2,
+        "rl_use_soft_updates": True,
+        "rl_tau": 0.005
+    },
+    "High_Load": {
+        "num_ues": 20,
+        "num_bss": 3,
+        "total_sim_steps": 2000,
+        "rl_epsilon_decay_steps": 1800,
+        "rl_batch_size": 64,
+        "rl_learning_rate": 0.0005,
+        "rl_target_update_freq": 100,
+        "rl_replay_buffer_size": 20000,
+        "rl_num_hidden_layers": 3,
+        "rl_hidden_units": 128,
+        "rl_dropout_rate": 0.2,
+        "rl_use_soft_updates": True,
+        "rl_tau": 0.005
+    },
+    "Large_Network": {
+        "num_ues": 15,
+        "num_bss": 5,
+        "total_sim_steps": 2000,
+        "rl_epsilon_decay_steps": 1800,
+        "rl_batch_size": 64,
+        "rl_learning_rate": 0.0005,
+        "rl_target_update_freq": 100,
+        "rl_replay_buffer_size": 20000,
+        "rl_num_hidden_layers": 3,
+        "rl_hidden_units": 128,
+        "rl_dropout_rate": 0.2,
+        "rl_use_soft_updates": True,
+        "rl_tau": 0.005
     },
     "High_Density_Dynamic": {
         "num_ues": 30, # High UE count

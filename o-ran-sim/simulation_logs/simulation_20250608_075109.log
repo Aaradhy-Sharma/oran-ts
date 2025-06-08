@@ -1,0 +1,4862 @@
+
+--- Running: Baseline (Seed: 269831) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 1 BSs
+PPP: Placing 1 UEs
+RL_AGENT: BaselineAgent initialized.
+Simulation setup for Baseline complete. Starting steps...
+
+--- Time Step 0 ---
+RL_AGENT: UE0 initial association with BS0 (RSRP: -78.39 dBm)
+Step Reward: 0.881
+Metrics @ T0: Rew:0.88 Thr:4.42 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 1 ---
+Step Reward: 0.881
+Metrics @ T1: Rew:0.88 Thr:4.94 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 2 ---
+Step Reward: 0.881
+Metrics @ T2: Rew:0.88 Thr:4.03 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 4 ---
+Step Reward: 0.881
+Metrics @ T4: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 5 ---
+Step Reward: 0.881
+Metrics @ T5: Rew:0.88 Thr:4.71 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 6 ---
+Step Reward: 0.881
+Metrics @ T6: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 8 ---
+Step Reward: 0.881
+Metrics @ T8: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 9 ---
+Step Reward: 0.881
+Metrics @ T9: Rew:0.88 Thr:4.57 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 10 ---
+Step Reward: 0.881
+Metrics @ T10: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 12 ---
+Step Reward: 0.881
+Metrics @ T12: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 13 ---
+Step Reward: 0.881
+Metrics @ T13: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:4.02 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 16 ---
+Step Reward: 0.881
+Metrics @ T16: Rew:0.88 Thr:4.30 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 18 ---
+Step Reward: 0.881
+Metrics @ T18: Rew:0.88 Thr:4.06 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 19 ---
+Step Reward: 0.881
+Metrics @ T19: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 20 ---
+Step Reward: 0.881
+Metrics @ T20: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 23 ---
+Step Reward: 0.881
+Metrics @ T23: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 24 ---
+Step Reward: 0.881
+Metrics @ T24: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 25 ---
+Step Reward: 0.881
+Metrics @ T25: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 26 ---
+Step Reward: 0.881
+Metrics @ T26: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 27 ---
+Step Reward: 0.881
+Metrics @ T27: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 28 ---
+Step Reward: 0.881
+Metrics @ T28: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 29 ---
+Step Reward: 0.881
+Metrics @ T29: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 30 ---
+Step Reward: 0.881
+Metrics @ T30: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 31 ---
+Step Reward: 0.881
+Metrics @ T31: Rew:0.88 Thr:4.61 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 32 ---
+Step Reward: 0.881
+Metrics @ T32: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 33 ---
+Step Reward: 0.881
+Metrics @ T33: Rew:0.88 Thr:4.26 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 34 ---
+Step Reward: 0.881
+Metrics @ T34: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 35 ---
+Step Reward: 0.881
+Metrics @ T35: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 36 ---
+Step Reward: 0.881
+Metrics @ T36: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 37 ---
+Step Reward: 0.881
+Metrics @ T37: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 38 ---
+Step Reward: 0.881
+Metrics @ T38: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:4.81 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 40 ---
+Step Reward: 0.881
+Metrics @ T40: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 41 ---
+Step Reward: 0.881
+Metrics @ T41: Rew:0.88 Thr:4.25 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 43 ---
+Step Reward: 0.881
+Metrics @ T43: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:3.33 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 45 ---
+Step Reward: 0.881
+Metrics @ T45: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 46 ---
+Step Reward: 0.881
+Metrics @ T46: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 47 ---
+Step Reward: 0.881
+Metrics @ T47: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 48 ---
+Step Reward: 0.881
+Metrics @ T48: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 49 ---
+Step Reward: 0.881
+Metrics @ T49: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 51 ---
+Step Reward: 0.881
+Metrics @ T51: Rew:0.88 Thr:2.71 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:4.85 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 53 ---
+Step Reward: 0.881
+Metrics @ T53: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 54 ---
+Step Reward: 0.881
+Metrics @ T54: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 55 ---
+Step Reward: 0.881
+Metrics @ T55: Rew:0.88 Thr:4.55 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 56 ---
+Step Reward: 0.881
+Metrics @ T56: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 57 ---
+Step Reward: 0.881
+Metrics @ T57: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 58 ---
+Step Reward: 0.881
+Metrics @ T58: Rew:0.88 Thr:4.43 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 61 ---
+Step Reward: 0.881
+Metrics @ T61: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 62 ---
+Step Reward: 0.881
+Metrics @ T62: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 63 ---
+Step Reward: 0.881
+Metrics @ T63: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 64 ---
+Step Reward: 0.881
+Metrics @ T64: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 65 ---
+Step Reward: 0.881
+Metrics @ T65: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 66 ---
+Step Reward: 0.881
+Metrics @ T66: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 67 ---
+Step Reward: 0.881
+Metrics @ T67: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 69 ---
+Step Reward: 0.881
+Metrics @ T69: Rew:0.88 Thr:4.80 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 70 ---
+Step Reward: 0.881
+Metrics @ T70: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 71 ---
+Step Reward: 0.881
+Metrics @ T71: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 73 ---
+Step Reward: 0.881
+Metrics @ T73: Rew:0.88 Thr:4.20 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 74 ---
+Step Reward: 0.881
+Metrics @ T74: Rew:0.88 Thr:1.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 75 ---
+Step Reward: 0.881
+Metrics @ T75: Rew:0.88 Thr:4.56 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 76 ---
+Step Reward: 0.881
+Metrics @ T76: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 77 ---
+Step Reward: 0.881
+Metrics @ T77: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 78 ---
+Step Reward: 0.881
+Metrics @ T78: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 79 ---
+Step Reward: 0.881
+Metrics @ T79: Rew:0.88 Thr:2.87 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 80 ---
+Step Reward: 0.881
+Metrics @ T80: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 81 ---
+Step Reward: 0.881
+Metrics @ T81: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 82 ---
+Step Reward: 0.881
+Metrics @ T82: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:4.77 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:4.68 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:4.77 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:3.77 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:4.47 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 91 ---
+Step Reward: 0.881
+Metrics @ T91: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 92 ---
+Step Reward: 0.881
+Metrics @ T92: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 93 ---
+Step Reward: 0.881
+Metrics @ T93: Rew:0.88 Thr:3.75 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 94 ---
+Step Reward: 0.881
+Metrics @ T94: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 97 ---
+Step Reward: 0.881
+Metrics @ T97: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 99 ---
+Step Reward: 0.881
+Metrics @ T99: Rew:0.88 Thr:4.28 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 101 ---
+Step Reward: 0.881
+Metrics @ T101: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 102 ---
+Step Reward: 0.881
+Metrics @ T102: Rew:0.88 Thr:3.85 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 103 ---
+Step Reward: 0.881
+Metrics @ T103: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 104 ---
+Step Reward: 0.881
+Metrics @ T104: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 105 ---
+Step Reward: 0.881
+Metrics @ T105: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 106 ---
+Step Reward: 0.881
+Metrics @ T106: Rew:0.88 Thr:3.72 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 107 ---
+Step Reward: 0.881
+Metrics @ T107: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 108 ---
+Step Reward: 0.881
+Metrics @ T108: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 109 ---
+Step Reward: 0.881
+Metrics @ T109: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 110 ---
+Step Reward: 0.881
+Metrics @ T110: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 111 ---
+Step Reward: 0.881
+Metrics @ T111: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 112 ---
+Step Reward: 0.881
+Metrics @ T112: Rew:0.88 Thr:4.85 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 114 ---
+Step Reward: 0.881
+Metrics @ T114: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 115 ---
+Step Reward: 0.881
+Metrics @ T115: Rew:0.88 Thr:4.92 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 116 ---
+Step Reward: 0.881
+Metrics @ T116: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:4.86 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 119 ---
+Step Reward: 0.881
+Metrics @ T119: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 123 ---
+Step Reward: 0.881
+Metrics @ T123: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:3.15 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 126 ---
+Step Reward: 0.881
+Metrics @ T126: Rew:0.88 Thr:4.67 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 128 ---
+Step Reward: 0.881
+Metrics @ T128: Rew:0.88 Thr:2.53 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 130 ---
+Step Reward: 0.881
+Metrics @ T130: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 133 ---
+Step Reward: 0.881
+Metrics @ T133: Rew:0.88 Thr:1.48 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 134 ---
+Step Reward: 0.881
+Metrics @ T134: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 135 ---
+Step Reward: 0.881
+Metrics @ T135: Rew:0.88 Thr:4.13 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 136 ---
+Step Reward: 0.881
+Metrics @ T136: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 138 ---
+Step Reward: 0.881
+Metrics @ T138: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 142 ---
+Step Reward: 0.881
+Metrics @ T142: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 143 ---
+Step Reward: 0.881
+Metrics @ T143: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 144 ---
+Step Reward: 0.881
+Metrics @ T144: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 147 ---
+Step Reward: 0.881
+Metrics @ T147: Rew:0.88 Thr:3.46 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 148 ---
+Step Reward: 0.881
+Metrics @ T148: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 150 ---
+Step Reward: 0.881
+Metrics @ T150: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 151 ---
+Step Reward: 0.881
+Metrics @ T151: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 152 ---
+Step Reward: 0.881
+Metrics @ T152: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 154 ---
+Step Reward: 0.881
+Metrics @ T154: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:3.50 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 156 ---
+Step Reward: 0.881
+Metrics @ T156: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:4.50 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 158 ---
+Step Reward: 0.881
+Metrics @ T158: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 163 ---
+Step Reward: 0.881
+Metrics @ T163: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 165 ---
+Step Reward: 0.881
+Metrics @ T165: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 166 ---
+Step Reward: 0.881
+Metrics @ T166: Rew:0.88 Thr:3.57 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 169 ---
+Step Reward: 0.881
+Metrics @ T169: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 170 ---
+Step Reward: 0.881
+Metrics @ T170: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 171 ---
+Step Reward: 0.881
+Metrics @ T171: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:4.07 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:4.86 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:3.82 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 178 ---
+Step Reward: 0.881
+Metrics @ T178: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 179 ---
+Step Reward: 0.881
+Metrics @ T179: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:4.37 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 183 ---
+Step Reward: 0.881
+Metrics @ T183: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 185 ---
+Step Reward: 0.881
+Metrics @ T185: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:4.74 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:3.41 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:4.49 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:3.71 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 191 ---
+Step Reward: 0.881
+Metrics @ T191: Rew:0.88 Thr:3.73 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 192 ---
+Step Reward: 0.881
+Metrics @ T192: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:4.19 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:4.41 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:4.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:1.000
+Simulation for Baseline ended early at step 199.
+Simulation for Baseline completed 200 steps.
+
+--- Running: TabularQLearning (Seed: 269878) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 1 BSs
+PPP: Placing 4 UEs
+RL_AGENT: TabularQLearningAgent initialized with granular state space.
+Simulation setup for TabularQLearning complete. Starting steps...
+
+--- Time Step 0 ---
+Step Reward: 0.431
+Metrics @ T0: Rew:0.43 Thr:16.85 Satisfied:1(25.0%) HOs:0 Load:0.75 Eps:0.994
+
+--- Time Step 1 ---
+Step Reward: 0.731
+Metrics @ T1: Rew:0.73 Thr:52.35 Satisfied:3(75.0%) HOs:0 Load:0.75 Eps:0.988
+
+--- Time Step 2 ---
+Step Reward: 0.731
+Metrics @ T2: Rew:0.73 Thr:54.17 Satisfied:3(75.0%) HOs:0 Load:0.75 Eps:0.982
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:61.16 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.976
+
+--- Time Step 4 ---
+Step Reward: 0.881
+Metrics @ T4: Rew:0.88 Thr:61.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.970
+
+--- Time Step 5 ---
+Step Reward: 0.881
+Metrics @ T5: Rew:0.88 Thr:56.12 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.964
+
+--- Time Step 6 ---
+Step Reward: 0.881
+Metrics @ T6: Rew:0.88 Thr:58.06 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.958
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:61.23 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.953
+
+--- Time Step 8 ---
+Step Reward: 0.881
+Metrics @ T8: Rew:0.88 Thr:63.53 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.947
+
+--- Time Step 9 ---
+Step Reward: 0.881
+Metrics @ T9: Rew:0.88 Thr:60.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.941
+
+--- Time Step 10 ---
+Step Reward: 0.881
+Metrics @ T10: Rew:0.88 Thr:61.55 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.935
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:58.44 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.929
+
+--- Time Step 12 ---
+Step Reward: 0.881
+Metrics @ T12: Rew:0.88 Thr:54.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.923
+
+--- Time Step 13 ---
+Step Reward: 0.881
+Metrics @ T13: Rew:0.88 Thr:57.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.917
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:67.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.911
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:63.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.905
+
+--- Time Step 16 ---
+Step Reward: 0.881
+Metrics @ T16: Rew:0.88 Thr:60.16 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.899
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:57.66 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.893
+
+--- Time Step 18 ---
+Step Reward: 0.881
+Metrics @ T18: Rew:0.88 Thr:55.88 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.887
+
+--- Time Step 19 ---
+Step Reward: 0.881
+Metrics @ T19: Rew:0.88 Thr:62.49 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.881
+
+--- Time Step 20 ---
+Step Reward: 0.881
+Metrics @ T20: Rew:0.88 Thr:48.27 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.875
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:60.57 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.869
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:61.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.863
+
+--- Time Step 23 ---
+Step Reward: 0.881
+Metrics @ T23: Rew:0.88 Thr:61.74 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.858
+
+--- Time Step 24 ---
+Step Reward: 0.881
+Metrics @ T24: Rew:0.88 Thr:62.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.852
+
+--- Time Step 25 ---
+Step Reward: 0.881
+Metrics @ T25: Rew:0.88 Thr:60.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.846
+
+--- Time Step 26 ---
+Step Reward: 0.881
+Metrics @ T26: Rew:0.88 Thr:62.45 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.840
+
+--- Time Step 27 ---
+Step Reward: 0.881
+Metrics @ T27: Rew:0.88 Thr:58.78 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.834
+
+--- Time Step 28 ---
+Step Reward: 0.881
+Metrics @ T28: Rew:0.88 Thr:56.74 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.828
+
+--- Time Step 29 ---
+Step Reward: 0.881
+Metrics @ T29: Rew:0.88 Thr:57.85 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.822
+
+--- Time Step 30 ---
+Step Reward: 0.881
+Metrics @ T30: Rew:0.88 Thr:56.20 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.816
+
+--- Time Step 31 ---
+Step Reward: 0.881
+Metrics @ T31: Rew:0.88 Thr:59.71 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.810
+
+--- Time Step 32 ---
+Step Reward: 0.881
+Metrics @ T32: Rew:0.88 Thr:61.20 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.804
+
+--- Time Step 33 ---
+Step Reward: 0.881
+Metrics @ T33: Rew:0.88 Thr:63.29 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.798
+
+--- Time Step 34 ---
+Step Reward: 0.881
+Metrics @ T34: Rew:0.88 Thr:64.02 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.792
+
+--- Time Step 35 ---
+Step Reward: 0.881
+Metrics @ T35: Rew:0.88 Thr:56.76 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.786
+
+--- Time Step 36 ---
+Step Reward: 0.881
+Metrics @ T36: Rew:0.88 Thr:60.31 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.780
+
+--- Time Step 37 ---
+Step Reward: 0.881
+Metrics @ T37: Rew:0.88 Thr:66.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.774
+
+--- Time Step 38 ---
+Step Reward: 0.881
+Metrics @ T38: Rew:0.88 Thr:59.88 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.768
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:61.34 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.762
+
+--- Time Step 40 ---
+Step Reward: 0.881
+Metrics @ T40: Rew:0.88 Thr:66.68 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.757
+
+--- Time Step 41 ---
+Step Reward: 0.881
+Metrics @ T41: Rew:0.88 Thr:61.49 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.751
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:62.17 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.745
+
+--- Time Step 43 ---
+Step Reward: 0.881
+Metrics @ T43: Rew:0.88 Thr:67.59 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.739
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:59.04 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.733
+
+--- Time Step 45 ---
+Step Reward: 0.881
+Metrics @ T45: Rew:0.88 Thr:64.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.727
+
+--- Time Step 46 ---
+Step Reward: 0.881
+Metrics @ T46: Rew:0.88 Thr:65.68 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.721
+
+--- Time Step 47 ---
+Step Reward: 0.881
+Metrics @ T47: Rew:0.88 Thr:60.60 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.715
+
+--- Time Step 48 ---
+Step Reward: 0.881
+Metrics @ T48: Rew:0.88 Thr:56.10 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.709
+
+--- Time Step 49 ---
+Step Reward: 0.881
+Metrics @ T49: Rew:0.88 Thr:55.96 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.703
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:56.98 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.697
+
+--- Time Step 51 ---
+Step Reward: 0.881
+Metrics @ T51: Rew:0.88 Thr:64.12 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.691
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:57.02 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.685
+
+--- Time Step 53 ---
+Step Reward: 0.881
+Metrics @ T53: Rew:0.88 Thr:58.36 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.679
+
+--- Time Step 54 ---
+Step Reward: 0.881
+Metrics @ T54: Rew:0.88 Thr:64.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.673
+
+--- Time Step 55 ---
+Step Reward: 0.881
+Metrics @ T55: Rew:0.88 Thr:56.19 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.667
+
+--- Time Step 56 ---
+Step Reward: 0.881
+Metrics @ T56: Rew:0.88 Thr:61.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.662
+
+--- Time Step 57 ---
+Step Reward: 0.881
+Metrics @ T57: Rew:0.88 Thr:49.72 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.656
+
+--- Time Step 58 ---
+Step Reward: 0.881
+Metrics @ T58: Rew:0.88 Thr:52.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.650
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:61.27 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.644
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:66.48 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.638
+
+--- Time Step 61 ---
+Step Reward: 0.881
+Metrics @ T61: Rew:0.88 Thr:63.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.632
+
+--- Time Step 62 ---
+Step Reward: 0.881
+Metrics @ T62: Rew:0.88 Thr:52.61 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.626
+
+--- Time Step 63 ---
+Step Reward: 0.881
+Metrics @ T63: Rew:0.88 Thr:59.59 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.620
+
+--- Time Step 64 ---
+Step Reward: 0.881
+Metrics @ T64: Rew:0.88 Thr:63.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.614
+
+--- Time Step 65 ---
+Step Reward: 0.881
+Metrics @ T65: Rew:0.88 Thr:59.70 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.608
+
+--- Time Step 66 ---
+Step Reward: 0.881
+Metrics @ T66: Rew:0.88 Thr:64.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.602
+
+--- Time Step 67 ---
+Step Reward: 0.881
+Metrics @ T67: Rew:0.88 Thr:63.26 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.596
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:57.99 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.590
+
+--- Time Step 69 ---
+Step Reward: 0.881
+Metrics @ T69: Rew:0.88 Thr:59.22 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.584
+
+--- Time Step 70 ---
+Step Reward: 0.881
+Metrics @ T70: Rew:0.88 Thr:52.95 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.578
+
+--- Time Step 71 ---
+Step Reward: 0.881
+Metrics @ T71: Rew:0.88 Thr:56.51 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.573
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:53.97 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.567
+
+--- Time Step 73 ---
+Step Reward: 0.881
+Metrics @ T73: Rew:0.88 Thr:57.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.561
+
+--- Time Step 74 ---
+Step Reward: 0.881
+Metrics @ T74: Rew:0.88 Thr:54.17 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.555
+
+--- Time Step 75 ---
+Step Reward: 0.881
+Metrics @ T75: Rew:0.88 Thr:59.76 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.549
+
+--- Time Step 76 ---
+Step Reward: 0.881
+Metrics @ T76: Rew:0.88 Thr:57.54 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.543
+
+--- Time Step 77 ---
+Step Reward: 0.881
+Metrics @ T77: Rew:0.88 Thr:59.21 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.537
+
+--- Time Step 78 ---
+Step Reward: 0.881
+Metrics @ T78: Rew:0.88 Thr:60.33 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.531
+
+--- Time Step 79 ---
+Step Reward: 0.881
+Metrics @ T79: Rew:0.88 Thr:58.92 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.525
+
+--- Time Step 80 ---
+Step Reward: 0.881
+Metrics @ T80: Rew:0.88 Thr:61.78 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.519
+
+--- Time Step 81 ---
+Step Reward: 0.881
+Metrics @ T81: Rew:0.88 Thr:62.77 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.513
+
+--- Time Step 82 ---
+Step Reward: 0.881
+Metrics @ T82: Rew:0.88 Thr:58.73 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.507
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:65.45 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.501
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:59.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.495
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:64.66 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.489
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:66.57 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.483
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:62.76 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.478
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:64.31 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.472
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:57.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.466
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:65.40 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.460
+
+--- Time Step 91 ---
+Step Reward: 0.881
+Metrics @ T91: Rew:0.88 Thr:53.22 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.454
+
+--- Time Step 92 ---
+Step Reward: 0.881
+Metrics @ T92: Rew:0.88 Thr:61.36 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.448
+
+--- Time Step 93 ---
+Step Reward: 0.881
+Metrics @ T93: Rew:0.88 Thr:56.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.442
+
+--- Time Step 94 ---
+Step Reward: 0.881
+Metrics @ T94: Rew:0.88 Thr:64.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.436
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:59.14 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.430
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:56.29 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.424
+
+--- Time Step 97 ---
+Step Reward: 0.881
+Metrics @ T97: Rew:0.88 Thr:61.74 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.418
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:62.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.412
+
+--- Time Step 99 ---
+Step Reward: 0.881
+Metrics @ T99: Rew:0.88 Thr:54.98 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.406
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:64.13 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.400
+
+--- Time Step 101 ---
+Step Reward: 0.881
+Metrics @ T101: Rew:0.88 Thr:60.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.394
+
+--- Time Step 102 ---
+Step Reward: 0.881
+Metrics @ T102: Rew:0.88 Thr:61.97 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.388
+
+--- Time Step 103 ---
+Step Reward: 0.881
+Metrics @ T103: Rew:0.88 Thr:54.89 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.383
+
+--- Time Step 104 ---
+Step Reward: 0.881
+Metrics @ T104: Rew:0.88 Thr:64.88 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.377
+
+--- Time Step 105 ---
+Step Reward: 0.881
+Metrics @ T105: Rew:0.88 Thr:57.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.371
+
+--- Time Step 106 ---
+Step Reward: 0.881
+Metrics @ T106: Rew:0.88 Thr:68.58 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.365
+
+--- Time Step 107 ---
+Step Reward: 0.881
+Metrics @ T107: Rew:0.88 Thr:59.92 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.359
+
+--- Time Step 108 ---
+Step Reward: 0.881
+Metrics @ T108: Rew:0.88 Thr:64.33 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.353
+
+--- Time Step 109 ---
+Step Reward: 0.881
+Metrics @ T109: Rew:0.88 Thr:57.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.347
+
+--- Time Step 110 ---
+Step Reward: 0.881
+Metrics @ T110: Rew:0.88 Thr:58.94 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.341
+
+--- Time Step 111 ---
+Step Reward: 0.881
+Metrics @ T111: Rew:0.88 Thr:61.46 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.335
+
+--- Time Step 112 ---
+Step Reward: 0.881
+Metrics @ T112: Rew:0.88 Thr:65.65 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.329
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:54.11 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.323
+
+--- Time Step 114 ---
+Step Reward: 0.881
+Metrics @ T114: Rew:0.88 Thr:62.22 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.317
+
+--- Time Step 115 ---
+Step Reward: 0.881
+Metrics @ T115: Rew:0.88 Thr:59.01 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.311
+
+--- Time Step 116 ---
+Step Reward: 0.881
+Metrics @ T116: Rew:0.88 Thr:53.61 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.305
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:58.96 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.299
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:56.23 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.293
+
+--- Time Step 119 ---
+Step Reward: 0.881
+Metrics @ T119: Rew:0.88 Thr:59.21 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.288
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:62.19 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.282
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:61.27 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.276
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:57.58 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.270
+
+--- Time Step 123 ---
+Step Reward: 0.881
+Metrics @ T123: Rew:0.88 Thr:58.02 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.264
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:62.72 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.258
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:57.41 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.252
+
+--- Time Step 126 ---
+Step Reward: 0.881
+Metrics @ T126: Rew:0.88 Thr:60.70 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.246
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:60.73 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.240
+
+--- Time Step 128 ---
+Step Reward: 0.881
+Metrics @ T128: Rew:0.88 Thr:59.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.234
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:55.41 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.228
+
+--- Time Step 130 ---
+Step Reward: 0.881
+Metrics @ T130: Rew:0.88 Thr:56.98 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.222
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:57.13 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.216
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:63.51 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.210
+
+--- Time Step 133 ---
+Step Reward: 0.881
+Metrics @ T133: Rew:0.88 Thr:61.82 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.204
+
+--- Time Step 134 ---
+Step Reward: 0.881
+Metrics @ T134: Rew:0.88 Thr:61.83 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.198
+
+--- Time Step 135 ---
+Step Reward: 0.881
+Metrics @ T135: Rew:0.88 Thr:63.51 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.193
+
+--- Time Step 136 ---
+Step Reward: 0.881
+Metrics @ T136: Rew:0.88 Thr:63.12 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.187
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:62.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.181
+
+--- Time Step 138 ---
+Step Reward: 0.881
+Metrics @ T138: Rew:0.88 Thr:61.00 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.175
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:56.44 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.169
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:55.98 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.163
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:62.53 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.157
+
+--- Time Step 142 ---
+Step Reward: 0.881
+Metrics @ T142: Rew:0.88 Thr:57.96 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.151
+
+--- Time Step 143 ---
+Step Reward: 0.881
+Metrics @ T143: Rew:0.88 Thr:61.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.145
+
+--- Time Step 144 ---
+Step Reward: 0.881
+Metrics @ T144: Rew:0.88 Thr:62.03 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.139
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:58.08 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.133
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:63.52 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.127
+
+--- Time Step 147 ---
+Step Reward: 0.881
+Metrics @ T147: Rew:0.88 Thr:64.45 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.121
+
+--- Time Step 148 ---
+Step Reward: 0.881
+Metrics @ T148: Rew:0.88 Thr:69.40 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.115
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:55.49 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.109
+
+--- Time Step 150 ---
+Step Reward: 0.881
+Metrics @ T150: Rew:0.88 Thr:64.56 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.103
+
+--- Time Step 151 ---
+Step Reward: 0.881
+Metrics @ T151: Rew:0.88 Thr:61.81 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.098
+
+--- Time Step 152 ---
+Step Reward: 0.881
+Metrics @ T152: Rew:0.88 Thr:57.13 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.092
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:56.62 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.086
+
+--- Time Step 154 ---
+Step Reward: 0.881
+Metrics @ T154: Rew:0.88 Thr:62.90 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.080
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:65.71 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.074
+
+--- Time Step 156 ---
+Step Reward: 0.881
+Metrics @ T156: Rew:0.88 Thr:63.15 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.068
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:60.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.062
+
+--- Time Step 158 ---
+Step Reward: 0.881
+Metrics @ T158: Rew:0.88 Thr:66.96 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.056
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:56.22 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:64.19 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:64.61 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:59.03 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 163 ---
+Step Reward: 0.881
+Metrics @ T163: Rew:0.88 Thr:58.26 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:60.30 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 165 ---
+Step Reward: 0.881
+Metrics @ T165: Rew:0.88 Thr:53.54 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 166 ---
+Step Reward: 0.881
+Metrics @ T166: Rew:0.88 Thr:58.27 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:58.77 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:59.63 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 169 ---
+Step Reward: 0.881
+Metrics @ T169: Rew:0.88 Thr:56.94 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 170 ---
+Step Reward: 0.881
+Metrics @ T170: Rew:0.88 Thr:60.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 171 ---
+Step Reward: 0.881
+Metrics @ T171: Rew:0.88 Thr:64.24 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:59.67 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:58.73 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:58.66 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:63.10 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:61.20 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:56.82 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 178 ---
+Step Reward: 0.881
+Metrics @ T178: Rew:0.88 Thr:66.26 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 179 ---
+Step Reward: 0.881
+Metrics @ T179: Rew:0.88 Thr:65.26 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:55.95 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:63.02 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:63.09 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 183 ---
+Step Reward: 0.881
+Metrics @ T183: Rew:0.88 Thr:64.46 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:56.22 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 185 ---
+Step Reward: 0.881
+Metrics @ T185: Rew:0.88 Thr:63.87 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:55.75 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:63.36 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:60.12 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:59.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:64.15 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 191 ---
+Step Reward: 0.881
+Metrics @ T191: Rew:0.88 Thr:63.92 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 192 ---
+Step Reward: 0.881
+Metrics @ T192: Rew:0.88 Thr:62.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:60.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:59.17 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:57.72 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:66.54 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:56.44 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:55.01 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:57.31 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+Simulation for TabularQLearning ended early at step 199.
+Simulation for TabularQLearning completed 200 steps.
+
+--- Running: SARSA (Seed: 270057) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 2 BSs
+PPP: Placing 2 UEs
+RL_AGENT: SARSAAgent initialized with granular state space.
+Simulation setup for SARSA complete. Starting steps...
+
+--- Time Step 0 ---
+Step Reward: 0.300
+Metrics @ T0: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.994
+
+--- Time Step 1 ---
+Step Reward: 0.581
+Metrics @ T1: Rew:0.58 Thr:17.98 Satisfied:1(50.0%) HOs:0 Load:0.38 Eps:0.988
+
+--- Time Step 2 ---
+Step Reward: 0.581
+Metrics @ T2: Rew:0.58 Thr:15.81 Satisfied:1(50.0%) HOs:0 Load:0.38 Eps:0.982
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:35.51 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.976
+
+--- Time Step 4 ---
+Step Reward: 0.881
+Metrics @ T4: Rew:0.88 Thr:31.50 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.970
+
+--- Time Step 5 ---
+Step Reward: 0.881
+Metrics @ T5: Rew:0.88 Thr:32.37 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.964
+
+--- Time Step 6 ---
+Step Reward: 0.881
+Metrics @ T6: Rew:0.88 Thr:30.16 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.958
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:37.98 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.953
+
+--- Time Step 8 ---
+Step Reward: 0.881
+Metrics @ T8: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.947
+
+--- Time Step 9 ---
+Step Reward: 0.881
+Metrics @ T9: Rew:0.88 Thr:37.94 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.941
+
+--- Time Step 10 ---
+Step Reward: 0.881
+Metrics @ T10: Rew:0.88 Thr:38.70 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.935
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:36.89 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.929
+
+--- Time Step 12 ---
+Step Reward: 0.881
+Metrics @ T12: Rew:0.88 Thr:35.26 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.923
+
+--- Time Step 13 ---
+Step Reward: 0.881
+Metrics @ T13: Rew:0.88 Thr:37.45 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.917
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:37.90 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.911
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:36.00 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.905
+
+--- Time Step 16 ---
+Step Reward: 0.881
+Metrics @ T16: Rew:0.88 Thr:36.60 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.899
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:35.71 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.893
+
+--- Time Step 18 ---
+Step Reward: 0.881
+Metrics @ T18: Rew:0.88 Thr:38.95 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.887
+
+--- Time Step 19 ---
+Step Reward: 0.881
+Metrics @ T19: Rew:0.88 Thr:28.12 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.881
+
+--- Time Step 20 ---
+Step Reward: 0.881
+Metrics @ T20: Rew:0.88 Thr:37.61 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.875
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:32.34 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.869
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:38.08 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.863
+
+--- Time Step 23 ---
+Step Reward: 0.881
+Metrics @ T23: Rew:0.88 Thr:35.95 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.858
+
+--- Time Step 24 ---
+Step Reward: 0.881
+Metrics @ T24: Rew:0.88 Thr:33.65 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.852
+
+--- Time Step 25 ---
+Step Reward: 0.881
+Metrics @ T25: Rew:0.88 Thr:37.92 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.846
+
+--- Time Step 26 ---
+Step Reward: 0.881
+Metrics @ T26: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.840
+
+--- Time Step 27 ---
+Step Reward: 0.881
+Metrics @ T27: Rew:0.88 Thr:32.99 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.834
+
+--- Time Step 28 ---
+Step Reward: 0.881
+Metrics @ T28: Rew:0.88 Thr:36.58 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.828
+
+--- Time Step 29 ---
+Step Reward: 0.881
+Metrics @ T29: Rew:0.88 Thr:28.57 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.822
+
+--- Time Step 30 ---
+Step Reward: 0.881
+Metrics @ T30: Rew:0.88 Thr:34.11 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.816
+
+--- Time Step 31 ---
+Step Reward: 0.881
+Metrics @ T31: Rew:0.88 Thr:39.19 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.810
+
+--- Time Step 32 ---
+Step Reward: 0.881
+Metrics @ T32: Rew:0.88 Thr:38.07 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.804
+
+--- Time Step 33 ---
+Step Reward: 0.871
+Metrics @ T33: Rew:0.87 Thr:33.43 Satisfied:2(100.0%) HOs:1 Load:0.75 Eps:0.798
+
+--- Time Step 34 ---
+Step Reward: 0.881
+Metrics @ T34: Rew:0.88 Thr:29.34 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.792
+
+--- Time Step 35 ---
+Step Reward: 0.881
+Metrics @ T35: Rew:0.88 Thr:36.63 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.786
+
+--- Time Step 36 ---
+Step Reward: 0.871
+Metrics @ T36: Rew:0.87 Thr:37.15 Satisfied:2(100.0%) HOs:1 Load:0.38 Eps:0.780
+
+--- Time Step 37 ---
+Step Reward: 0.881
+Metrics @ T37: Rew:0.88 Thr:35.60 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.774
+
+--- Time Step 38 ---
+Step Reward: 0.881
+Metrics @ T38: Rew:0.88 Thr:33.03 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.768
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:36.90 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.762
+
+--- Time Step 40 ---
+Step Reward: 0.881
+Metrics @ T40: Rew:0.88 Thr:38.01 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.757
+
+--- Time Step 41 ---
+Step Reward: 0.881
+Metrics @ T41: Rew:0.88 Thr:38.70 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.751
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:35.84 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.745
+
+--- Time Step 43 ---
+Step Reward: 0.881
+Metrics @ T43: Rew:0.88 Thr:33.75 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.739
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:39.33 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.733
+
+--- Time Step 45 ---
+Step Reward: 0.881
+Metrics @ T45: Rew:0.88 Thr:35.91 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.727
+
+--- Time Step 46 ---
+Step Reward: 0.881
+Metrics @ T46: Rew:0.88 Thr:37.73 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.721
+
+--- Time Step 47 ---
+Step Reward: 0.881
+Metrics @ T47: Rew:0.88 Thr:37.99 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.715
+
+--- Time Step 48 ---
+Step Reward: 0.881
+Metrics @ T48: Rew:0.88 Thr:38.97 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.709
+
+--- Time Step 49 ---
+Step Reward: 0.881
+Metrics @ T49: Rew:0.88 Thr:38.40 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.703
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:37.71 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.697
+
+--- Time Step 51 ---
+Step Reward: 0.881
+Metrics @ T51: Rew:0.88 Thr:33.09 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.691
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:39.29 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.685
+
+--- Time Step 53 ---
+Step Reward: 0.881
+Metrics @ T53: Rew:0.88 Thr:36.64 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.679
+
+--- Time Step 54 ---
+Step Reward: 0.881
+Metrics @ T54: Rew:0.88 Thr:34.24 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.673
+
+--- Time Step 55 ---
+Step Reward: 0.881
+Metrics @ T55: Rew:0.88 Thr:36.29 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.667
+
+--- Time Step 56 ---
+Step Reward: 0.881
+Metrics @ T56: Rew:0.88 Thr:34.45 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.662
+
+--- Time Step 57 ---
+Step Reward: 0.881
+Metrics @ T57: Rew:0.88 Thr:33.74 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.656
+
+--- Time Step 58 ---
+Step Reward: 0.881
+Metrics @ T58: Rew:0.88 Thr:39.82 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.650
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:35.71 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.644
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:39.05 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.638
+
+--- Time Step 61 ---
+Step Reward: 0.881
+Metrics @ T61: Rew:0.88 Thr:37.22 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.632
+
+--- Time Step 62 ---
+Step Reward: 0.881
+Metrics @ T62: Rew:0.88 Thr:38.45 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.626
+
+--- Time Step 63 ---
+Step Reward: 0.881
+Metrics @ T63: Rew:0.88 Thr:37.26 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.620
+
+--- Time Step 64 ---
+Step Reward: 0.881
+Metrics @ T64: Rew:0.88 Thr:37.14 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.614
+
+--- Time Step 65 ---
+Step Reward: 0.881
+Metrics @ T65: Rew:0.88 Thr:36.66 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.608
+
+--- Time Step 66 ---
+Step Reward: 0.881
+Metrics @ T66: Rew:0.88 Thr:39.30 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.602
+
+--- Time Step 67 ---
+Step Reward: 0.881
+Metrics @ T67: Rew:0.88 Thr:36.29 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.596
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:36.37 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.590
+
+--- Time Step 69 ---
+Step Reward: 0.881
+Metrics @ T69: Rew:0.88 Thr:38.48 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.584
+
+--- Time Step 70 ---
+Step Reward: 0.881
+Metrics @ T70: Rew:0.88 Thr:38.93 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.578
+
+--- Time Step 71 ---
+Step Reward: 0.881
+Metrics @ T71: Rew:0.88 Thr:38.27 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.573
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:37.44 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.567
+
+--- Time Step 73 ---
+Step Reward: 0.881
+Metrics @ T73: Rew:0.88 Thr:38.91 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.561
+
+--- Time Step 74 ---
+Step Reward: 0.881
+Metrics @ T74: Rew:0.88 Thr:37.01 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.555
+
+--- Time Step 75 ---
+Step Reward: 0.881
+Metrics @ T75: Rew:0.88 Thr:39.81 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.549
+
+--- Time Step 76 ---
+Step Reward: 0.881
+Metrics @ T76: Rew:0.88 Thr:36.06 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.543
+
+--- Time Step 77 ---
+Step Reward: 0.881
+Metrics @ T77: Rew:0.88 Thr:34.00 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.537
+
+--- Time Step 78 ---
+Step Reward: 0.881
+Metrics @ T78: Rew:0.88 Thr:38.95 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.531
+
+--- Time Step 79 ---
+Step Reward: 0.881
+Metrics @ T79: Rew:0.88 Thr:37.28 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.525
+
+--- Time Step 80 ---
+Step Reward: 0.881
+Metrics @ T80: Rew:0.88 Thr:34.62 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.519
+
+--- Time Step 81 ---
+Step Reward: 0.881
+Metrics @ T81: Rew:0.88 Thr:39.07 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.513
+
+--- Time Step 82 ---
+Step Reward: 0.881
+Metrics @ T82: Rew:0.88 Thr:36.74 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.507
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:39.23 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.501
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:37.83 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.495
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:34.76 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.489
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:32.92 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.483
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:33.36 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.478
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:37.72 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.472
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:37.59 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.466
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.460
+
+--- Time Step 91 ---
+Step Reward: 0.881
+Metrics @ T91: Rew:0.88 Thr:35.85 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.454
+
+--- Time Step 92 ---
+Step Reward: 0.881
+Metrics @ T92: Rew:0.88 Thr:38.61 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.448
+
+--- Time Step 93 ---
+Step Reward: 0.881
+Metrics @ T93: Rew:0.88 Thr:37.13 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.442
+
+--- Time Step 94 ---
+Step Reward: 0.881
+Metrics @ T94: Rew:0.88 Thr:39.44 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.436
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:36.90 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.430
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:38.73 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.424
+
+--- Time Step 97 ---
+Step Reward: 0.881
+Metrics @ T97: Rew:0.88 Thr:38.49 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.418
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:39.66 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.412
+
+--- Time Step 99 ---
+Step Reward: 0.881
+Metrics @ T99: Rew:0.88 Thr:39.35 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.406
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:36.87 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.400
+
+--- Time Step 101 ---
+Step Reward: 0.881
+Metrics @ T101: Rew:0.88 Thr:39.26 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.394
+
+--- Time Step 102 ---
+Step Reward: 0.881
+Metrics @ T102: Rew:0.88 Thr:33.58 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.388
+
+--- Time Step 103 ---
+Step Reward: 0.881
+Metrics @ T103: Rew:0.88 Thr:35.92 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.383
+
+--- Time Step 104 ---
+Step Reward: 0.881
+Metrics @ T104: Rew:0.88 Thr:36.12 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.377
+
+--- Time Step 105 ---
+Step Reward: 0.881
+Metrics @ T105: Rew:0.88 Thr:37.00 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.371
+
+--- Time Step 106 ---
+Step Reward: 0.881
+Metrics @ T106: Rew:0.88 Thr:39.76 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.365
+
+--- Time Step 107 ---
+Step Reward: 0.881
+Metrics @ T107: Rew:0.88 Thr:39.64 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.359
+
+--- Time Step 108 ---
+Step Reward: 0.881
+Metrics @ T108: Rew:0.88 Thr:34.91 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.353
+
+--- Time Step 109 ---
+Step Reward: 0.881
+Metrics @ T109: Rew:0.88 Thr:37.95 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.347
+
+--- Time Step 110 ---
+Step Reward: 0.881
+Metrics @ T110: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.341
+
+--- Time Step 111 ---
+Step Reward: 0.881
+Metrics @ T111: Rew:0.88 Thr:35.58 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.335
+
+--- Time Step 112 ---
+Step Reward: 0.881
+Metrics @ T112: Rew:0.88 Thr:36.57 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.329
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:35.06 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.323
+
+--- Time Step 114 ---
+Step Reward: 0.881
+Metrics @ T114: Rew:0.88 Thr:38.53 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.317
+
+--- Time Step 115 ---
+Step Reward: 0.881
+Metrics @ T115: Rew:0.88 Thr:34.47 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.311
+
+--- Time Step 116 ---
+Step Reward: 0.881
+Metrics @ T116: Rew:0.88 Thr:38.45 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.305
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:36.34 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.299
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:39.35 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.293
+
+--- Time Step 119 ---
+Step Reward: 0.881
+Metrics @ T119: Rew:0.88 Thr:38.32 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.288
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:39.07 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.282
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:39.78 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.276
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:37.84 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.270
+
+--- Time Step 123 ---
+Step Reward: 0.881
+Metrics @ T123: Rew:0.88 Thr:38.98 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.264
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:37.92 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.258
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:38.17 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.252
+
+--- Time Step 126 ---
+Step Reward: 0.881
+Metrics @ T126: Rew:0.88 Thr:36.25 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.246
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:36.23 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.240
+
+--- Time Step 128 ---
+Step Reward: 0.881
+Metrics @ T128: Rew:0.88 Thr:38.22 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.234
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:36.91 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.228
+
+--- Time Step 130 ---
+Step Reward: 0.881
+Metrics @ T130: Rew:0.88 Thr:36.58 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.222
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:38.06 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.216
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:37.30 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.210
+
+--- Time Step 133 ---
+Step Reward: 0.881
+Metrics @ T133: Rew:0.88 Thr:37.84 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.204
+
+--- Time Step 134 ---
+Step Reward: 0.881
+Metrics @ T134: Rew:0.88 Thr:36.12 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.198
+
+--- Time Step 135 ---
+Step Reward: 0.881
+Metrics @ T135: Rew:0.88 Thr:39.39 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.193
+
+--- Time Step 136 ---
+Step Reward: 0.881
+Metrics @ T136: Rew:0.88 Thr:38.30 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.187
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:37.93 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.181
+
+--- Time Step 138 ---
+Step Reward: 0.881
+Metrics @ T138: Rew:0.88 Thr:33.53 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.175
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:34.20 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.169
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:38.59 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.163
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:34.66 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.157
+
+--- Time Step 142 ---
+Step Reward: 0.881
+Metrics @ T142: Rew:0.88 Thr:38.88 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.151
+
+--- Time Step 143 ---
+Step Reward: 0.881
+Metrics @ T143: Rew:0.88 Thr:33.88 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.145
+
+--- Time Step 144 ---
+Step Reward: 0.881
+Metrics @ T144: Rew:0.88 Thr:37.99 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.139
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:37.48 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.133
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:35.96 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.127
+
+--- Time Step 147 ---
+Step Reward: 0.881
+Metrics @ T147: Rew:0.88 Thr:39.57 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.121
+
+--- Time Step 148 ---
+Step Reward: 0.881
+Metrics @ T148: Rew:0.88 Thr:39.16 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.115
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:38.21 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.109
+
+--- Time Step 150 ---
+Step Reward: 0.881
+Metrics @ T150: Rew:0.88 Thr:39.15 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.103
+
+--- Time Step 151 ---
+Step Reward: 0.881
+Metrics @ T151: Rew:0.88 Thr:38.14 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.098
+
+--- Time Step 152 ---
+Step Reward: 0.881
+Metrics @ T152: Rew:0.88 Thr:39.12 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.092
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:38.64 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.086
+
+--- Time Step 154 ---
+Step Reward: 0.881
+Metrics @ T154: Rew:0.88 Thr:36.26 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.080
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:37.85 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.074
+
+--- Time Step 156 ---
+Step Reward: 0.881
+Metrics @ T156: Rew:0.88 Thr:35.79 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.068
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:37.61 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.062
+
+--- Time Step 158 ---
+Step Reward: 0.881
+Metrics @ T158: Rew:0.88 Thr:38.24 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.056
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:39.60 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:39.74 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:34.51 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:35.03 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 163 ---
+Step Reward: 0.881
+Metrics @ T163: Rew:0.88 Thr:39.78 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:38.34 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 165 ---
+Step Reward: 0.881
+Metrics @ T165: Rew:0.88 Thr:34.58 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 166 ---
+Step Reward: 0.881
+Metrics @ T166: Rew:0.88 Thr:39.39 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:37.85 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:38.34 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 169 ---
+Step Reward: 0.881
+Metrics @ T169: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 170 ---
+Step Reward: 0.881
+Metrics @ T170: Rew:0.88 Thr:39.10 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 171 ---
+Step Reward: 0.881
+Metrics @ T171: Rew:0.88 Thr:37.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:36.31 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:37.85 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:38.56 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:39.69 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:35.07 Satisfied:2(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:37.18 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 178 ---
+Step Reward: 0.881
+Metrics @ T178: Rew:0.88 Thr:35.49 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 179 ---
+Step Reward: 0.881
+Metrics @ T179: Rew:0.88 Thr:39.35 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:35.47 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:37.41 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:37.15 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 183 ---
+Step Reward: 0.881
+Metrics @ T183: Rew:0.88 Thr:38.15 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 185 ---
+Step Reward: 0.881
+Metrics @ T185: Rew:0.88 Thr:36.89 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:38.28 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:38.01 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:39.01 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:39.44 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 191 ---
+Step Reward: 0.881
+Metrics @ T191: Rew:0.88 Thr:38.70 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 192 ---
+Step Reward: 0.881
+Metrics @ T192: Rew:0.88 Thr:36.62 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:38.75 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:38.72 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:39.33 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:37.99 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:39.87 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:37.86 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.050
+Simulation for SARSA ended early at step 199.
+Simulation for SARSA completed 200 steps.
+
+--- Running: ExpectedSARSA (Seed: 270154) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 2 BSs
+PPP: Placing 4 UEs
+RL_AGENT: ExpectedSARSAAgent initialized with granular state space.
+Simulation setup for ExpectedSARSA complete. Starting steps...
+
+--- Time Step 0 ---
+Step Reward: 0.581
+Metrics @ T0: Rew:0.58 Thr:30.16 Satisfied:2(100.0%) HOs:0 Load:0.38 Eps:0.994
+
+--- Time Step 1 ---
+Step Reward: 0.731
+Metrics @ T1: Rew:0.73 Thr:38.83 Satisfied:3(75.0%) HOs:0 Load:0.75 Eps:0.988
+
+--- Time Step 2 ---
+Step Reward: 0.871
+Metrics @ T2: Rew:0.87 Thr:62.85 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.982
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:54.13 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.976
+
+--- Time Step 4 ---
+Step Reward: 0.871
+Metrics @ T4: Rew:0.87 Thr:61.80 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.970
+
+--- Time Step 5 ---
+Step Reward: 0.881
+Metrics @ T5: Rew:0.88 Thr:63.96 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.964
+
+--- Time Step 6 ---
+Step Reward: 0.881
+Metrics @ T6: Rew:0.88 Thr:63.28 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.958
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:56.19 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.953
+
+--- Time Step 8 ---
+Step Reward: 0.881
+Metrics @ T8: Rew:0.88 Thr:61.34 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.947
+
+--- Time Step 9 ---
+Step Reward: 0.871
+Metrics @ T9: Rew:0.87 Thr:63.14 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.941
+
+--- Time Step 10 ---
+Step Reward: 0.881
+Metrics @ T10: Rew:0.88 Thr:56.45 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.935
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:65.29 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.929
+
+--- Time Step 12 ---
+Step Reward: 0.871
+Metrics @ T12: Rew:0.87 Thr:58.08 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.923
+
+--- Time Step 13 ---
+Step Reward: 0.871
+Metrics @ T13: Rew:0.87 Thr:59.29 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.917
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:55.61 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.911
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:62.53 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.905
+
+--- Time Step 16 ---
+Step Reward: 0.881
+Metrics @ T16: Rew:0.88 Thr:58.04 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.899
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:58.60 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.893
+
+--- Time Step 18 ---
+Step Reward: 0.871
+Metrics @ T18: Rew:0.87 Thr:62.17 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.887
+
+--- Time Step 19 ---
+Step Reward: 0.881
+Metrics @ T19: Rew:0.88 Thr:67.75 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.881
+
+--- Time Step 20 ---
+Step Reward: 0.871
+Metrics @ T20: Rew:0.87 Thr:55.44 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.875
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:54.16 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.869
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:57.28 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.863
+
+--- Time Step 23 ---
+Step Reward: 0.871
+Metrics @ T23: Rew:0.87 Thr:56.92 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.858
+
+--- Time Step 24 ---
+Step Reward: 0.871
+Metrics @ T24: Rew:0.87 Thr:60.93 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.852
+
+--- Time Step 25 ---
+Step Reward: 0.871
+Metrics @ T25: Rew:0.87 Thr:63.04 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.846
+
+--- Time Step 26 ---
+Step Reward: 0.881
+Metrics @ T26: Rew:0.88 Thr:55.47 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.840
+
+--- Time Step 27 ---
+Step Reward: 0.871
+Metrics @ T27: Rew:0.87 Thr:56.21 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.834
+
+--- Time Step 28 ---
+Step Reward: 0.881
+Metrics @ T28: Rew:0.88 Thr:55.37 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.828
+
+--- Time Step 29 ---
+Step Reward: 0.881
+Metrics @ T29: Rew:0.88 Thr:65.00 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.822
+
+--- Time Step 30 ---
+Step Reward: 0.881
+Metrics @ T30: Rew:0.88 Thr:62.03 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.816
+
+--- Time Step 31 ---
+Step Reward: 0.871
+Metrics @ T31: Rew:0.87 Thr:57.94 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.810
+
+--- Time Step 32 ---
+Step Reward: 0.881
+Metrics @ T32: Rew:0.88 Thr:61.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.804
+
+--- Time Step 33 ---
+Step Reward: 0.871
+Metrics @ T33: Rew:0.87 Thr:56.74 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.798
+
+--- Time Step 34 ---
+Step Reward: 0.881
+Metrics @ T34: Rew:0.88 Thr:64.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.792
+
+--- Time Step 35 ---
+Step Reward: 0.871
+Metrics @ T35: Rew:0.87 Thr:59.87 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.786
+
+--- Time Step 36 ---
+Step Reward: 0.881
+Metrics @ T36: Rew:0.88 Thr:52.18 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.780
+
+--- Time Step 37 ---
+Step Reward: 0.881
+Metrics @ T37: Rew:0.88 Thr:63.93 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.774
+
+--- Time Step 38 ---
+Step Reward: 0.881
+Metrics @ T38: Rew:0.88 Thr:55.00 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.768
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:64.47 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.762
+
+--- Time Step 40 ---
+Step Reward: 0.871
+Metrics @ T40: Rew:0.87 Thr:64.36 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.757
+
+--- Time Step 41 ---
+Step Reward: 0.871
+Metrics @ T41: Rew:0.87 Thr:59.02 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.751
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:61.60 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.745
+
+--- Time Step 43 ---
+Step Reward: 0.881
+Metrics @ T43: Rew:0.88 Thr:66.23 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.739
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:55.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.733
+
+--- Time Step 45 ---
+Step Reward: 0.881
+Metrics @ T45: Rew:0.88 Thr:63.23 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.727
+
+--- Time Step 46 ---
+Step Reward: 0.861
+Metrics @ T46: Rew:0.86 Thr:64.87 Satisfied:4(100.0%) HOs:2 Load:0.38 Eps:0.721
+
+--- Time Step 47 ---
+Step Reward: 0.881
+Metrics @ T47: Rew:0.88 Thr:63.05 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.715
+
+--- Time Step 48 ---
+Step Reward: 0.881
+Metrics @ T48: Rew:0.88 Thr:62.32 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.709
+
+--- Time Step 49 ---
+Step Reward: 0.871
+Metrics @ T49: Rew:0.87 Thr:57.27 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.703
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:61.77 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.697
+
+--- Time Step 51 ---
+Step Reward: 0.881
+Metrics @ T51: Rew:0.88 Thr:64.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.691
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:61.16 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.685
+
+--- Time Step 53 ---
+Step Reward: 0.871
+Metrics @ T53: Rew:0.87 Thr:56.65 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.679
+
+--- Time Step 54 ---
+Step Reward: 0.861
+Metrics @ T54: Rew:0.86 Thr:58.19 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.673
+
+--- Time Step 55 ---
+Step Reward: 0.871
+Metrics @ T55: Rew:0.87 Thr:60.60 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.667
+
+--- Time Step 56 ---
+Step Reward: 0.881
+Metrics @ T56: Rew:0.88 Thr:56.18 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.662
+
+--- Time Step 57 ---
+Step Reward: 0.871
+Metrics @ T57: Rew:0.87 Thr:60.50 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.656
+
+--- Time Step 58 ---
+Step Reward: 0.861
+Metrics @ T58: Rew:0.86 Thr:58.80 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.650
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:59.07 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.644
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:56.15 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.638
+
+--- Time Step 61 ---
+Step Reward: 0.881
+Metrics @ T61: Rew:0.88 Thr:68.47 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.632
+
+--- Time Step 62 ---
+Step Reward: 0.881
+Metrics @ T62: Rew:0.88 Thr:63.67 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.626
+
+--- Time Step 63 ---
+Step Reward: 0.871
+Metrics @ T63: Rew:0.87 Thr:64.98 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.620
+
+--- Time Step 64 ---
+Step Reward: 0.871
+Metrics @ T64: Rew:0.87 Thr:60.54 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.614
+
+--- Time Step 65 ---
+Step Reward: 0.871
+Metrics @ T65: Rew:0.87 Thr:61.73 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.608
+
+--- Time Step 66 ---
+Step Reward: 0.871
+Metrics @ T66: Rew:0.87 Thr:58.83 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.602
+
+--- Time Step 67 ---
+Step Reward: 0.871
+Metrics @ T67: Rew:0.87 Thr:64.38 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.596
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:54.84 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.590
+
+--- Time Step 69 ---
+Step Reward: 0.871
+Metrics @ T69: Rew:0.87 Thr:55.63 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.584
+
+--- Time Step 70 ---
+Step Reward: 0.881
+Metrics @ T70: Rew:0.88 Thr:62.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.578
+
+--- Time Step 71 ---
+Step Reward: 0.881
+Metrics @ T71: Rew:0.88 Thr:61.75 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.573
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:60.00 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.567
+
+--- Time Step 73 ---
+Step Reward: 0.881
+Metrics @ T73: Rew:0.88 Thr:60.99 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.561
+
+--- Time Step 74 ---
+Step Reward: 0.881
+Metrics @ T74: Rew:0.88 Thr:65.13 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.555
+
+--- Time Step 75 ---
+Step Reward: 0.871
+Metrics @ T75: Rew:0.87 Thr:60.63 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.549
+
+--- Time Step 76 ---
+Step Reward: 0.871
+Metrics @ T76: Rew:0.87 Thr:66.02 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.543
+
+--- Time Step 77 ---
+Step Reward: 0.881
+Metrics @ T77: Rew:0.88 Thr:64.41 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.537
+
+--- Time Step 78 ---
+Step Reward: 0.871
+Metrics @ T78: Rew:0.87 Thr:63.28 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.531
+
+--- Time Step 79 ---
+Step Reward: 0.881
+Metrics @ T79: Rew:0.88 Thr:64.91 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.525
+
+--- Time Step 80 ---
+Step Reward: 0.871
+Metrics @ T80: Rew:0.87 Thr:60.64 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.519
+
+--- Time Step 81 ---
+Step Reward: 0.871
+Metrics @ T81: Rew:0.87 Thr:53.24 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.513
+
+--- Time Step 82 ---
+Step Reward: 0.871
+Metrics @ T82: Rew:0.87 Thr:60.67 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.507
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:65.17 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.501
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:67.57 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.495
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:61.66 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.489
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:60.04 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.483
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:59.83 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.478
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:66.55 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.472
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:61.54 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.466
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:60.48 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.460
+
+--- Time Step 91 ---
+Step Reward: 0.881
+Metrics @ T91: Rew:0.88 Thr:66.05 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.454
+
+--- Time Step 92 ---
+Step Reward: 0.871
+Metrics @ T92: Rew:0.87 Thr:58.29 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.448
+
+--- Time Step 93 ---
+Step Reward: 0.881
+Metrics @ T93: Rew:0.88 Thr:66.59 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.442
+
+--- Time Step 94 ---
+Step Reward: 0.881
+Metrics @ T94: Rew:0.88 Thr:58.02 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.436
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:50.41 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.430
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:63.78 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.424
+
+--- Time Step 97 ---
+Step Reward: 0.871
+Metrics @ T97: Rew:0.87 Thr:61.07 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.418
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:60.17 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.412
+
+--- Time Step 99 ---
+Step Reward: 0.871
+Metrics @ T99: Rew:0.87 Thr:65.21 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.406
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:57.83 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.400
+
+--- Time Step 101 ---
+Step Reward: 0.881
+Metrics @ T101: Rew:0.88 Thr:57.15 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.394
+
+--- Time Step 102 ---
+Step Reward: 0.881
+Metrics @ T102: Rew:0.88 Thr:53.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.388
+
+--- Time Step 103 ---
+Step Reward: 0.871
+Metrics @ T103: Rew:0.87 Thr:59.85 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.383
+
+--- Time Step 104 ---
+Step Reward: 0.871
+Metrics @ T104: Rew:0.87 Thr:59.19 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.377
+
+--- Time Step 105 ---
+Step Reward: 0.871
+Metrics @ T105: Rew:0.87 Thr:63.00 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.371
+
+--- Time Step 106 ---
+Step Reward: 0.881
+Metrics @ T106: Rew:0.88 Thr:61.29 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.365
+
+--- Time Step 107 ---
+Step Reward: 0.871
+Metrics @ T107: Rew:0.87 Thr:61.02 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.359
+
+--- Time Step 108 ---
+Step Reward: 0.881
+Metrics @ T108: Rew:0.88 Thr:60.12 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.353
+
+--- Time Step 109 ---
+Step Reward: 0.881
+Metrics @ T109: Rew:0.88 Thr:59.76 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.347
+
+--- Time Step 110 ---
+Step Reward: 0.871
+Metrics @ T110: Rew:0.87 Thr:54.31 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.341
+
+--- Time Step 111 ---
+Step Reward: 0.871
+Metrics @ T111: Rew:0.87 Thr:57.34 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.335
+
+--- Time Step 112 ---
+Step Reward: 0.861
+Metrics @ T112: Rew:0.86 Thr:62.16 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.329
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:65.09 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.323
+
+--- Time Step 114 ---
+Step Reward: 0.871
+Metrics @ T114: Rew:0.87 Thr:60.82 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.317
+
+--- Time Step 115 ---
+Step Reward: 0.871
+Metrics @ T115: Rew:0.87 Thr:58.63 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.311
+
+--- Time Step 116 ---
+Step Reward: 0.861
+Metrics @ T116: Rew:0.86 Thr:62.75 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.305
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:63.85 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.299
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:63.42 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.293
+
+--- Time Step 119 ---
+Step Reward: 0.871
+Metrics @ T119: Rew:0.87 Thr:64.76 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.288
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:60.05 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.282
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:68.25 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.276
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:62.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.270
+
+--- Time Step 123 ---
+Step Reward: 0.871
+Metrics @ T123: Rew:0.87 Thr:61.86 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.264
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:65.07 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.258
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:60.77 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.252
+
+--- Time Step 126 ---
+Step Reward: 0.871
+Metrics @ T126: Rew:0.87 Thr:54.84 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.246
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:56.21 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.240
+
+--- Time Step 128 ---
+Step Reward: 0.861
+Metrics @ T128: Rew:0.86 Thr:61.20 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.234
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:60.91 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.228
+
+--- Time Step 130 ---
+Step Reward: 0.871
+Metrics @ T130: Rew:0.87 Thr:54.63 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.222
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:67.89 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.216
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:63.91 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.210
+
+--- Time Step 133 ---
+Step Reward: 0.881
+Metrics @ T133: Rew:0.88 Thr:61.65 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.204
+
+--- Time Step 134 ---
+Step Reward: 0.861
+Metrics @ T134: Rew:0.86 Thr:61.78 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.198
+
+--- Time Step 135 ---
+Step Reward: 0.861
+Metrics @ T135: Rew:0.86 Thr:60.23 Satisfied:4(100.0%) HOs:2 Load:0.75 Eps:0.193
+
+--- Time Step 136 ---
+Step Reward: 0.871
+Metrics @ T136: Rew:0.87 Thr:57.51 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.187
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:62.37 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.181
+
+--- Time Step 138 ---
+Step Reward: 0.871
+Metrics @ T138: Rew:0.87 Thr:65.27 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.175
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:63.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.169
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:62.48 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.163
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:58.98 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.157
+
+--- Time Step 142 ---
+Step Reward: 0.881
+Metrics @ T142: Rew:0.88 Thr:62.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.151
+
+--- Time Step 143 ---
+Step Reward: 0.871
+Metrics @ T143: Rew:0.87 Thr:52.37 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.145
+
+--- Time Step 144 ---
+Step Reward: 0.871
+Metrics @ T144: Rew:0.87 Thr:65.23 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.139
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:63.82 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.133
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:63.06 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.127
+
+--- Time Step 147 ---
+Step Reward: 0.871
+Metrics @ T147: Rew:0.87 Thr:66.19 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.121
+
+--- Time Step 148 ---
+Step Reward: 0.881
+Metrics @ T148: Rew:0.88 Thr:55.35 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.115
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:64.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.109
+
+--- Time Step 150 ---
+Step Reward: 0.871
+Metrics @ T150: Rew:0.87 Thr:71.13 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.103
+
+--- Time Step 151 ---
+Step Reward: 0.871
+Metrics @ T151: Rew:0.87 Thr:59.51 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.098
+
+--- Time Step 152 ---
+Step Reward: 0.871
+Metrics @ T152: Rew:0.87 Thr:56.32 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.092
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:59.15 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.086
+
+--- Time Step 154 ---
+Step Reward: 0.871
+Metrics @ T154: Rew:0.87 Thr:65.07 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.080
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:59.24 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.074
+
+--- Time Step 156 ---
+Step Reward: 0.871
+Metrics @ T156: Rew:0.87 Thr:62.57 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.068
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:64.39 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.062
+
+--- Time Step 158 ---
+Step Reward: 0.871
+Metrics @ T158: Rew:0.87 Thr:67.39 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.056
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:65.00 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:70.14 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:60.14 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:63.14 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 163 ---
+Step Reward: 0.871
+Metrics @ T163: Rew:0.87 Thr:64.26 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:62.73 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 165 ---
+Step Reward: 0.871
+Metrics @ T165: Rew:0.87 Thr:60.94 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 166 ---
+Step Reward: 0.881
+Metrics @ T166: Rew:0.88 Thr:63.58 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:62.60 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:61.11 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 169 ---
+Step Reward: 0.871
+Metrics @ T169: Rew:0.87 Thr:65.18 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 170 ---
+Step Reward: 0.871
+Metrics @ T170: Rew:0.87 Thr:59.08 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 171 ---
+Step Reward: 0.871
+Metrics @ T171: Rew:0.87 Thr:58.02 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:61.55 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:59.03 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:66.93 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:59.38 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:60.50 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:64.81 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 178 ---
+Step Reward: 0.871
+Metrics @ T178: Rew:0.87 Thr:63.81 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.050
+
+--- Time Step 179 ---
+Step Reward: 0.871
+Metrics @ T179: Rew:0.87 Thr:59.80 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:62.49 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:65.00 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:58.85 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 183 ---
+Step Reward: 0.871
+Metrics @ T183: Rew:0.87 Thr:65.02 Satisfied:4(100.0%) HOs:1 Load:0.38 Eps:0.050
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:68.60 Satisfied:4(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 185 ---
+Step Reward: 0.871
+Metrics @ T185: Rew:0.87 Thr:59.62 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:64.16 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:57.83 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:65.30 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:69.43 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:59.79 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 191 ---
+Step Reward: 0.871
+Metrics @ T191: Rew:0.87 Thr:65.88 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 192 ---
+Step Reward: 0.871
+Metrics @ T192: Rew:0.87 Thr:66.20 Satisfied:4(100.0%) HOs:1 Load:0.75 Eps:0.050
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:64.50 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:61.14 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:62.68 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:65.40 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:56.92 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:68.48 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:60.32 Satisfied:4(100.0%) HOs:0 Load:0.75 Eps:0.050
+Simulation for ExpectedSARSA ended early at step 199.
+Simulation for ExpectedSARSA completed 200 steps.
+
+--- Running: NStepSARSA (Seed: 270339) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 1 BSs
+PPP: Placing 1 UEs
+RL_AGENT: NStepSARSAAgent initialized with N=3 and granular state space.
+Simulation setup for NStepSARSA complete. Starting steps...
+
+--- Time Step 0 ---
+Step Reward: 0.300
+Metrics @ T0: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.994
+
+--- Time Step 1 ---
+Step Reward: 0.300
+Metrics @ T1: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.988
+
+--- Time Step 2 ---
+Step Reward: 0.300
+Metrics @ T2: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.982
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.976
+
+--- Time Step 4 ---
+Step Reward: 0.881
+Metrics @ T4: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.970
+
+--- Time Step 5 ---
+Step Reward: 0.881
+Metrics @ T5: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.964
+
+--- Time Step 6 ---
+Step Reward: 0.881
+Metrics @ T6: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.958
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.953
+
+--- Time Step 8 ---
+Step Reward: 0.881
+Metrics @ T8: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.947
+
+--- Time Step 9 ---
+Step Reward: 0.881
+Metrics @ T9: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.941
+
+--- Time Step 10 ---
+Step Reward: 0.881
+Metrics @ T10: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.935
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.929
+
+--- Time Step 12 ---
+Step Reward: 0.881
+Metrics @ T12: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.923
+
+--- Time Step 13 ---
+Step Reward: 0.881
+Metrics @ T13: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.917
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.911
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.905
+
+--- Time Step 16 ---
+Step Reward: 0.881
+Metrics @ T16: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.899
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.893
+
+--- Time Step 18 ---
+Step Reward: 0.881
+Metrics @ T18: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.887
+
+--- Time Step 19 ---
+Step Reward: 0.881
+Metrics @ T19: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.881
+
+--- Time Step 20 ---
+Step Reward: 0.881
+Metrics @ T20: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.875
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.869
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.863
+
+--- Time Step 23 ---
+Step Reward: 0.881
+Metrics @ T23: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.858
+
+--- Time Step 24 ---
+Step Reward: 0.881
+Metrics @ T24: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.852
+
+--- Time Step 25 ---
+Step Reward: 0.881
+Metrics @ T25: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.846
+
+--- Time Step 26 ---
+Step Reward: 0.881
+Metrics @ T26: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.840
+
+--- Time Step 27 ---
+Step Reward: 0.881
+Metrics @ T27: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.834
+
+--- Time Step 28 ---
+Step Reward: 0.881
+Metrics @ T28: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.828
+
+--- Time Step 29 ---
+Step Reward: 0.881
+Metrics @ T29: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.822
+
+--- Time Step 30 ---
+Step Reward: 0.881
+Metrics @ T30: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.816
+
+--- Time Step 31 ---
+Step Reward: 0.881
+Metrics @ T31: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.810
+
+--- Time Step 32 ---
+Step Reward: 0.881
+Metrics @ T32: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.804
+
+--- Time Step 33 ---
+Step Reward: 0.881
+Metrics @ T33: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.798
+
+--- Time Step 34 ---
+Step Reward: 0.881
+Metrics @ T34: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.792
+
+--- Time Step 35 ---
+Step Reward: 0.881
+Metrics @ T35: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.786
+
+--- Time Step 36 ---
+Step Reward: 0.881
+Metrics @ T36: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.780
+
+--- Time Step 37 ---
+Step Reward: 0.881
+Metrics @ T37: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.774
+
+--- Time Step 38 ---
+Step Reward: 0.881
+Metrics @ T38: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.768
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.762
+
+--- Time Step 40 ---
+Step Reward: 0.881
+Metrics @ T40: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.757
+
+--- Time Step 41 ---
+Step Reward: 0.881
+Metrics @ T41: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.751
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.745
+
+--- Time Step 43 ---
+Step Reward: 0.881
+Metrics @ T43: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.739
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.733
+
+--- Time Step 45 ---
+Step Reward: 0.881
+Metrics @ T45: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.727
+
+--- Time Step 46 ---
+Step Reward: 0.881
+Metrics @ T46: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.721
+
+--- Time Step 47 ---
+Step Reward: 0.881
+Metrics @ T47: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.715
+
+--- Time Step 48 ---
+Step Reward: 0.881
+Metrics @ T48: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.709
+
+--- Time Step 49 ---
+Step Reward: 0.881
+Metrics @ T49: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.703
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.697
+
+--- Time Step 51 ---
+Step Reward: 0.881
+Metrics @ T51: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.691
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.685
+
+--- Time Step 53 ---
+Step Reward: 0.881
+Metrics @ T53: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.679
+
+--- Time Step 54 ---
+Step Reward: 0.881
+Metrics @ T54: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.673
+
+--- Time Step 55 ---
+Step Reward: 0.881
+Metrics @ T55: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.667
+
+--- Time Step 56 ---
+Step Reward: 0.881
+Metrics @ T56: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.662
+
+--- Time Step 57 ---
+Step Reward: 0.881
+Metrics @ T57: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.656
+
+--- Time Step 58 ---
+Step Reward: 0.881
+Metrics @ T58: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.650
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.644
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.638
+
+--- Time Step 61 ---
+Step Reward: 0.881
+Metrics @ T61: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.632
+
+--- Time Step 62 ---
+Step Reward: 0.881
+Metrics @ T62: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.626
+
+--- Time Step 63 ---
+Step Reward: 0.881
+Metrics @ T63: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.620
+
+--- Time Step 64 ---
+Step Reward: 0.881
+Metrics @ T64: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.614
+
+--- Time Step 65 ---
+Step Reward: 0.881
+Metrics @ T65: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.608
+
+--- Time Step 66 ---
+Step Reward: 0.881
+Metrics @ T66: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.602
+
+--- Time Step 67 ---
+Step Reward: 0.881
+Metrics @ T67: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.596
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.590
+
+--- Time Step 69 ---
+Step Reward: 0.881
+Metrics @ T69: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.584
+
+--- Time Step 70 ---
+Step Reward: 0.881
+Metrics @ T70: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.578
+
+--- Time Step 71 ---
+Step Reward: 0.881
+Metrics @ T71: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.573
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.567
+
+--- Time Step 73 ---
+Step Reward: 0.881
+Metrics @ T73: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.561
+
+--- Time Step 74 ---
+Step Reward: 0.881
+Metrics @ T74: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.555
+
+--- Time Step 75 ---
+Step Reward: 0.881
+Metrics @ T75: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.549
+
+--- Time Step 76 ---
+Step Reward: 0.881
+Metrics @ T76: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.543
+
+--- Time Step 77 ---
+Step Reward: 0.881
+Metrics @ T77: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.537
+
+--- Time Step 78 ---
+Step Reward: 0.881
+Metrics @ T78: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.531
+
+--- Time Step 79 ---
+Step Reward: 0.881
+Metrics @ T79: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.525
+
+--- Time Step 80 ---
+Step Reward: 0.881
+Metrics @ T80: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.519
+
+--- Time Step 81 ---
+Step Reward: 0.881
+Metrics @ T81: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.513
+
+--- Time Step 82 ---
+Step Reward: 0.881
+Metrics @ T82: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.507
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.501
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.495
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.489
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.483
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.478
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.472
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.466
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.460
+
+--- Time Step 91 ---
+Step Reward: 0.881
+Metrics @ T91: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.454
+
+--- Time Step 92 ---
+Step Reward: 0.881
+Metrics @ T92: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.448
+
+--- Time Step 93 ---
+Step Reward: 0.881
+Metrics @ T93: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.442
+
+--- Time Step 94 ---
+Step Reward: 0.881
+Metrics @ T94: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.436
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.430
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.424
+
+--- Time Step 97 ---
+Step Reward: 0.881
+Metrics @ T97: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.418
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.412
+
+--- Time Step 99 ---
+Step Reward: 0.881
+Metrics @ T99: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.406
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.400
+
+--- Time Step 101 ---
+Step Reward: 0.881
+Metrics @ T101: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.394
+
+--- Time Step 102 ---
+Step Reward: 0.881
+Metrics @ T102: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.388
+
+--- Time Step 103 ---
+Step Reward: 0.881
+Metrics @ T103: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.383
+
+--- Time Step 104 ---
+Step Reward: 0.881
+Metrics @ T104: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.377
+
+--- Time Step 105 ---
+Step Reward: 0.881
+Metrics @ T105: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.371
+
+--- Time Step 106 ---
+Step Reward: 0.881
+Metrics @ T106: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.365
+
+--- Time Step 107 ---
+Step Reward: 0.881
+Metrics @ T107: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.359
+
+--- Time Step 108 ---
+Step Reward: 0.881
+Metrics @ T108: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.353
+
+--- Time Step 109 ---
+Step Reward: 0.881
+Metrics @ T109: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.347
+
+--- Time Step 110 ---
+Step Reward: 0.881
+Metrics @ T110: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.341
+
+--- Time Step 111 ---
+Step Reward: 0.881
+Metrics @ T111: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.335
+
+--- Time Step 112 ---
+Step Reward: 0.881
+Metrics @ T112: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.329
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.323
+
+--- Time Step 114 ---
+Step Reward: 0.881
+Metrics @ T114: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.317
+
+--- Time Step 115 ---
+Step Reward: 0.881
+Metrics @ T115: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.311
+
+--- Time Step 116 ---
+Step Reward: 0.881
+Metrics @ T116: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.305
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.299
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.293
+
+--- Time Step 119 ---
+Step Reward: 0.881
+Metrics @ T119: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.288
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.282
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.276
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.270
+
+--- Time Step 123 ---
+Step Reward: 0.881
+Metrics @ T123: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.264
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.258
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.252
+
+--- Time Step 126 ---
+Step Reward: 0.881
+Metrics @ T126: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.246
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.240
+
+--- Time Step 128 ---
+Step Reward: 0.881
+Metrics @ T128: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.234
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.228
+
+--- Time Step 130 ---
+Step Reward: 0.881
+Metrics @ T130: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.222
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.216
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.210
+
+--- Time Step 133 ---
+Step Reward: 0.881
+Metrics @ T133: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.204
+
+--- Time Step 134 ---
+Step Reward: 0.881
+Metrics @ T134: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.198
+
+--- Time Step 135 ---
+Step Reward: 0.881
+Metrics @ T135: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.193
+
+--- Time Step 136 ---
+Step Reward: 0.881
+Metrics @ T136: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.187
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.181
+
+--- Time Step 138 ---
+Step Reward: 0.881
+Metrics @ T138: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.175
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.169
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.163
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.157
+
+--- Time Step 142 ---
+Step Reward: 0.881
+Metrics @ T142: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.151
+
+--- Time Step 143 ---
+Step Reward: 0.881
+Metrics @ T143: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.145
+
+--- Time Step 144 ---
+Step Reward: 0.881
+Metrics @ T144: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.139
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.133
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.127
+
+--- Time Step 147 ---
+Step Reward: 0.881
+Metrics @ T147: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.121
+
+--- Time Step 148 ---
+Step Reward: 0.881
+Metrics @ T148: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.115
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.109
+
+--- Time Step 150 ---
+Step Reward: 0.881
+Metrics @ T150: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.103
+
+--- Time Step 151 ---
+Step Reward: 0.881
+Metrics @ T151: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.098
+
+--- Time Step 152 ---
+Step Reward: 0.881
+Metrics @ T152: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.092
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.086
+
+--- Time Step 154 ---
+Step Reward: 0.881
+Metrics @ T154: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.080
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.074
+
+--- Time Step 156 ---
+Step Reward: 0.881
+Metrics @ T156: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.068
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.062
+
+--- Time Step 158 ---
+Step Reward: 0.881
+Metrics @ T158: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.056
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 163 ---
+Step Reward: 0.881
+Metrics @ T163: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 165 ---
+Step Reward: 0.881
+Metrics @ T165: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 166 ---
+Step Reward: 0.881
+Metrics @ T166: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 169 ---
+Step Reward: 0.881
+Metrics @ T169: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 170 ---
+Step Reward: 0.881
+Metrics @ T170: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 171 ---
+Step Reward: 0.881
+Metrics @ T171: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 178 ---
+Step Reward: 0.881
+Metrics @ T178: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 179 ---
+Step Reward: 0.881
+Metrics @ T179: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 183 ---
+Step Reward: 0.881
+Metrics @ T183: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 185 ---
+Step Reward: 0.881
+Metrics @ T185: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 191 ---
+Step Reward: 0.881
+Metrics @ T191: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 192 ---
+Step Reward: 0.881
+Metrics @ T192: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:19.93 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.050
+Simulation for NStepSARSA ended early at step 199.
+Simulation for NStepSARSA completed 200 steps.
+
+--- Running: DQN (Seed: 270393) ---
+Placement Method: PPP
+Lambda BS: 0.5, Lambda UE: 2.0
+PPP: Placing 2 BSs
+PPP: Placing 1 UEs
+RL_AGENT: DQNAgent initialized. State: 10, Action: 10, Arch: 2x64
+RL_AGENT: DQNAgent initialized. State: 5, Action: 81, Arch: 2x64
+Simulation setup for DQN complete. Starting steps...
+
+--- Time Step 0 ---
+Step Reward: 0.881
+Metrics @ T0: Rew:0.88 Thr:8.00 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.994
+
+--- Time Step 1 ---
+Step Reward: 0.300
+Metrics @ T1: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.988
+
+--- Time Step 2 ---
+Step Reward: 0.300
+Metrics @ T2: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.982
+
+--- Time Step 3 ---
+Step Reward: 0.881
+Metrics @ T3: Rew:0.88 Thr:7.90 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.976
+
+--- Time Step 4 ---
+Step Reward: 0.881
+Metrics @ T4: Rew:0.88 Thr:8.17 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.970
+
+--- Time Step 5 ---
+Step Reward: 0.300
+Metrics @ T5: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.964
+
+--- Time Step 6 ---
+Step Reward: 0.300
+Metrics @ T6: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.958
+
+--- Time Step 7 ---
+Step Reward: 0.881
+Metrics @ T7: Rew:0.88 Thr:3.17 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.953
+
+--- Time Step 8 ---
+Step Reward: 0.300
+Metrics @ T8: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.947
+
+--- Time Step 9 ---
+Step Reward: 0.881
+Metrics @ T9: Rew:0.88 Thr:5.96 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.941
+
+--- Time Step 10 ---
+Step Reward: 0.300
+Metrics @ T10: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.935
+
+--- Time Step 11 ---
+Step Reward: 0.881
+Metrics @ T11: Rew:0.88 Thr:3.47 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.929
+
+--- Time Step 12 ---
+Step Reward: 0.881
+Metrics @ T12: Rew:0.88 Thr:7.83 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.923
+
+--- Time Step 13 ---
+Step Reward: 0.881
+Metrics @ T13: Rew:0.88 Thr:5.21 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.917
+
+--- Time Step 14 ---
+Step Reward: 0.881
+Metrics @ T14: Rew:0.88 Thr:3.70 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.911
+
+--- Time Step 15 ---
+Step Reward: 0.881
+Metrics @ T15: Rew:0.88 Thr:7.38 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.905
+
+--- Time Step 16 ---
+Step Reward: 0.300
+Metrics @ T16: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.899
+
+--- Time Step 17 ---
+Step Reward: 0.881
+Metrics @ T17: Rew:0.88 Thr:6.35 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.893
+
+--- Time Step 18 ---
+Step Reward: 0.881
+Metrics @ T18: Rew:0.88 Thr:3.59 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.887
+
+--- Time Step 19 ---
+Step Reward: 0.181
+Metrics @ T19: Rew:0.18 Thr:0.47 Satisfied:0(0.0%) HOs:1 Load:0.12 Eps:0.881
+
+--- Time Step 20 ---
+Step Reward: 0.871
+Metrics @ T20: Rew:0.87 Thr:2.80 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.875
+
+--- Time Step 21 ---
+Step Reward: 0.881
+Metrics @ T21: Rew:0.88 Thr:5.02 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.869
+
+--- Time Step 22 ---
+Step Reward: 0.881
+Metrics @ T22: Rew:0.88 Thr:4.92 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.863
+
+--- Time Step 23 ---
+Step Reward: 0.881
+Metrics @ T23: Rew:0.88 Thr:3.99 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.858
+
+--- Time Step 24 ---
+Step Reward: 0.881
+Metrics @ T24: Rew:0.88 Thr:7.85 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.852
+
+--- Time Step 25 ---
+Step Reward: 0.881
+Metrics @ T25: Rew:0.88 Thr:4.13 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.846
+
+--- Time Step 26 ---
+Step Reward: 0.300
+Metrics @ T26: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.840
+
+--- Time Step 27 ---
+Step Reward: 0.290
+Metrics @ T27: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.834
+
+--- Time Step 28 ---
+Step Reward: 0.871
+Metrics @ T28: Rew:0.87 Thr:5.66 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.828
+
+--- Time Step 29 ---
+Step Reward: 0.871
+Metrics @ T29: Rew:0.87 Thr:6.70 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.822
+
+--- Time Step 30 ---
+Step Reward: 0.290
+Metrics @ T30: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.816
+
+--- Time Step 31 ---
+Step Reward: 0.721
+Metrics @ T31: Rew:0.72 Thr:1.18 Satisfied:1(100.0%) HOs:1 Load:0.25 Eps:0.810
+
+--- Time Step 32 ---
+Step Reward: 0.300
+Metrics @ T32: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.804
+
+--- Time Step 33 ---
+Step Reward: 0.431
+Metrics @ T33: Rew:0.43 Thr:0.92 Satisfied:0(0.0%) HOs:0 Load:0.12 Eps:0.798
+
+--- Time Step 34 ---
+Step Reward: 0.300
+Metrics @ T34: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.792
+
+--- Time Step 35 ---
+Step Reward: 0.881
+Metrics @ T35: Rew:0.88 Thr:2.71 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.786
+
+--- Time Step 36 ---
+Step Reward: 0.871
+Metrics @ T36: Rew:0.87 Thr:2.83 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.780
+
+--- Time Step 37 ---
+Step Reward: 0.290
+Metrics @ T37: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.774
+
+--- Time Step 38 ---
+Step Reward: 0.871
+Metrics @ T38: Rew:0.87 Thr:3.42 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.768
+
+--- Time Step 39 ---
+Step Reward: 0.881
+Metrics @ T39: Rew:0.88 Thr:3.59 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.762
+
+--- Time Step 40 ---
+Step Reward: 0.300
+Metrics @ T40: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.757
+
+--- Time Step 41 ---
+Step Reward: 0.881
+Metrics @ T41: Rew:0.88 Thr:7.91 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.751
+
+--- Time Step 42 ---
+Step Reward: 0.881
+Metrics @ T42: Rew:0.88 Thr:13.97 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.745
+
+--- Time Step 43 ---
+Step Reward: 0.300
+Metrics @ T43: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.739
+
+--- Time Step 44 ---
+Step Reward: 0.881
+Metrics @ T44: Rew:0.88 Thr:5.36 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.733
+
+--- Time Step 45 ---
+Step Reward: 0.871
+Metrics @ T45: Rew:0.87 Thr:7.32 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.727
+
+--- Time Step 46 ---
+Step Reward: 0.871
+Metrics @ T46: Rew:0.87 Thr:2.79 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.721
+
+--- Time Step 47 ---
+Step Reward: 0.290
+Metrics @ T47: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.715
+
+--- Time Step 48 ---
+Step Reward: 0.290
+Metrics @ T48: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.709
+
+--- Time Step 49 ---
+Step Reward: 0.881
+Metrics @ T49: Rew:0.88 Thr:2.78 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.703
+
+--- Time Step 50 ---
+Step Reward: 0.881
+Metrics @ T50: Rew:0.88 Thr:7.86 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.697
+
+--- Time Step 51 ---
+Step Reward: 0.871
+Metrics @ T51: Rew:0.87 Thr:12.74 Satisfied:1(100.0%) HOs:1 Load:0.75 Eps:0.691
+
+--- Time Step 52 ---
+Step Reward: 0.881
+Metrics @ T52: Rew:0.88 Thr:17.92 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.685
+
+--- Time Step 53 ---
+Step Reward: 0.881
+Metrics @ T53: Rew:0.88 Thr:14.36 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.679
+
+--- Time Step 54 ---
+Step Reward: 0.871
+Metrics @ T54: Rew:0.87 Thr:3.47 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.673
+
+--- Time Step 55 ---
+Step Reward: 0.881
+Metrics @ T55: Rew:0.88 Thr:2.81 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.667
+
+--- Time Step 56 ---
+Step Reward: 0.300
+Metrics @ T56: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.662
+
+--- Time Step 57 ---
+Step Reward: 0.881
+Metrics @ T57: Rew:0.88 Thr:9.47 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.656
+
+--- Time Step 58 ---
+Step Reward: 0.881
+Metrics @ T58: Rew:0.88 Thr:4.13 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.650
+
+--- Time Step 59 ---
+Step Reward: 0.881
+Metrics @ T59: Rew:0.88 Thr:2.53 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.644
+
+--- Time Step 60 ---
+Step Reward: 0.881
+Metrics @ T60: Rew:0.88 Thr:12.81 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.638
+
+--- Time Step 61 ---
+Step Reward: 0.290
+Metrics @ T61: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.632
+
+--- Time Step 62 ---
+Step Reward: 0.871
+Metrics @ T62: Rew:0.87 Thr:2.48 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.626
+
+--- Time Step 63 ---
+Step Reward: 0.881
+Metrics @ T63: Rew:0.88 Thr:6.37 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.620
+
+--- Time Step 64 ---
+Step Reward: 0.881
+Metrics @ T64: Rew:0.88 Thr:4.14 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.614
+
+--- Time Step 65 ---
+Step Reward: 0.881
+Metrics @ T65: Rew:0.88 Thr:8.09 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.608
+
+--- Time Step 66 ---
+Step Reward: 0.881
+Metrics @ T66: Rew:0.88 Thr:3.71 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.602
+
+--- Time Step 67 ---
+Step Reward: 0.881
+Metrics @ T67: Rew:0.88 Thr:5.63 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.596
+
+--- Time Step 68 ---
+Step Reward: 0.881
+Metrics @ T68: Rew:0.88 Thr:2.81 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.590
+
+--- Time Step 69 ---
+Step Reward: 0.881
+Metrics @ T69: Rew:0.88 Thr:6.20 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.584
+
+--- Time Step 70 ---
+Step Reward: 0.871
+Metrics @ T70: Rew:0.87 Thr:8.09 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.578
+
+--- Time Step 71 ---
+Step Reward: 0.871
+Metrics @ T71: Rew:0.87 Thr:2.70 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.573
+
+--- Time Step 72 ---
+Step Reward: 0.881
+Metrics @ T72: Rew:0.88 Thr:8.94 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.567
+
+--- Time Step 73 ---
+Step Reward: 0.300
+Metrics @ T73: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.561
+
+--- Time Step 74 ---
+Step Reward: 0.300
+Metrics @ T74: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.555
+
+--- Time Step 75 ---
+Step Reward: 0.300
+Metrics @ T75: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.549
+
+--- Time Step 76 ---
+Step Reward: 0.300
+Metrics @ T76: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.543
+
+--- Time Step 77 ---
+Step Reward: 0.300
+Metrics @ T77: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.537
+
+--- Time Step 78 ---
+Step Reward: 0.300
+Metrics @ T78: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.531
+
+--- Time Step 79 ---
+Step Reward: 0.300
+Metrics @ T79: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.525
+
+--- Time Step 80 ---
+Step Reward: 0.300
+Metrics @ T80: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.519
+
+--- Time Step 81 ---
+Step Reward: 0.881
+Metrics @ T81: Rew:0.88 Thr:3.82 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.513
+
+--- Time Step 82 ---
+Step Reward: 0.881
+Metrics @ T82: Rew:0.88 Thr:5.79 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.507
+
+--- Time Step 83 ---
+Step Reward: 0.881
+Metrics @ T83: Rew:0.88 Thr:12.49 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.501
+
+--- Time Step 84 ---
+Step Reward: 0.881
+Metrics @ T84: Rew:0.88 Thr:8.58 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.495
+
+--- Time Step 85 ---
+Step Reward: 0.881
+Metrics @ T85: Rew:0.88 Thr:6.71 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.489
+
+--- Time Step 86 ---
+Step Reward: 0.881
+Metrics @ T86: Rew:0.88 Thr:2.55 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.483
+
+--- Time Step 87 ---
+Step Reward: 0.881
+Metrics @ T87: Rew:0.88 Thr:6.19 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.478
+
+--- Time Step 88 ---
+Step Reward: 0.881
+Metrics @ T88: Rew:0.88 Thr:3.05 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.472
+
+--- Time Step 89 ---
+Step Reward: 0.881
+Metrics @ T89: Rew:0.88 Thr:6.80 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.466
+
+--- Time Step 90 ---
+Step Reward: 0.881
+Metrics @ T90: Rew:0.88 Thr:7.98 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.460
+
+--- Time Step 91 ---
+Step Reward: 0.300
+Metrics @ T91: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.454
+
+--- Time Step 92 ---
+Step Reward: 0.300
+Metrics @ T92: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.448
+
+--- Time Step 93 ---
+Step Reward: 0.300
+Metrics @ T93: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.442
+
+--- Time Step 94 ---
+Step Reward: 0.300
+Metrics @ T94: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.436
+
+--- Time Step 95 ---
+Step Reward: 0.881
+Metrics @ T95: Rew:0.88 Thr:3.63 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.430
+
+--- Time Step 96 ---
+Step Reward: 0.881
+Metrics @ T96: Rew:0.88 Thr:7.67 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.424
+
+--- Time Step 97 ---
+Step Reward: 0.881
+Metrics @ T97: Rew:0.88 Thr:6.73 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.418
+
+--- Time Step 98 ---
+Step Reward: 0.881
+Metrics @ T98: Rew:0.88 Thr:4.51 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.412
+
+--- Time Step 99 ---
+Step Reward: 0.871
+Metrics @ T99: Rew:0.87 Thr:2.86 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.406
+
+--- Time Step 100 ---
+Step Reward: 0.881
+Metrics @ T100: Rew:0.88 Thr:6.82 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.400
+
+--- Time Step 101 ---
+Step Reward: 0.871
+Metrics @ T101: Rew:0.87 Thr:7.45 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.394
+
+--- Time Step 102 ---
+Step Reward: 0.300
+Metrics @ T102: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.388
+
+--- Time Step 103 ---
+Step Reward: 0.290
+Metrics @ T103: Rew:0.29 Thr:0.00 Satisfied:0(0.0%) HOs:1 Load:0.00 Eps:0.383
+
+--- Time Step 104 ---
+Step Reward: 0.300
+Metrics @ T104: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.377
+
+--- Time Step 105 ---
+Step Reward: 0.300
+Metrics @ T105: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.371
+
+--- Time Step 106 ---
+Step Reward: 0.300
+Metrics @ T106: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.365
+
+--- Time Step 107 ---
+Step Reward: 0.300
+Metrics @ T107: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.359
+
+--- Time Step 108 ---
+Step Reward: 0.300
+Metrics @ T108: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.353
+
+--- Time Step 109 ---
+Step Reward: 0.300
+Metrics @ T109: Rew:0.30 Thr:0.00 Satisfied:0(0.0%) HOs:0 Load:0.00 Eps:0.347
+
+--- Time Step 110 ---
+Step Reward: 0.881
+Metrics @ T110: Rew:0.88 Thr:3.54 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.341
+
+--- Time Step 111 ---
+Step Reward: 0.881
+Metrics @ T111: Rew:0.88 Thr:7.24 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.335
+
+--- Time Step 112 ---
+Step Reward: 0.881
+Metrics @ T112: Rew:0.88 Thr:4.54 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.329
+
+--- Time Step 113 ---
+Step Reward: 0.881
+Metrics @ T113: Rew:0.88 Thr:9.17 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.323
+
+--- Time Step 114 ---
+Step Reward: 0.871
+Metrics @ T114: Rew:0.87 Thr:8.57 Satisfied:1(100.0%) HOs:1 Load:0.75 Eps:0.317
+
+--- Time Step 115 ---
+Step Reward: 0.871
+Metrics @ T115: Rew:0.87 Thr:8.57 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.311
+
+--- Time Step 116 ---
+Step Reward: 0.881
+Metrics @ T116: Rew:0.88 Thr:4.12 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.305
+
+--- Time Step 117 ---
+Step Reward: 0.881
+Metrics @ T117: Rew:0.88 Thr:5.80 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.299
+
+--- Time Step 118 ---
+Step Reward: 0.881
+Metrics @ T118: Rew:0.88 Thr:9.05 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.293
+
+--- Time Step 119 ---
+Step Reward: 0.881
+Metrics @ T119: Rew:0.88 Thr:3.50 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.288
+
+--- Time Step 120 ---
+Step Reward: 0.881
+Metrics @ T120: Rew:0.88 Thr:4.94 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.282
+
+--- Time Step 121 ---
+Step Reward: 0.881
+Metrics @ T121: Rew:0.88 Thr:7.87 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.276
+
+--- Time Step 122 ---
+Step Reward: 0.881
+Metrics @ T122: Rew:0.88 Thr:4.89 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.270
+
+--- Time Step 123 ---
+Step Reward: 0.881
+Metrics @ T123: Rew:0.88 Thr:5.84 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.264
+
+--- Time Step 124 ---
+Step Reward: 0.881
+Metrics @ T124: Rew:0.88 Thr:3.94 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.258
+
+--- Time Step 125 ---
+Step Reward: 0.881
+Metrics @ T125: Rew:0.88 Thr:7.82 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.252
+
+--- Time Step 126 ---
+Step Reward: 0.881
+Metrics @ T126: Rew:0.88 Thr:5.74 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.246
+
+--- Time Step 127 ---
+Step Reward: 0.881
+Metrics @ T127: Rew:0.88 Thr:5.40 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.240
+
+--- Time Step 128 ---
+Step Reward: 0.881
+Metrics @ T128: Rew:0.88 Thr:6.93 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.234
+
+--- Time Step 129 ---
+Step Reward: 0.881
+Metrics @ T129: Rew:0.88 Thr:6.59 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.228
+
+--- Time Step 130 ---
+Step Reward: 0.881
+Metrics @ T130: Rew:0.88 Thr:4.82 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.222
+
+--- Time Step 131 ---
+Step Reward: 0.881
+Metrics @ T131: Rew:0.88 Thr:5.51 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.216
+
+--- Time Step 132 ---
+Step Reward: 0.881
+Metrics @ T132: Rew:0.88 Thr:7.49 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.210
+
+--- Time Step 133 ---
+Step Reward: 0.871
+Metrics @ T133: Rew:0.87 Thr:5.09 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.204
+
+--- Time Step 134 ---
+Step Reward: 0.871
+Metrics @ T134: Rew:0.87 Thr:5.75 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.198
+
+--- Time Step 135 ---
+Step Reward: 0.881
+Metrics @ T135: Rew:0.88 Thr:5.95 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.193
+
+--- Time Step 136 ---
+Step Reward: 0.881
+Metrics @ T136: Rew:0.88 Thr:8.58 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.187
+
+--- Time Step 137 ---
+Step Reward: 0.881
+Metrics @ T137: Rew:0.88 Thr:7.83 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.181
+
+--- Time Step 138 ---
+Step Reward: 0.881
+Metrics @ T138: Rew:0.88 Thr:6.09 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.175
+
+--- Time Step 139 ---
+Step Reward: 0.881
+Metrics @ T139: Rew:0.88 Thr:5.20 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.169
+
+--- Time Step 140 ---
+Step Reward: 0.881
+Metrics @ T140: Rew:0.88 Thr:5.80 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.163
+
+--- Time Step 141 ---
+Step Reward: 0.881
+Metrics @ T141: Rew:0.88 Thr:7.25 Satisfied:1(100.0%) HOs:0 Load:0.75 Eps:0.157
+
+--- Time Step 142 ---
+Step Reward: 0.871
+Metrics @ T142: Rew:0.87 Thr:3.54 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.151
+
+--- Time Step 143 ---
+Step Reward: 0.871
+Metrics @ T143: Rew:0.87 Thr:8.99 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.145
+
+--- Time Step 144 ---
+Step Reward: 0.881
+Metrics @ T144: Rew:0.88 Thr:7.30 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.139
+
+--- Time Step 145 ---
+Step Reward: 0.881
+Metrics @ T145: Rew:0.88 Thr:5.65 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.133
+
+--- Time Step 146 ---
+Step Reward: 0.881
+Metrics @ T146: Rew:0.88 Thr:6.67 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.127
+
+--- Time Step 147 ---
+Step Reward: 0.881
+Metrics @ T147: Rew:0.88 Thr:5.89 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.121
+
+--- Time Step 148 ---
+Step Reward: 0.871
+Metrics @ T148: Rew:0.87 Thr:13.23 Satisfied:1(100.0%) HOs:1 Load:0.75 Eps:0.115
+
+--- Time Step 149 ---
+Step Reward: 0.881
+Metrics @ T149: Rew:0.88 Thr:3.41 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.109
+
+--- Time Step 150 ---
+Step Reward: 0.881
+Metrics @ T150: Rew:0.88 Thr:5.42 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.103
+
+--- Time Step 151 ---
+Step Reward: 0.871
+Metrics @ T151: Rew:0.87 Thr:7.26 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.098
+
+--- Time Step 152 ---
+Step Reward: 0.881
+Metrics @ T152: Rew:0.88 Thr:8.14 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.092
+
+--- Time Step 153 ---
+Step Reward: 0.881
+Metrics @ T153: Rew:0.88 Thr:6.82 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.086
+
+--- Time Step 154 ---
+Step Reward: 0.881
+Metrics @ T154: Rew:0.88 Thr:4.34 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.080
+
+--- Time Step 155 ---
+Step Reward: 0.881
+Metrics @ T155: Rew:0.88 Thr:8.76 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.074
+
+--- Time Step 156 ---
+Step Reward: 0.881
+Metrics @ T156: Rew:0.88 Thr:8.59 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.068
+
+--- Time Step 157 ---
+Step Reward: 0.881
+Metrics @ T157: Rew:0.88 Thr:6.86 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.062
+
+--- Time Step 158 ---
+Step Reward: 0.881
+Metrics @ T158: Rew:0.88 Thr:6.76 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.056
+
+--- Time Step 159 ---
+Step Reward: 0.881
+Metrics @ T159: Rew:0.88 Thr:6.04 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 160 ---
+Step Reward: 0.881
+Metrics @ T160: Rew:0.88 Thr:6.65 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 161 ---
+Step Reward: 0.881
+Metrics @ T161: Rew:0.88 Thr:5.91 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 162 ---
+Step Reward: 0.881
+Metrics @ T162: Rew:0.88 Thr:8.55 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 163 ---
+Step Reward: 0.881
+Metrics @ T163: Rew:0.88 Thr:5.48 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 164 ---
+Step Reward: 0.881
+Metrics @ T164: Rew:0.88 Thr:6.95 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 165 ---
+Step Reward: 0.881
+Metrics @ T165: Rew:0.88 Thr:2.66 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 166 ---
+Step Reward: 0.871
+Metrics @ T166: Rew:0.87 Thr:9.14 Satisfied:1(100.0%) HOs:1 Load:0.38 Eps:0.050
+
+--- Time Step 167 ---
+Step Reward: 0.881
+Metrics @ T167: Rew:0.88 Thr:4.54 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 168 ---
+Step Reward: 0.881
+Metrics @ T168: Rew:0.88 Thr:5.46 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 169 ---
+Step Reward: 0.881
+Metrics @ T169: Rew:0.88 Thr:8.15 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 170 ---
+Step Reward: 0.881
+Metrics @ T170: Rew:0.88 Thr:5.22 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 171 ---
+Step Reward: 0.881
+Metrics @ T171: Rew:0.88 Thr:6.92 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 172 ---
+Step Reward: 0.881
+Metrics @ T172: Rew:0.88 Thr:6.77 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 173 ---
+Step Reward: 0.881
+Metrics @ T173: Rew:0.88 Thr:8.16 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 174 ---
+Step Reward: 0.881
+Metrics @ T174: Rew:0.88 Thr:8.08 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 175 ---
+Step Reward: 0.881
+Metrics @ T175: Rew:0.88 Thr:6.62 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 176 ---
+Step Reward: 0.881
+Metrics @ T176: Rew:0.88 Thr:6.46 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 177 ---
+Step Reward: 0.881
+Metrics @ T177: Rew:0.88 Thr:7.73 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 178 ---
+Step Reward: 0.881
+Metrics @ T178: Rew:0.88 Thr:6.63 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 179 ---
+Step Reward: 0.881
+Metrics @ T179: Rew:0.88 Thr:9.10 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 180 ---
+Step Reward: 0.881
+Metrics @ T180: Rew:0.88 Thr:6.07 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 181 ---
+Step Reward: 0.881
+Metrics @ T181: Rew:0.88 Thr:5.01 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 182 ---
+Step Reward: 0.881
+Metrics @ T182: Rew:0.88 Thr:3.97 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 183 ---
+Step Reward: 0.881
+Metrics @ T183: Rew:0.88 Thr:7.37 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 184 ---
+Step Reward: 0.881
+Metrics @ T184: Rew:0.88 Thr:4.42 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 185 ---
+Step Reward: 0.881
+Metrics @ T185: Rew:0.88 Thr:7.43 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 186 ---
+Step Reward: 0.881
+Metrics @ T186: Rew:0.88 Thr:5.15 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 187 ---
+Step Reward: 0.881
+Metrics @ T187: Rew:0.88 Thr:7.88 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 188 ---
+Step Reward: 0.881
+Metrics @ T188: Rew:0.88 Thr:5.13 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 189 ---
+Step Reward: 0.881
+Metrics @ T189: Rew:0.88 Thr:8.08 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 190 ---
+Step Reward: 0.881
+Metrics @ T190: Rew:0.88 Thr:6.70 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 191 ---
+Step Reward: 0.881
+Metrics @ T191: Rew:0.88 Thr:8.59 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 192 ---
+Step Reward: 0.881
+Metrics @ T192: Rew:0.88 Thr:8.60 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 193 ---
+Step Reward: 0.881
+Metrics @ T193: Rew:0.88 Thr:3.90 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 194 ---
+Step Reward: 0.881
+Metrics @ T194: Rew:0.88 Thr:7.40 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 195 ---
+Step Reward: 0.881
+Metrics @ T195: Rew:0.88 Thr:6.32 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 196 ---
+Step Reward: 0.881
+Metrics @ T196: Rew:0.88 Thr:4.46 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 197 ---
+Step Reward: 0.881
+Metrics @ T197: Rew:0.88 Thr:6.00 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 198 ---
+Step Reward: 0.881
+Metrics @ T198: Rew:0.88 Thr:7.18 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+
+--- Time Step 199 ---
+Step Reward: 0.881
+Metrics @ T199: Rew:0.88 Thr:9.02 Satisfied:1(100.0%) HOs:0 Load:0.38 Eps:0.050
+Simulation for DQN ended early at step 199.
+Simulation for DQN completed 200 steps.

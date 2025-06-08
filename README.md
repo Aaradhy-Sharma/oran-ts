@@ -23,7 +23,7 @@ The simulation incorporates realistic channel models (path loss, shadowing, smal
     *   **SARSA:** An on-policy temporal-difference control algorithm.
     *   **Expected SARSA:** An off-policy variant of SARSA, using expected Q-values.
     *   **N-Step SARSA:** Generalizes SARSA to use n-step returns for potentially faster learning.
-    *   **Deep Q-Network (DQN):** A deep reinforcement learning agent using neural networks for Q-value approximation (requires TensorFlow).
+    *   **Deep Q-Network (DQN):** A sophisticated deep reinforcement learning agent using neural networks with residual connections, double Q-learning, and prioritized experience replay (requires TensorFlow).
 *   **Realistic Network Modeling:**
     *   UE mobility with random walk model.
     *   Base Station (BS) and UE placement (Uniform Random or Poisson Point Process).
@@ -44,6 +44,12 @@ The simulation incorporates realistic channel models (path loss, shadowing, smal
     *   Generating comparative plots for key performance indicators (KPIs).
     *   Saving raw metrics (JSON) and aggregated data (CSV) for detailed offline analysis.
     *   Saving generated plots to disk.
+*   **Command-Line Interface:** A new `run_comparison.py` script for:
+    *   Quick comparison of all agents with configurable parameters.
+    *   Support for both uniform and PPP placement methods.
+    *   Progress tracking with tqdm.
+    *   Comprehensive logging and visualization.
+    *   Research-quality plots for each metric.
 
 ## Project Structure
 
@@ -51,6 +57,7 @@ The simulation incorporates realistic channel models (path loss, shadowing, smal
 o-ran-sim/
 ├── main.py                   # Entry point for the GUI application
 ├── runner.py                 # Automated experiment execution and analysis
+├── run_comparison.py         # Quick comparison script with CLI
 ├── sim_core/                 # Core simulation logic and entities
 │   ├── __init__.py           # Package initializer
 │   ├── constants.py          # Global constants (Boltzmann, Kelvin, TF_AVAILABLE)
@@ -97,6 +104,7 @@ matplotlib
 scipy
 pandas
 tensorflow # Only required if you wish to run the DQN agent
+tqdm       # For progress tracking
 ```
 
 ### Installation
@@ -115,7 +123,7 @@ tensorflow # Only required if you wish to run the DQN agent
 
 ## How to Run
 
-There are two primary ways to run the simulation:
+There are three primary ways to run the simulation:
 
 ### 1. Interactive GUI Mode
 
@@ -149,7 +157,25 @@ This script will:
 *   Generate comparative plots (displayed and optionally saved).
 *   Save raw per-run metrics (JSON) and aggregated per-scenario metrics (CSV) to the `automated_sim_results` directory.
 
-You will be prompted at the end to decide whether to save the generated plots.
+### 3. Quick Comparison Mode
+
+For quick comparison of all agents with configurable parameters:
+
+```bash
+# Run with uniform placement (default)
+python run_comparison.py
+
+# Run with PPP placement
+python run_comparison.py --placement PPP --lambda-bs 0.5 --lambda-ue 2.0
+```
+
+This script provides:
+*   Command-line interface for parameter configuration
+*   Support for both uniform and PPP placement methods
+*   Progress tracking with tqdm
+*   Comprehensive logging
+*   Research-quality plots for each metric
+*   Results saved in `simulation_results/` directory
 
 ## Understanding the Experiment Scenarios in `runner.py`
 
@@ -178,49 +204,44 @@ The simulation tracks several KPIs to evaluate agent performance:
 *   **Average SINR (dB):** Mean Signal-to-Interference-plus-Noise Ratio for connected UEs.
 *   **Average RBs per UE:** Resources allocated per UE.
 *   **Epsilon Decay:** (For RL agents) Visualizes the exploration-exploitation balance over time.
+*   **DQN Loss:** (For DQN agent) Tracks the training loss of the neural network.
 
-## Output Structure (`automated_sim_results` directory)
+## Recent Improvements
 
-When `runner.py` is executed, it creates a dedicated directory named `automated_sim_results/` in the project root. Inside this, a unique timestamped subdirectory is created for each complete experiment run (e.g., `automated_sim_results/Experiment_Run_YYYYMMDD_HHMMSS/`). This ensures that results from different full experiment sessions do not overwrite each other.
+### DQN Agent Enhancements
+*   Sophisticated network architecture with residual connections
+*   Improved loss tracking and visualization
+*   Double Q-learning implementation
+*   Learning rate scheduling with exponential decay
+*   Enhanced state representation with more granular levels
+*   Proper gradient clipping and L2 regularization
+*   Prioritized experience replay
 
-Within each timestamped experiment run directory, you will find the following:
+### Simulation Framework Updates
+*   Support for both uniform and PPP placement methods
+*   Improved progress tracking with tqdm
+*   Enhanced logging system
+*   Research-quality plots with improved styling
+*   Better error handling and reporting
+*   Command-line interface for quick comparisons
 
+## Output Structure
+
+The simulation generates output in two main directories:
+
+### 1. `automated_sim_results/` (for `runner.py`)
+[Previous detailed structure remains unchanged]
+
+### 2. `simulation_results/` (for `run_comparison.py`)
 ```
-automated_sim_results/
-└── Experiment_Run_YYYYMMDD_HHMMSS/
-    ├── runner_log_YYYYMMDD_HHMMSS.log     # Comprehensive log of the entire experiment run
-    ├── raw_metrics_per_run/               # Contains raw JSON data for each individual simulation run
-    │   └── [scenario_name]_run[#]_seed[#]/ # Subdirectory for each specific run (scenario-agent-seed combo)
-    │       └── [AgentType]_metrics_YYYYMMDD_HHMMSS.json  # Raw metrics and params for one simulation run
-    ├── aggregated_csv_data/               # Contains aggregated CSV data per scenario
-    │   └── [ScenarioName]_aggregated_metrics.csv # Aggregated performance data for all agents in a scenario
-    └── comparison_plots/                  # Contains saved comparison plots (PNG format)
-        └── Experiment_Run_YYYYMMDD_HHMMSS_[ScenarioName]_performance_comparison.png # Plot for each scenario
+simulation_results/
+└── comparison_run_[placement]_YYYYMMDD_HHMMSS/
+    ├── simulation_logs/                    # Log files for each run
+    ├── metrics/                           # CSV files with detailed metrics
+    └── plots/                             # Research-quality plots for each metric
 ```
-
-### Accessing the Data
-
-1.  **Full Experiment Log (`runner_log_*.log`):**
-    *   This file provides a detailed chronological account of the entire automated experiment process. It includes start/end times for each run, parameter overrides, and any warnings or errors encountered. Useful for debugging or reviewing the exact sequence of events.
-
-2.  **Raw Metrics per Run (`raw_metrics_per_run/`):**
-    *   Each JSON file in this subdirectory represents the complete metrics history (`metrics_history`) and the exact simulation parameters (`simulation_parameters`) for a *single* agent running under a *specific* scenario with a *single* random seed.
-    *   These JSON files are ideal if you need to re-process the data, perform custom analysis on individual runs, or inspect the exact configuration that led to a particular result. They can be opened with any text editor or JSON viewer, or loaded into Python using `json.load()`.
-
-3.  **Aggregated CSV Data (`aggregated_csv_data/`):**
-    *   For each experiment scenario, a `.csv` file is generated (e.g., `Default_Config_aggregated_metrics.csv`).
-    *   These CSV files contain the **mean performance metrics over time (averaged across all random seeds)** for all agents within that specific scenario.
-    *   Each row typically represents a time step, and columns include `time_step`, various KPIs (e.g., `avg_ue_throughput_mbps`, `reward`), and an `Agent` column indicating which agent the data belongs to.
-    *   CSV files are highly versatile and can be directly opened in spreadsheet software (Microsoft Excel, Google Sheets, LibreOffice Calc) for quick visualization, filtering, and statistical analysis. They can also be easily loaded into Python using `pandas.read_csv()` for advanced data manipulation.
-
-4.  **Comparison Plots (`comparison_plots/`):**
-    *   These are high-resolution PNG image files, with one file for each experiment scenario.
-    *   Each plot visually compares the performance trends of all tested RL agents (and the baseline) across multiple KPIs over the simulation duration for that specific scenario.
-    *   These are excellent for quick visual comparison and for including directly in reports or presentations.
-
-This structured output facilitates comprehensive analysis of the RL agents' performance, allowing researchers to draw robust conclusions from the simulation results.
 
 ## Contact
 
-*   Aaradhy Sharma - as783@snu.edu.in // tc.shadical@gmail.com 
+*   Aaradhy Sharma - as783@snu.edu.in // tc.shadical@gmail.com
 

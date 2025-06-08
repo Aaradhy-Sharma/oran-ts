@@ -354,39 +354,22 @@ class CellularSimApp(tk.Tk):
         self.log_handler.log(message)  # Use the LogHandler
 
     def setup_simulation(self):
-        if not self._update_simparams_from_gui():
-            return
-
-        # Set a fixed random seed for reproducibility for this run
-        seed = 42  # Could be a GUI parameter too
-        random.seed(seed)
-        np.random.seed(seed)
-        if TF_AVAILABLE_GLOBAL:
-            import tensorflow as tf
-
-            tf.random.set_seed(seed)
-
-        self.log_message(
-            f"Setting up simulation with agent: {self.params.rl_agent_type} (Seed: {seed})..."
-        )
         try:
+            self._update_simparams_from_gui()
             self.simulation = Simulation(self.params, self.log_message)
-            self.log_message("Simulation setup complete.")
             self.run_step_button.config(state=tk.NORMAL)
             self.run_all_button.config(state=tk.NORMAL)
-            self.compare_button.config(state=tk.DISABLED)  # Disable until a run is complete
             self.update_visualization(initial_setup=True)
         except ImportError as e:
-            messagebox.showerror(
-                "RL Agent Error",
-                f"Cannot initialize agent: {e}. Please ensure required libraries are installed.",
-            )
-            self.log_message(f"Error during setup: {e}")
-            self.run_step_button.config(state=tk.DISABLED)
-            self.run_all_button.config(state=tk.DISABLED)
+            if "TensorFlow is required for DQN agent" in str(e):
+                messagebox.showerror("TensorFlow Required", 
+                    "TensorFlow is required to use the DQN agent. Please install TensorFlow using:\n\n"
+                    "pip install tensorflow\n\n"
+                    "Then restart the application.")
+            else:
+                messagebox.showerror("Error", str(e))
         except Exception as e:
-            self.log_message(f"Error during setup: {e}")
-            messagebox.showerror("Setup Error", f"{e}")
+            messagebox.showerror("Error", str(e))
 
     def run_one_step(self):
         if self.simulation:
