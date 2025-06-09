@@ -24,6 +24,7 @@ The simulation incorporates realistic channel models (path loss, shadowing, smal
     *   **Expected SARSA:** An off-policy variant of SARSA, using expected Q-values.
     *   **N-Step SARSA:** Generalizes SARSA to use n-step returns for potentially faster learning.
     *   **Deep Q-Network (DQN):** A sophisticated deep reinforcement learning agent using neural networks with residual connections, double Q-learning, and prioritized experience replay (requires TensorFlow).
+    *   **NO_DECAY_DQN:** A variant of DQN with stable exploration rate.
 *   **Realistic Network Modeling:**
     *   UE mobility with random walk model.
     *   Base Station (BS) and UE placement (Uniform Random or Poisson Point Process).
@@ -37,27 +38,19 @@ The simulation incorporates realistic channel models (path loss, shadowing, smal
     *   Real-time visualization of the network state (BSs, UEs, connections, RBs).
     *   Step-by-step or full simulation execution.
     *   Logging of simulation events and metrics.
-*   **Automated Experiment Runner:** A powerful `runner.py` script for:
-    *   Defining multiple experiment scenarios with varying network parameters (e.g., density, mobility, resource scarcity).
-    *   Running all specified RL agents across these scenarios for multiple random seeds.
-    *   Aggregating performance metrics over multiple runs for statistical significance.
-    *   Generating comparative plots for key performance indicators (KPIs).
-    *   Saving raw metrics (JSON) and aggregated data (CSV) for detailed offline analysis.
-    *   Saving generated plots to disk.
-*   **Command-Line Interface:** A new `run_comparison.py` script for:
-    *   Quick comparison of all agents with configurable parameters.
+*   **Comprehensive Runner:** The `final_runner.py` script provides:
     *   Support for both uniform and PPP placement methods.
     *   Progress tracking with tqdm.
     *   Comprehensive logging and visualization.
     *   Research-quality plots for each metric.
+    *   Results saved in `FINAL/results/` directory.
 
 ## Project Structure
 
 ```
 o-ran-sim/
 ├── main.py                   # Entry point for the GUI application
-├── runner.py                 # Automated experiment execution and analysis
-├── run_comparison.py         # Quick comparison script with CLI
+├── final_runner.py           # Main script for running comprehensive simulations
 ├── sim_core/                 # Core simulation logic and entities
 │   ├── __init__.py           # Package initializer
 │   ├── constants.py          # Global constants (Boltzmann, Kelvin, TF_AVAILABLE)
@@ -123,14 +116,18 @@ tqdm       # For progress tracking
 
 ## How to Run
 
-There are three primary ways to run the simulation:
+There are two primary ways to run the simulation:
 
 ### 1. Interactive GUI Mode
 
 For interactive exploration and visualization:
 
 ```bash
+# Using python
 python main.py
+
+# Or using uv (faster alternative)
+uv run main.py
 ```
 
 This will launch the Tkinter GUI.
@@ -141,56 +138,29 @@ This will launch the Tkinter GUI.
 *   The visualization panel will update in real-time.
 *   The log panel provides detailed information.
 
-### 2. Automated Experiment Runner Mode
+### 2. Comprehensive Simulation Mode
 
-For systematic evaluation and generating comparative results:
-
-```bash
-python runner.py
-```
-
-This script will:
-*   Execute predefined experiment scenarios (e.g., varying UE/BS density, mobility).
-*   Run each specified RL agent multiple times per scenario with different random seeds for statistical robustness.
-*   Log the progress and any errors to a file in the `automated_sim_results` directory.
-*   Aggregate the metrics for each agent across multiple runs.
-*   Generate comparative plots (displayed and optionally saved).
-*   Save raw per-run metrics (JSON) and aggregated per-scenario metrics (CSV) to the `automated_sim_results` directory.
-
-### 3. Quick Comparison Mode
-
-For quick comparison of all agents with configurable parameters:
+For running comprehensive simulations with all agents:
 
 ```bash
-# Run with uniform placement (default)
-python run_comparison.py
+# Using python
+python final_runner.py
+# Or with PPP placement
+python final_runner.py --placement PPP --lambda-bs 0.5 --lambda-ue 2.0
 
-# Run with PPP placement
-python run_comparison.py --placement PPP --lambda-bs 0.5 --lambda-ue 2.0
+# Or using uv (faster alternative)
+uv run final_runner.py
+# Or with PPP placement
+uv run final_runner.py --placement PPP --lambda-bs 0.5 --lambda-ue 2.0
 ```
 
-This script provides:
+The `final_runner.py` script provides:
 *   Command-line interface for parameter configuration
 *   Support for both uniform and PPP placement methods
 *   Progress tracking with tqdm
 *   Comprehensive logging
 *   Research-quality plots for each metric
-*   Results saved in `simulation_results/` directory
-
-## Understanding the Experiment Scenarios in `runner.py`
-
-The `runner.py` script includes a `EXPERIMENT_SCENARIOS` dictionary that defines various test conditions. Each scenario is a dictionary of `SimParams` attributes that override the `base_sim_params`. This allows for flexible testing of how different agents perform under specific stresses.
-
-Examples of included scenarios:
-
-*   **`Default_Config`**: Baseline parameters for comparison.
-*   **`High_Density_Dynamic`**: Tests performance under high UE and BS density with increased mobility and channel variability. Designed to challenge tabular methods due to large state space and highlight generalization of DRL.
-*   **`BS_Hotspot_Uneven_Load`**: Simulates a network where UEs cluster, potentially leading to uneven load distribution across BSs, testing load balancing strategies.
-*   **`Sparse_Network_Challenging_Coverage`**: Evaluates performance in networks with fewer BSs and more severe channel conditions, stressing coverage maintenance.
-*   **`High_Traffic_Low_Resources`**: Tests resource allocation efficiency when demand is high but available resources are limited.
-*   **`Extreme_Mobility`**: Assesses adaptability and handover efficiency in very rapidly changing environments.
-
-Feel free to modify the `EXPERIMENT_SCENARIOS` dictionary in `runner.py` to define your own test cases.
+*   Results saved in `FINAL/results/` directory
 
 ## Key Performance Indicators (KPIs)
 
@@ -204,41 +174,19 @@ The simulation tracks several KPIs to evaluate agent performance:
 *   **Average SINR (dB):** Mean Signal-to-Interference-plus-Noise Ratio for connected UEs.
 *   **Average RBs per UE:** Resources allocated per UE.
 *   **Epsilon Decay:** (For RL agents) Visualizes the exploration-exploitation balance over time.
-*   **DQN Loss:** (For DQN agent) Tracks the training loss of the neural network.
-
-## Recent Improvements
-
-### DQN Agent Enhancements
-*   Sophisticated network architecture with residual connections
-*   Improved loss tracking and visualization
-*   Double Q-learning implementation
-*   Learning rate scheduling with exponential decay
-*   Enhanced state representation with more granular levels
-*   Proper gradient clipping and L2 regularization
-*   Prioritized experience replay
-
-### Simulation Framework Updates
-*   Support for both uniform and PPP placement methods
-*   Improved progress tracking with tqdm
-*   Enhanced logging system
-*   Research-quality plots with improved styling
-*   Better error handling and reporting
-*   Command-line interface for quick comparisons
 
 ## Output Structure
 
-The simulation generates output in two main directories:
+The simulation generates output in the following directory structure:
 
-### 1. `automated_sim_results/` (for `runner.py`)
-[Previous detailed structure remains unchanged]
-
-### 2. `simulation_results/` (for `run_comparison.py`)
 ```
-simulation_results/
-└── comparison_run_[placement]_YYYYMMDD_HHMMSS/
-    ├── simulation_logs/                    # Log files for each run
-    ├── metrics/                           # CSV files with detailed metrics
-    └── plots/                             # Research-quality plots for each metric
+FINAL/
+├── logs/                    # Log files directory
+│   └── final_simulation_YYYYMMDD_HHMMSS.log
+└── results/                 # Results directory
+    └── final_comparison_[placement]_YYYYMMDD_HHMMSS/
+        ├── metrics/         # CSV files with detailed metrics
+        └── plots/           # Research-quality plots for each metric
 ```
 
 ## Contact

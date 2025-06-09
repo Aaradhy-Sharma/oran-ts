@@ -231,9 +231,17 @@ class Simulation:
         return 0
 
     def _calculate_reward(self, handovers_this_step):
+        # Calculate UE satisfaction score (binary satisfaction)
         total_ue_satisfaction_score = 0.0
+        total_throughput = 0.0
+        max_possible_throughput = self.params.target_ue_throughput_mbps * self.params.num_ues_actual
+        
         for ue in self.ues.values():
             if ue.serving_bs_1 or ue.serving_bs_2:
+                # Add to total throughput
+                total_throughput += ue.current_total_rate_mbps
+                
+                # Calculate satisfaction score
                 if ue.current_total_rate_mbps >= self.params.target_ue_throughput_mbps:
                     total_ue_satisfaction_score += 1.0
                 elif ue.current_total_rate_mbps > 0.5 * self.params.target_ue_throughput_mbps:
@@ -241,12 +249,17 @@ class Simulation:
                 elif ue.current_total_rate_mbps > 0:
                     total_ue_satisfaction_score += 0.1
 
+        # Normalize satisfaction score
         avg_ue_satisfaction_reward = (
             total_ue_satisfaction_score / self.params.num_ues_actual
             if self.params.num_ues_actual > 0
             else 0.0
         )
-
+        
+        # Calculate throughput reward (normalized to [0,1])
+        throughput_reward = total_throughput / max_possible_throughput if max_possible_throughput > 0 else 0.0
+        
+        # Calculate load penalties
         load_penalties = [
             (bs.load_factor_metric - 1.0) ** 2
             for bs in self.bss.values()
@@ -255,15 +268,24 @@ class Simulation:
         avg_bs_load_penalty = np.mean(load_penalties) if load_penalties else 0.0
         reward_bs_load = 1.0 - avg_bs_load_penalty
 
+        # Calculate handover penalty
         ho_penalty = -0.1 * handovers_this_step
         ho_penalty = max(ho_penalty, -1.0)
 
-        w_ue_satisfaction, w_bs_load, w_ho_penalty = 0.6, 0.3, 0.1
+        # Updated weights to emphasize throughput
+        w_throughput = 0.4  # New weight for throughput
+        w_ue_satisfaction = 0.3  # Reduced from 0.6
+        w_bs_load = 0.2  # Reduced from 0.3
+        w_ho_penalty = 0.1  # Kept the same
+
+        # Calculate total reward with throughput component
         total_reward = (
-            w_ue_satisfaction * avg_ue_satisfaction_reward
-            + w_bs_load * reward_bs_load
-            + w_ho_penalty * ho_penalty
+            w_throughput * throughput_reward +
+            w_ue_satisfaction * avg_ue_satisfaction_reward +
+            w_bs_load * reward_bs_load +
+            w_ho_penalty * ho_penalty
         )
+        
         return total_reward
 
     def run_step(self):
