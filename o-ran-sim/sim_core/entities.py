@@ -1,6 +1,6 @@
 import numpy as np
 import math
-from scipy.stats import rayleigh # NEW: For small-scale fading
+from scipy.stats import rayleigh 
 from sim_core.params import SimParams
 from sim_core.channel import ChannelModel
 from sim_core.resource import ResourceBlockPool
@@ -39,7 +39,6 @@ class BaseStation:
         )
         received_signal_power_dbm = signal_eirp_dbm - signal_path_loss_db
         
-        # --- NEW: Apply small-scale fading gain to desired signal ---
         # Rayleigh fading for amplitude, squared for power.
         # Mean of rayleigh.rvs(scale=sigma)^2 is 2*sigma^2.
         # To get a mean linear gain of 1 (0 dB), set sigma = 1/sqrt(2).
@@ -50,7 +49,6 @@ class BaseStation:
         fading_gain_linear_signal = max(fading_gain_linear_signal, 1e-10) 
 
         signal_power_w = dbm_to_linear(received_signal_power_dbm) * fading_gain_linear_signal
-        # --- END NEW ---
 
         interference_w = 0.0
         for other_bs_id, other_bs in all_bss_map.items():
@@ -67,14 +65,12 @@ class BaseStation:
                 )
                 inter_power_w = dbm_to_linear(inter_eirp_dbm - inter_path_loss_db)
                 
-                # --- NEW: Apply small-scale fading gain to interference ---
                 fading_gain_linear_interference = rayleigh.rvs(scale=1/np.sqrt(2))**2
                 fading_gain_linear_interference = max(fading_gain_linear_interference, 1e-10)
                 interference_w += inter_power_w * fading_gain_linear_interference
-                # --- END NEW ---
 
         denominator = noise_w + interference_w
-        if denominator <= 1e-22: # Prevent division by zero/very small number
+        if denominator <= 1e-22: 
             denominator = 1e-22
         sinr_linear = signal_power_w / denominator
         return max(sinr_linear, dbm_to_linear(-20)) # Cap minimum SINR
@@ -87,7 +83,6 @@ class BaseStation:
             and ue.current_total_rate_mbps > 0 # Only count UEs effectively served
         ]
 
-        # Sum of rates *provided by this BS* (simplified approximation)
         theta_j_t = sum(
             ue.get_rate_from_bs(self.id) for ue in connected_ues_to_this_bs
         )
@@ -95,8 +90,6 @@ class BaseStation:
 
         if u_j_m_t > 0:
             avg_cap_per_ue_from_this_bs_mbps = theta_j_t / u_j_m_t
-            # Load factor definition is subjective. Here, it relates to target rate.
-            # 1.0 if near target, 0.75 if above target, 0.25 if below target.
             if (
                 abs(avg_cap_per_ue_from_this_bs_mbps - self.params.target_ue_throughput_mbps)
                 < 0.2 * self.params.target_ue_throughput_mbps
@@ -145,7 +138,7 @@ class UserEquipment:
                 rsrp = bs.get_access_beam_rsrp_at_ue(self.position)
                 self.measurements[bs_id] = rsrp
                 # Only consider BSs above a certain threshold for candidates to save computation
-                if rsrp > self.params.min_rsrp_for_acq_dbm - 20: # Example threshold
+                if rsrp > self.params.min_rsrp_for_acq_dbm - 20: # Example 
                     temp_measurements.append((bs_id, rsrp))
             except Exception: # Handle potential issues like a BS not having a valid position
                 self.measurements[bs_id] = -np.inf
