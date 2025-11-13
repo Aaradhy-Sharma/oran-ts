@@ -2,27 +2,22 @@ import collections
 import numpy as np
 import random
 import math
-import tensorflow as tf
-from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.layers import Dense, Dropout, BatchNormalization, Input
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras import backend as K
-from tensorflow.keras.callbacks import Callback
 
 from sim_core.params import SimParams
 from sim_core.entities import UserEquipment
 from sim_core.resource import ResourceBlockPool
 from rl_agents.base import RLAgentBase
 
+# Guard TensorFlow imports so this module can be imported even when TF isn't installed.
 try:
     import tensorflow as tf
     from tensorflow.keras.models import Sequential, Model
-    from tensorflow.keras.layers import Dense, Dropout, Input
+    from tensorflow.keras.layers import Dense, Dropout, BatchNormalization, Input
     from tensorflow.keras.optimizers import Adam
+    from tensorflow.keras.callbacks import Callback
     TF_AVAILABLE = True
-except ImportError:
+except Exception:
     TF_AVAILABLE = False
-    print("Warning: TensorFlow not available. DQNAgent cannot be used.")
 
 class LossTracker(Callback):
     """Custom callback to track loss during training."""

@@ -1,0 +1,560 @@
+% Mid-term Report (Research Paper Style)
+\documentclass[conference]{IEEEtran}
+% Declaration Page
+\newpage
+\vfill
+\begin{center}
+
+{\LARGE \textbf{Declaration}}
+
+\vspace{2cm}
+
+\begin{minipage}{0.8\textwidth}
+\centering
+I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the University and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+\end{minipage}
+
+\vspace{3cm}
+
+Name of the Student: Aaradhy Sharma
+
+\vspace{1cm}
+
+Signature and Date: \rule{4cm}{0.4pt} \hspace{2cm} October 13, 2025
+
+\end{center}
+\vfillndlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{makecell, siunitx,multirow,hyperref}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{placeins}
+\usepackage{algorithm}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+\begin{center}
+\vspace*{2cm}
+
+{\LARGE \textbf{Reinforcement Learning based traffic steering in Open Radio Access Network (ORAN)}}
+
+\vspace{2cm}
+
+{\large Project Report Submitted in Partial Fulfilment of the Requirements for the Degree of}
+
+\vspace{1cm}
+
+{\large \textbf{Bachelor of Technology}}
+
+\vspace{0.5cm}
+
+{\large in}
+
+\vspace{0.5cm}
+
+{\large \textbf{Computer Science and Engineering}}
+
+\vspace{2cm}
+
+{\large Submitted by}
+
+\vspace{1cm}
+
+{\large \textbf{Aaradhy Sharma: (Roll No. 2210110100)}}
+
+\vspace{1.5cm}
+
+{\large Under the Supervision of}
+
+\vspace{0.5cm}
+
+{\large \textbf{Dr. Shankar K. Ghosh}}\\
+{\large Professor}
+
+\vspace{1cm}
+
+\includegraphics[width=0.25\textwidth]{snulogo.png}
+
+\vspace{0.5cm}
+
+{\large Department of Computer Science and Engineering}
+
+\vspace{0.3cm}
+
+{\large \textbf{October, 2025}}
+
+\end{center}
+\end{titlepage}
+
+% Declaration Page
+\newpage
+\begin{center}
+
+{\centering \LARGE \textbf{Declaration}}
+
+\vspace{2cm}
+
+\begin{minipage}{0.8\textwidth}
+\centering
+I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the University and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+\end{minipage}
+\end{center}
+
+\vspace{4cm}
+
+\noindent Name of the Student: Aaradhy Sharma \\ 
+\hspace{2cm} Signature and Date:       \hspace{2.5cm}       October 13, 2025
+
+\newpage
+
+% IEEE Conference Paper starts here
+\title{Reinforcement Learning based traffic steering in Open Radio Access Network (ORAN)\\
+}
+
+\author{\IEEEauthorblockN{Aaradhy Sharma}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering} \\
+\textit{Shiv Nadar Institution of Eminence}\\
+Delhi, NCR \\
+as783@snu.edu.in}
+\and
+\IEEEauthorblockN{Shankar K. Ghosh}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering} \\
+\textit{Shiv Nadar Institution of Eminence}\\
+Delhi, NCR \\
+shankar.ghosh@snu.edu.in}
+}
+
+\maketitle
+
+\begin{abstract}
+This report presents the design, implementation, and evaluation framework for intelligent handover decision-making and resource block (RB) allocation in Open RAN networks using reinforcement learning. We develop a comprehensive simulation environment integrating multiple RL algorithms—including Tabular Q-Learning, SARSA variants, and Deep Q-Networks with advanced stabilization techniques—alongside baseline 3GPP-compliant heuristics. Our system incorporates realistic channel modeling through Sionna library integration, enabling small-scale fading simulation while maintaining compatibility with traditional path loss and shadowing models. The modular architecture supports both single and dual connectivity scenarios, with configurable parameters for extensive evaluation across different deployment scenarios. We formalize the mobility and scheduling problem as a Markov Decision Process, implement state-of-the-art RL algorithms with detailed hyperparameter analysis, and provide a robust evaluation methodology for performance comparison against industry-standard baselines.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Open RAN, reinforcement learning, handover optimization, resource allocation, multi-connectivity, Sionna, 5G/6G networks, deep Q-networks, SARSA, channel modeling.
+\end{IEEEkeywords}
+
+\section{Introduction}
+The evolution toward Open RAN (O-RAN) architectures introduces opportunities for intelligent, software-defined control of radio access networks through disaggregated components and standardized interfaces \cite{oranwhitepaper}. Critical challenges remain in mobility management and resource allocation, particularly in dense deployments where user equipment (UE) must seamlessly transition between base stations (BSs) while maintaining quality-of-service (QoS) requirements. Traditional handover mechanisms rely on static thresholds and heuristic policies that may not adapt optimally to dynamic traffic patterns and channel conditions.
+
+Reinforcement learning (RL) provides a principled framework for learning optimal policies through interaction with the environment \cite{sutton_barto_rl}. In cellular networks, RL agents can optimize handover decisions and resource block (RB) allocation by learning from experienced throughput, interference patterns, and mobility trajectories. This approach enables adaptive policies that respond to network conditions without requiring explicit system models or exhaustive parameter tuning.
+
+This report presents a comprehensive simulation framework implementing multiple RL algorithms for joint handover and RB allocation optimization. Our contributions include: (i) a modular O-RAN simulator with realistic channel modeling using the Sionna library for small-scale fading effects; (ii) implementation of five RL algorithms with detailed comparative analysis; (iii) integration of 3GPP-compliant baseline heuristics for benchmarking; and (iv) comprehensive evaluation methodology supporting both single and dual connectivity scenarios.
+
+\section{Problem Statement and Goals}
+In Open Radio Access Networks (O-RAN), intelligent traffic steering and resource allocation present complex optimization challenges that traditional rule-based approaches struggle to address effectively. The disaggregated O-RAN architecture with O-CU, O-DU, O-RU components and RAN Intelligent Controller (RIC) enables programmable network control but requires sophisticated decision-making algorithms to optimize network performance dynamically.
+
+\subsection{Core Problem Definition}
+The primary challenge addressed in this work is the joint optimization of traffic steering (TS) and resource allocation (RA) in O-RAN environments supporting both single and dual connectivity scenarios. Traffic steering involves intelligently directing network traffic flows to specific network resources based on network conditions, QoS requirements, user demands, and BS load optimization objectives. Resource allocation encompasses the assignment and distribution of available network resources (bandwidth, spectrum, power, RBs) to different UEs to ensure optimal performance.
+
+The problem complexity is amplified by several factors. Link-beam architecture introduces coordination challenges as each O-RU governs one or more link-beams with distributed power allocation, requiring coordinated beam-level resource management. Dual connectivity support enables UEs to maintain simultaneous connections to multiple BSs, necessitating careful resource coordination to avoid interference while optimizing aggregate throughput. Dynamic channel conditions create non-stationary optimization landscapes through time-varying channels incorporating path loss, shadowing, and small-scale fading effects combined with user mobility and inter-cell interference. Multi-objective optimization further complicates the problem through conflicting objectives between UE throughput maximization, fair resource distribution, BS load balancing, and handover minimization.
+
+\subsection{Optimization Objectives}
+Our framework targets the joint maximization of two primary objectives:
+
+\textbf{Objective 1 - UE Satisfaction Maximization:}
+\begin{equation}
+\max_{U} \sum_{i \in \mathcal{U}} \sum_{l \in L} u_{i,{l}}(t) \mathcal{C}_{i}(t)
+\end{equation}
+where $\mathcal{C}_{i}(t)$ is a comparison function indicating whether UE $i$ achieves target throughput $T$ at time $t$, and $u_{i,l}(t)$ represents the UE access indicator for link-beam assignment.
+
+\textbf{Objective 2 - BS Load Balancing:}
+\begin{equation}
+\max_{\mathcal{B}} \sum_{j \in \mathcal{B}}\Lambda_j(t)
+\end{equation}
+where $\Lambda_j(t)$ is the load balancing factor for BS $j$, ensuring balanced resource utilization across the network.
+
+\subsection{Research Goals}
+This work aims to achieve five specific goals. Intelligent traffic steering through reinforcement learning algorithms that dynamically optimize UE-BS associations and RB allocations based on real-time network conditions. Dual connectivity optimization enabling efficient resource management for UEs maintaining simultaneous connections to multiple BSs while preventing resource conflicts. Load balancing to maintain balanced load distribution across BSs, preventing over-utilization and ensuring fair resource access for all UEs. Comparative analysis providing comprehensive evaluation of multiple RL algorithms including Tabular Q-Learning, SARSA variants, and DQN against 3GPP-compliant baseline heuristics. Realistic channel modeling through integration of advanced capabilities including Sionna library support for small-scale fading effects alongside traditional path loss and shadowing models.
+
+\section{System Model and Architecture}
+Our simulation framework models a disaggregated O-RAN environment where $n$ O-DUs (indexed by $j = 1, \ldots, n$) and $o$ O-RUs (indexed by $k = 1, \ldots, o$) serve $m$ UEs (indexed by $i = 1, \ldots, m$), where typically $m > n$. The system supports both single connectivity and dual connectivity scenarios through a shared pool of $r$ Resource Blocks (RBs) managed across the distributed units.
+
+\subsection{O-RAN Architecture Components}
+The simulated O-RAN architecture incorporates the key functional splits:
+
+\textbf{O-RAN Central Unit (O-CU):} Responsible for higher-layer protocol management, data routing, and Quality of Service (QoS) policy enforcement. In our simulation, this functionality is abstracted into global resource coordination and policy management.
+
+\textbf{O-RAN Distributed Unit (O-DU):} Handles Medium Access Control (MAC) scheduling, radio link control (RLC), and Packet Data Convergence Protocol (PDCP) functions. Each O-DU $j$ manages scheduling decisions and resource allocation for its associated O-RUs.
+
+\textbf{O-RAN Radio Unit (O-RU):} Performs physical layer processing including modulation, beamforming, and RF operations. Each O-RU manages one or more link-beams with distributed power allocation according to:
+\begin{equation}
+\hat{P}_{a,j} = \frac{P_j}{N_{j}}
+\end{equation}
+where $P_j$ is the total transmission power of O-DU $j$, $N_j$ is the number of link-beams, and $\hat{P}_{a,j}$ represents the power allocated to link-beam $l_{a,j}$.
+
+\textbf{RAN Intelligent Controller (RIC):} Implemented through our RL agent framework, providing intelligent decision-making for traffic steering and resource allocation. The Near-RT RIC functionality operates on 10ms-1s timescales for dynamic resource allocation and interference management.
+
+\subsection{UE Connectivity Models}
+The system supports heterogeneous connectivity patterns:
+
+\textbf{Single Connectivity UEs ($U_1$):} A subset of $m_1$ UEs maintaining connection to exactly one O-DU through a single link-beam, where association and resource allocation decisions are managed jointly.
+
+\textbf{Dual Connectivity UEs ($U_2$):} A subset of $m_2$ UEs capable of simultaneous connections to two different O-DUs through separate link-beams. This enables resource aggregation and improved reliability. For dual-connected UE $i_2$, RB sets $K_1$ and $K_2$ from different BSs satisfy $K_1 \cap K_2 = \emptyset$ to prevent interference.
+
+\subsection{Link-Beam and Resource Management}
+Each UE $i$ is characterized by:
+For each UE $i$, the notation includes $K_i$ as the set of allocated Resource Blocks, $L_i$ as the set of serving link-beams with $|L_i| = 1$ for single connectivity and $|L_i| = 2$ for dual connectivity, and $D_i$ as the set of serving O-DUs with $|D_i| = 1$ for single connectivity and $|D_i| = 2$ for dual connectivity.
+
+UE access is governed by binary indicators $u^{i}_{a,j}(t) \in \{0,1\}$ representing whether UE $i$ is assigned to link-beam $l_{a,j}$ at time $t$. Resource Block allocation is controlled by indicators $f_{i,j,k,a}(t) \in \{0,1\}$ indicating RB $k$ assignment to UE $i$ through link-beam $a$ and O-DU $j$.
+
+\subsection{Simulation Architecture and Data Flow}
+The simulation framework (\textit{sim\_core/}) organizes the following components:
+
+Entity Management: BaseStation and UserEquipment classes in \textit{entities.py} model O-DU/O-RU functionality and UE behavior respectively. These maintain RSRP measurements and candidate BS lists.
+
+Resource Pool: A global ResourceBlockPool in \textit{resource.py} arbitrates RB ownership and tracks per-BS availability. This supports both shared access and dual connectivity constraints.
+
+Channel Modeling: Advanced channel modeling in \textit{channel.py} incorporates path loss, log-normal shadowing, and optional Sionna integration for small-scale fading effects.
+
+RL Integration: Agents in \textit{rl\_agents/} consume per-UE state features and output traffic steering actions. Baseline A3/TTT handover heuristics provide performance comparison benchmarks.
+
+At each simulation step: (i) UEs perform mobility updates and RSRP measurements; (ii) RL agents determine handover and RB allocation actions; (iii) Resource grants are processed through the RB pool; (iv) SINR and achievable rates are computed using Shannon capacity; (v) Network performance metrics are recorded; (vi) Agent models are updated based on observed rewards. All parameters are centralized in \textit{SimParams} configuration.
+
+\section{MDP Formulation for Traffic Steering}
+We formulate the joint traffic steering and resource allocation problem as a Markov Decision Process (MDP) where each UE's connection and resource allocation decisions are optimized to maximize network-wide performance. The MDP components are designed to capture the essential aspects of O-RAN traffic steering while maintaining computational tractability.
+
+\subsection{State Space Design}
+The state representation varies between tabular and deep learning approaches to balance expressiveness with computational efficiency:
+
+Tabular Agents (Q-Learning, SARSA variants): A discrete 5-dimensional state vector $s_i(t)$ for UE $i$ at time $t$ contains essential decision variables. The UE satisfaction indicator provides a binary indicator $\mathcal{C}_i(t) \in \{0,1\}$ representing whether UE $i$ achieves target throughput $T$. Primary BS load category discretizes the load factor of the serving BS into bins representing low, medium, and high utilization levels. Secondary BS load category tracks the load factor of the secondary BS, with zero value indicating single connectivity mode. RSRP difference category quantizes the difference between the best neighbor and serving BS RSRP beyond the hysteresis threshold. Rate-to-target ratio normalizes current throughput relative to target rate $T$. Each dimension uses 10 discretization bins, yielding manageable state space size of $10^5$ states.
+
+Deep Q-Network Agent: A continuous state vector incorporates richer information for neural network processing. Top-K RSRP values provide normalized RSRP measurements from the strongest neighboring BSs. Current total throughput captures the UE's aggregate data rate across all active connections. Allocated RBs per BS track the number of resource blocks allocated from primary and secondary BSs. BS load factors maintain continuous load metrics for all connected BSs. Dual connectivity status provides binary indicators for the current connection configuration.
+
+\subsection{Action Space Definition}
+The action space reflects the traffic steering decisions available to each UE:
+
+Tabular Agents: Three high-level traffic steering actions are available. Stay maintains current BS associations and RB allocations. Switch Single performs handover to the best available neighbor BS with single connectivity. Try Dual attempts dual connectivity configuration with resource splitting between BSs.
+
+DQN Agent: Factored action space with joint optimization enables fine-grained control. Primary BS selection provides choice among all available BSs or maintaining the current connection. Secondary BS selection adds an additional BS for dual connectivity configurations, with the constraint that it must differ from the primary BS. RB category per link determines resource allocation levels with three options: zero allocation, half-maximum, or maximum capacity per connection. 
+
+The action space size scales as $(N_{BS}+1)^2 \times 3^2$ with constraint enforcement to prevent invalid configurations.
+
+\subsection{Reward Function Design}
+The reward function encourages network-wide performance optimization through multiple objectives:
+\begin{align}
+R_t &= w_{ue} \cdot R_{ue\_satisfaction} + w_{bs} \cdot R_{bs\_load} + w_{ho} \cdot R_{ho\_penalty}
+\end{align}
+where:
+The UE satisfaction component $R_{ue\_satisfaction} = \frac{1}{m}\sum_{i=1}^{m} \mathcal{C}_i(t)$ captures the fraction of UEs meeting target throughput at each time step. The load balancing component $R_{bs\_load} = 1 - \frac{1}{n}\sum_{j=1}^{n}(\Lambda_j(t) - 1)^2$ penalizes deviation from ideal load distribution across all BSs. The handover penalty $R_{ho\_penalty} = -\lambda_{ho} \cdot N_{handovers}(t)$ discourages excessive mobility to maintain connection stability and reduce signaling overhead.
+
+The weights $w_{ue}, w_{bs}, w_{ho}$ are tunable parameters allowing emphasis adjustment across different network objectives. For DQN agents, rewards are clipped to $[-1,1]$ for training stability.
+
+\subsection{Transition Dynamics and Discount Factor}
+State transitions are induced by UE mobility through random walk movement patterns affecting channel conditions and BS proximity. Traffic dynamics create time-varying interference and resource availability patterns. Action consequences from BS associations and RB allocations directly result from agent decisions and update the network state. The discount factor $\gamma \in [0,1]$ balances immediate rewards versus long-term performance optimization, typically configured near 0.95-0.99 for forward-looking policies.
+
+\subsection{Reward Design}
+We use additive shaping components to encourage stable mobility and balanced scheduling:
+\begin{align}
+ r &= r_{\text{QoS}} + r_{\text{load}} + r_{\text{radio}}, \\
+ r_{\text{QoS}} &= \begin{cases}
+  +1, & \text{if } \text{rate} / \text{target} \ge 1, \\
+  0, & \text{otherwise},
+ \end{cases} \\
+ r_{\text{load}} &= -\lambda_{\ell}\,(\text{load}_{\text{bs1}} + \text{load}_{\text{bs2}}), \\
+ r_{\text{radio}} &= +\lambda_{r}\, \text{RSRP\_diff\_bin},
+\end{align}
+with small coefficients $\lambda_{\ell},\lambda_{r}>0$; we clip $r\in[-1,1]$ for stability.
+
+\subsection{Action Spaces}
+Tabular agents operate over three abstract actions. The DQN uses a factored action index mapping to primary/secondary BS indices and RB categories per link (0/half/max), with post-processing to enforce constraints (no duplicate BS, per-UE RB cap). This yields an action-space size of $(N_{\text{BS}}+1)^2 \cdot 3^2$.
+
+\section{Channel Model and SINR Calculations}
+\label{sec:channel}
+The channel modeling framework (\textit{sim\_core/channel.py}) incorporates realistic propagation effects essential for accurate O-RAN simulation. The model supports both traditional channel modeling and advanced Sionna integration for enhanced small-scale fading simulation.
+
+\subsection{Channel Gain Computation}
+The instantaneous channel gain $g^{k}_{i,l_{a,j}}(t)$ between UE $i$ and link-beam $l_{a,j}$ on RB $k$ at time $t$ is computed as:
+\begin{equation}
+g^{k}_{i,l_{a,j}}(t) = q_{i,j}(t) \cdot |h^k_{i,j}(t)|^2
+\end{equation}
+where $q_{i,j}(t)$ represents the large-scale fading component (path loss and shadowing) and $h^k_{i,j}(t)$ captures small-scale fading effects.
+
+\textbf{Large-Scale Fading:} Incorporates distance-dependent path loss and log-normal shadowing:
+\begin{equation}
+q_{i,j}(t) = \left(\frac{d_0}{d_{i,j}(t)}\right)^{\alpha} \cdot 10^{X_{\sigma}/10}
+\end{equation}
+where $d_{i,j}(t)$ is the distance between UE $i$ and BS $j$, $d_0$ is the reference distance, $\alpha$ is the path loss exponent, and $X_{\sigma} \sim \mathcal{N}(0,\sigma^2)$ represents log-normal shadowing.
+
+\textbf{Small-Scale Fading:} Modeled through Rayleigh fading with optional Sionna integration for more sophisticated channel realizations including correlated fading across RBs and realistic multi-path effects.
+
+\subsection{SINR Calculation for Single Connectivity}
+For single-connected UE $i_1$ served by link-beam $l_{a,j}$ on RB $k$, the SINR is:
+\begin{equation}
+\gamma_{i_1,a,j}^{k}(t) = \frac{\hat{P}_{a,j} \cdot g^{k}_{i_1,l_{a,j}}(t)}{\sum\limits_{n_{l_k} \in L_k \setminus l_{a,j}} P_{n_{l_k}} \cdot g_{i_1,n_{l_k}}^{k}(t) + \sigma^2}
+\end{equation}
+where $\hat{P}_{a,j} = P_j/N_j$ is the power allocated to link-beam $l_{a,j}$, $L_k$ represents the set of interfering link-beams using RB $k$, and $\sigma^2 = kTFB$ is the thermal noise power with Boltzmann constant $k$, temperature $T$, UE noise figure $F$, and RB bandwidth $B$.
+
+\subsection{SINR Calculation for Dual Connectivity}
+For dual-connected UE $i_2$ served by BSs $j_1$ and $j_2$ through link-beams $l_{a_1,j_1}$ and $l_{a_2,j_2}$ on RBs $k_1$ and $k_2$ respectively:
+\begin{align}
+\gamma_{i_2,a_1,j_1}^{k_1}(t) &= \frac{\hat{P}_{a_1,j_1} \cdot g^{k_1}_{i_2,l_{a_1,j_1}}(t)}{\sum\limits_{n_{l_k} \in L_{k_1} \setminus l_{a_1,j_1}} P_{n_{l_k}} \cdot g_{i_2,n_{l_k}}^{k_1}(t) + \sigma^2_1} \\
+\gamma_{i_2,a_2,j_2}^{k_2}(t) &= \frac{\hat{P}_{a_2,j_2} \cdot g^{k_2}_{i_2,l_{a_2,j_2}}(t)}{\sum\limits_{n_{l_k} \in L_{k_2} \setminus l_{a_2,j_2}} P_{n_{l_k}} \cdot g_{i_2,n_{l_k}}^{k_2}(t) + \sigma^2_2}
+\end{align}
+The constraint $K_1 \cap K_2 = \emptyset$ ensures no RB is simultaneously used by both connections to prevent self-interference.
+
+\subsection{Achievable Rate Computation}
+Data rates are computed using Shannon capacity with SINR capping for numerical stability:
+\begin{align}
+c_{i,l_{a,j}}^{k}(t) &= B \cdot \log_2(1 + \min(\gamma_{i,a,j}^{k}(t), \gamma_{max}))
+\end{align}
+The aggregate receiving rate for UE $i$ is:
+\begin{equation}
+R_{i}(t) = \sum_{k \in K_{i}} \sum_{l \in L_{i}} \sum_{j \in D_{i}} f_{i,j,k,a}(t) \cdot c_{i,l_{a,j}}^{k}(t)
+\end{equation}
+where $f_{i,j,k,a}(t) \in \{0,1\}$ indicates RB allocation and the cardinalities $|L_i|$ and $|D_i|$ equal 1 for single connectivity and 2 for dual connectivity.
+
+\section{Sionna Integration for Advanced Channel Modeling}
+The framework supports optional integration with NVIDIA Sionna, a TensorFlow-based library for advanced wireless communications modeling. This integration extends the simulation's channel modeling capabilities beyond traditional path loss and shadowing models to include sophisticated small-scale fading effects and realistic propagation scenarios.
+
+\subsection{Enhanced Channel Modeling Features}
+The Sionna integration provides several advanced channel modeling capabilities. Small-scale fading generates more realistic multi-path channel realizations through Rayleigh channel models with configurable antenna configurations. The system supports independent fading samples for serving and interfering links, enabling accurate SINR calculations under realistic propagation conditions. Spatial correlation across multiple RBs and antenna elements provides frequency-selective channel behavior consistent with 3GPP specifications.
+
+The integration maintains compatibility with existing channel modeling by preserving path loss and shadowing calculations in the original \texttt{ChannelModel} while replacing only the small-scale fading component. This hybrid approach ensures consistent large-scale propagation behavior while introducing realistic multi-path effects.
+
+\subsection{Implementation Architecture}
+The Sionna integration is implemented through the \textit{sionna\_enabled/} module using a non-invasive monkey-patching approach. The core integration function \texttt{enable\_sionna\_fading()} creates per-BS Sionna channel handles and patches the \texttt{BaseStation.calculate\_sinr\_on\_rb()} method to incorporate Sionna-generated fading samples.
+
+The \texttt{ChannelHandle} wrapper class provides a minimal interface that converts NumPy arrays to TensorFlow tensors, applies Sionna channel models, and converts results back to NumPy format. This design maintains compatibility with the existing NumPy-based simulation framework while leveraging TensorFlow's computational capabilities.
+
+\textbf{Key Implementation Components:}
+\begin{align}
+\text{Sionna SINR} &= \frac{P_{\text{signal}} \cdot |h_{\text{serving}}|^2}{P_{\text{interference}} \cdot \sum_i |h_{\text{interferer},i}|^2 + \sigma^2}
+\end{align}
+where $h$ represents complex channel coefficients generated by Sionna channel models, and traditional path loss calculations determine $P_{\text{signal}}$ and $P_{\text{interference}}$.
+
+\subsection{Graceful Fallback and Compatibility}
+The integration employs guarded imports and exception handling to ensure graceful operation when Sionna or TensorFlow dependencies are unavailable. The \texttt{sionna\_available()} function checks for proper library installation, and all Sionna-specific code paths include fallback mechanisms that revert to unity fading coefficients.
+
+This design ensures that the simulation framework remains fully functional for baseline research while enabling advanced channel modeling when dependencies are satisfied. Researchers can evaluate RL algorithm performance under both simplified and realistic channel conditions within the same codebase.
+
+\subsection{Experimental Integration Features}
+The \textit{sionna\_enabled/} module includes experimental runners and integration scripts for comparative evaluation. The \textit{run\_all\_experiments\_sionna.py} script enables systematic comparison between traditional and Sionna-enhanced channel modeling across all RL algorithms. Per-step caching mechanisms optimize performance by avoiding repeated channel computations for identical BS-RB combinations within single simulation steps.
+
+\section{Baseline Heuristic}
+The baseline agent (file: \textit{rl\_agents/baseline.py}) implements A3+TTT handover procedures where neighbor RSRP must exceed serving cell RSRP by a hysteresis offset for the configured time-to-trigger duration, with neighbor RSRP above acquisition threshold before handover execution. Timers are tracked per neighbor to ensure proper TTT compliance. Greedy RB allocation follows association decisions, with each UE requesting up to per-BS RB caps and simple pre-checking to reduce requested RBs when projected rates already exceed targets by specified margins. Single connectivity operation clears secondary BS connections during handover, reserving multi-connectivity capabilities for learning-driven schemes. This heuristic serves as a deterministic reference and safe fallback under poor learning performance.
+
+\section{RL Agent Implementations and Comparative Framework}
+Our framework implements a comprehensive suite of reinforcement learning algorithms for intelligent traffic steering, enabling detailed comparative analysis of different learning approaches. All agents inherit from \textit{RLAgentBase} (\textit{rl\_agents/base.py}), providing unified interfaces for epsilon scheduling, action selection, and performance logging.
+
+\subsection{Baseline Agent: 3GPP-Compliant Heuristics}
+The baseline agent (\textit{rl\_agents/baseline.py}) implements industry-standard handover mechanisms for benchmarking:
+
+A3 + Time-to-Trigger (TTT) Handover: Follows 3GPP specifications where handover is triggered when:
+\begin{equation}
+\text{RSRP}_{neighbor} > \text{RSRP}_{serving} + \text{Hysteresis}
+\end{equation}
+for a duration exceeding the TTT threshold, with neighbor RSRP above acquisition threshold.
+
+Greedy Resource Allocation: After association decisions, UEs request RBs up to per-BS limits with throughput-based pre-filtering to avoid over-allocation when target rates are already satisfied.
+
+Single Connectivity Only: Secondary connections are terminated during handovers, with dual connectivity reserved for learning-based approaches.
+
+\subsection{Tabular Q-Learning Agent}
+Implementation: \textit{rl\_agents/tabular\_q.py}
+
+The fundamental value-based RL algorithm maintains explicit Q-tables for discrete state-action pairs. The implementation employs $5$D state space discretization with $10$ bins per dimension, yielding $10^5$ total states for computational tractability. The action space consists of three high-level actions: Stay, Switch Single, and Try Dual connectivity. Q-value updates follow the classic off-policy learning rule:
+\begin{equation}
+Q(s,a) \leftarrow Q(s,a) + \alpha\big[r + \gamma \max_{a'} Q(s',a') - Q(s,a)\big]
+\end{equation}
+Exploration employs $\epsilon$-greedy strategy with linear decay scheduling to balance exploration and exploitation during training.
+
+\subsection{SARSA Agent}
+Implementation: \textit{rl\_agents/sarsa.py}
+
+The on-policy temporal difference learning algorithm provides more conservative policy updates compared to Q-learning. State and action representations are identical to Q-Learning to enable direct performance comparison. The key distinction lies in the update mechanism, which uses the actual next action from the current policy rather than the optimal action:
+\begin{equation}
+Q(s,a) \leftarrow Q(s,a) + \alpha\big[r + \gamma Q(s',a') - Q(s,a)\big]
+\end{equation}
+where $a'$ is selected by the current $\epsilon$-greedy policy. This on-policy constraint results in more conservative learning that tends toward safer policies, potentially sacrificing optimality for stability.
+
+\subsection{Expected SARSA Agent}
+Implementation: \textit{rl\_agents/expected\_sarsa.py}
+
+This hybrid approach combines SARSA's on-policy nature with Q-Learning's comprehensive value estimation. The algorithm computes expected next-state values under the current policy:
+\begin{equation}
+Q(s,a) \leftarrow Q(s,a) + \alpha\Big[r + \gamma \mathbb{E}_{\pi}[Q(s',a')] - Q(s,a)\Big]
+\end{equation}
+For the $\epsilon$-greedy policy with 3 actions, the expectation is computed analytically:
+\begin{equation}
+\mathbb{E}_{\pi}[Q(s',a')] = (1-\epsilon)\max_{a'}Q(s',a') + \epsilon \frac{1}{3}\sum_{a'}Q(s',a')
+\end{equation}
+This approach achieves lower variance updates compared to standard SARSA due to the expected value computation, potentially leading to more stable learning while maintaining on-policy characteristics.
+
+\subsection{N-Step SARSA Agent}
+Implementation: \textit{rl\_agents/nstep\_sarsa.py}
+
+Multi-step temporal difference learning bridges one-step TD and Monte Carlo methods by accumulating rewards over N future steps with bootstrapping:
+\begin{equation}
+G_{t:t+n} = \sum_{i=0}^{n-1} \gamma^{i} r_{t+i+1} + \gamma^{n} Q(s_{t+n}, a_{t+n})
+\end{equation}
+The implementation maintains per-UE trajectory buffers using FIFO structures to store experience sequences, enabling delayed Q-value updates after N-step sequences complete. The configurable parameter N (typically 3-5) balances the bias-variance tradeoff, with larger N providing lower bias but higher variance estimates.
+
+\subsection{Deep Q-Network (DQN) Agent}
+Implementation: \textit{rl\_agents/dqn.py}
+
+Advanced deep reinforcement learning agent with sophisticated stabilization techniques:
+
+Network Architecture: The neural network employs a residual MLP architecture with 2 hidden layers containing 64 units each. Batch normalization and dropout with 0.1 probability provide regularization during training. The output layer is sized for the factored action space with dimensions $(N_{BS}+1)^2 \times 3^2$ to handle joint BS selection and resource allocation decisions.
+
+Training Stabilization: Multiple techniques ensure stable training in the non-stationary O-RAN environment. A separate target network updated via soft updates ($\tau=0.01$) or periodic hard copies provides stable Q-value targets. Prioritized experience replay with 50k capacity employs TD-error based sampling priorities to focus learning on informative experiences. Double Q-learning decouples action selection and evaluation to reduce overestimation bias, while gradient norm clipping (threshold=1.0) prevents exploding gradients. Huber loss provides robust training by reducing sensitivity to outliers in reward signals.
+
+Optimization Details: The network employs Adam optimizer with exponential learning rate decay for adaptive gradient-based optimization. Training uses batch size 32 samples with L2 regularization ($\lambda=10^{-4}$) for generalization. Reward clipping to $r \in [-1,1]$ ensures training stability across diverse network conditions.
+
+\subsection{Training Process and Agent Coordination}
+The centralized RL agent orchestrates decisions for all UEs through the following training protocol:
+
+The training protocol proceeds through five coordinated phases. First, each UE's state is constructed from RSRP measurements, throughput metrics, and BS load factors to capture current network conditions. Second, the agent selects actions using $\epsilon$-greedy exploration with linear decay scheduling to balance exploration and exploitation. Third, selected actions are translated to specific BS associations and RB allocations with constraint enforcement for feasibility. Fourth, network-wide rewards are computed from UE satisfaction metrics, BS load balance indicators, and handover penalty terms. Finally, agent-specific learning updates occur through Q-table modifications for tabular methods or neural network training for DQN approaches.
+
+This unified framework enables fair comparison across algorithms while maintaining algorithm-specific optimizations for maximum performance.
+
+\subsection{Training Protocol}
+We update $\epsilon$ linearly from 1.0 to 0.05 over \texttt{rl\_epsilon\_decay\_steps}. Replay buffer warms up until at least one minibatch is available. Target network updates are performed using soft updates with coefficient $\tau$ or hard copies every \texttt{rl\_target\_update\_freq} epochs. Reward clipping is applied before TD target computation; priorities are updated using mean absolute TD errors.
+
+\section{Experimental Setup and Evaluation Methodology}
+\subsection{Simulation Configuration}
+The experimental evaluation is conducted using a custom Python-based O-RAN simulator designed to model realistic cellular network environments accurately. Our simulation parameters are carefully selected to represent plausible deployment scenarios while maintaining computational tractability for extensive RL training.
+
+\textbf{Network Topology:} Two deployment scenarios are evaluated to assess algorithm robustness across different spatial configurations. The uniform deployment scenario places 10 UEs and 3 BSs uniformly distributed within a $1 \times 1$ km$^2$ area, providing controlled conditions for baseline comparison. The Poisson Point Process (PPP) deployment employs realistic spatial randomness with $\lambda_{BS} = 0.5$ BSs/km$^2$ and $\lambda_{UE} = 2.0$ UEs/km$^2$ densities, reflecting practical deployment uncertainties.
+
+\textbf{Mobility Model:} UEs follow random walk mobility patterns with speed 5 m/s, representative of pedestrian scenarios. Each simulation executes 200 time steps with 0.2-second step duration, providing 40 seconds of total simulation time for comprehensive performance evaluation.
+
+\textbf{Radio Parameters:} The radio configuration employs O-DU transmit power of 38.0 dBm with equal power splitting across link-beams to model realistic beamforming scenarios. The spectrum allocation consists of 20 total Resource Blocks with 0.5 MHz bandwidth each, providing sufficient granularity for resource allocation optimization. UE constraints limit maximum RB allocation to 4 total RBs with 2 RBs maximum per BS for dual connectivity scenarios. Target throughput is set to 1.0 Mbps per UE to represent moderate data service requirements. Channel modeling incorporates path loss exponent 3.7 and shadowing standard deviation 4.0 dB for realistic propagation conditions.
+
+\textbf{RL Hyperparameters:} Learning configuration employs discount factor $\gamma = 0.95$ to balance immediate and future rewards. Learning rates are set to $\alpha = 0.001$ for both tabular and DQN agents to ensure stable convergence. Exploration follows $\epsilon$-greedy strategy with linear decay from 0.1 to 0.1 over 160 steps, maintaining constant exploration for robust policy evaluation. DQN-specific parameters include batch size 32, replay buffer capacity 2000 samples, and target network update frequency every 5 steps. N-step SARSA employs N = 3 steps for multi-step returns to balance bias-variance tradeoffs.
+
+\subsection{Performance Metrics}
+Our evaluation framework captures multiple aspects of network performance through comprehensive key performance indicators (KPIs):
+
+\textbf{UE-Centric Metrics:} The evaluation framework captures individual user performance through UE satisfaction ratio, defined as the fraction of UEs achieving target throughput $T$ at each time step. Average UE throughput provides insight into overall network capacity delivery, while throughput fairness is quantified using Jain's fairness index $J = \frac{(\sum_i x_i)^2}{n\sum_i x_i^2}$ to measure equitable resource distribution across users.
+
+\textbf{Network-Level Metrics:} System-wide performance is assessed through BS load distribution, measured by coefficient of variation across base stations to evaluate load balancing effectiveness. Resource Block utilization captures the fraction of available RBs allocated per time step, indicating spectrum efficiency. Network-wide SINR provides aggregate signal quality assessment across all UE-BS links, reflecting interference management effectiveness.
+
+\textbf{Mobility Metrics:} Handover performance is evaluated through handover frequency per UE throughout simulation duration, with particular attention to ping-pong handovers that indicate connection instability. Connection duration measurements provide insight into association stability and the impact of mobility on network performance.
+
+\subsection{Comparative Analysis Framework}
+The evaluation follows a systematic comparative approach:
+
+\textbf{Algorithm Comparison:} All RL agents (Tabular Q-Learning, SARSA, Expected SARSA, N-step SARSA, DQN) are evaluated against the baseline 3GPP-compliant heuristic under identical conditions.
+
+\textbf{Scenario Variations:} Each algorithm is tested across both uniform and PPP deployment scenarios to assess robustness to different spatial configurations.
+
+\textbf{Statistical Significance:} Multiple independent simulation runs with different random seeds ensure statistical validity of performance comparisons.
+
+\subsection{Ablation Studies}
+Systematic ablation studies investigate the impact of key design choices:
+
+\textbf{Reward Function Analysis:} The impact of individual reward components (UE satisfaction, load balancing, handover penalty) is systematically evaluated to understand their contribution to overall performance. Sensitivity analysis examines the effect of reward component weights $(w_{ue}, w_{bs}, w_{ho})$ on learned policies, while reward clipping effects in DQN training are assessed for training stability.
+
+\textbf{DQN Architecture Studies:} Deep Q-Network configurations are evaluated across multiple dimensions including target network update strategies comparing soft updates versus hard updates. Experience replay buffer size impact is studied across ranges from 1k to 10k samples, while network architecture variations examine different layer depths and hidden unit configurations. Learning rate scheduling effects are analyzed to optimize training convergence.
+
+\textbf{N-step SARSA Parameter Analysis:} Multi-step return analysis evaluates different trajectory lengths $N \in \{1, 3, 5, 10\}$ to balance bias-variance tradeoffs. Buffer management strategies for trajectory storage are examined alongside update frequency versus trajectory length tradeoffs to optimize learning efficiency.
+
+\subsection{Baseline Benchmarking}
+The 3GPP-compliant baseline provides realistic performance benchmarks through A3 handover configuration with 3.0 dB hysteresis, 0.4 second time-to-trigger, and -115 dBm acquisition threshold.
+Greedy resource allocation uses simple throughput-based RB allocation without intelligent optimization. Single connectivity only operation provides no dual connectivity support for conservative baseline comparison.
+
+This comprehensive evaluation methodology enables detailed analysis of RL algorithm performance while ensuring fair comparison against industry-standard approaches. The framework supports both algorithm development and deployment readiness assessment for practical O-RAN implementations.
+
+\section{Agent Comparison Summary}
+Table~\ref{tab:agent-summary} summarizes the main design choices across implemented reinforcement learning agents, highlighting their key algorithmic differences and stability mechanisms.
+
+\begin{table*}[t!]
+\centering
+\caption{Summary of implemented reinforcement learning agents.}
+\label{tab:agent-summary}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Agent} & \textbf{State Space} & \textbf{Action Space} & \textbf{Update Rule} & \textbf{Stability Mechanism} \\
+\midrule
+Tabular Q-Learning & $5$D, $10$-bin discretization & $3$ high-level actions & $\max_{a'}$ target & $\epsilon$-greedy exploration \\
+SARSA & $5$D, $10$-bin discretization & $3$ high-level actions & on-policy $Q(s',a')$ & $\epsilon$-greedy exploration \\
+Expected SARSA & $5$D, $10$-bin discretization & $3$ high-level actions & $\mathbb{E}_{\pi}[Q(s',a')]$ & $\epsilon$-greedy exploration \\
+N-step SARSA & $5$D, $10$-bin discretization & $3$ high-level actions & $N$-step return & $\epsilon$-greedy exploration \\
+DQN & $5$D continuous & factored joint space & Double Q targets & target net, PER, Huber loss \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Limitations and Future Directions}
+While the simulation framework incorporates realistic channel effects including fading, interference, and path loss, several limitations warrant consideration. Link adaptation and HARQ mechanisms are abstracted through the Shannon capacity model, potentially overestimating achievable rates under realistic protocol constraints. The discretized action space for tabular agents may under-utilize multi-connectivity benefits, while DQN stability remains sensitive to hyperparameter selection despite stabilization techniques.
+
+The non-stationary environment induced by UE mobility presents ongoing challenges for learning convergence, particularly in dense deployment scenarios. Future work should address these limitations through adaptive learning rates, more sophisticated state representations, and integration with realistic protocol stack implementations. Extended evaluation in larger-scale scenarios with diverse traffic patterns will further validate the approach's scalability and robustness.
+
+\section{Related Work}
+O-RAN Alliance Working Group 1 has defined multiple use cases for intelligent RAN operations, with traffic steering being a critical component for dynamic network optimization \cite{O-RAN1,O-RAN2}. Traffic steering enables intelligent control over user traffic routing through programmable network interfaces, addressing the limitations of traditional closed RAN architectures.
+
+Recent advances in machine learning-based traffic steering have demonstrated significant performance improvements over static approaches. Ntassah et al. \cite{ntassah2024user} proposed support vector machines combined with ensemble LSTM models for uniform load distribution with reduced handovers. Kavehmadavani et al. \cite{Kavehmadavani} decomposed resource optimization using LSTM for traffic prediction and successive convex approximation for real-time optimization. However, these approaches lack support for heterogeneous RAN environments and sequential decision-making capabilities.
+
+Reinforcement learning approaches have emerged as promising solutions for dynamic RAN optimization. Erdol et al. \cite{Erdol} introduced federated meta-learning for distributed RAT allocation, while Lacava et al. \cite{Lacava} developed cloud-native near-RT RIC implementations with substantial throughput gains. Di Priscoli et al. \cite{Priscoli} formulated network selection as MDPs using Q-learning for load balancing. However, existing approaches have not explicitly addressed beam-based networks with dual connectivity support.
+
+The foundations of reinforcement learning \cite{SuttonBarto2018} and core algorithms including Q-learning \cite{watkins_qlearning}, SARSA \cite{rummery_sarsa}, and Expected SARSA \cite{vanSeijen2009expected} provide the theoretical basis for our comparative analysis. Deep Q-Networks with stabilization techniques including experience replay, target networks, and double Q-learning \cite{Sewak2019DQN} enable function approximation for large state spaces.
+
+\section{Current Status and Future Work}
+This work presents a comprehensive mid-term evaluation of reinforcement learning approaches for O-RAN traffic steering with dual connectivity support. Our implementation includes working baseline heuristics and multiple RL algorithms with unified interfaces for fair comparison. The integration of Sionna library support enables realistic channel modeling while maintaining backward compatibility.
+
+Future research directions include systematic hyperparameter optimization, fairness-aware reward mechanisms, extended multi-connectivity scenarios, and deployment validation in realistic O-RAN testbeds. The modular framework design supports both algorithm development and practical implementation assessment.
+
+\section{Conclusion}
+We have developed and evaluated a comprehensive simulation framework for intelligent traffic steering in Open RAN networks using reinforcement learning. The system incorporates realistic O-RAN architecture modeling with link-beam power allocation, dual connectivity support, and advanced channel modeling through optional Sionna integration. Our comparative analysis of five RL algorithms against 3GPP-compliant baselines provides insights into algorithm performance trade-offs for different network scenarios.
+
+The framework demonstrates the potential of learning-based approaches for dynamic network optimization while highlighting the importance of proper reward design and algorithm selection for specific deployment objectives. The modular architecture enables continued research into advanced RL techniques for next-generation cellular networks.
+
+\begin{thebibliography}{99}
+
+\bibitem{oranwhitepaper} O-RAN Alliance, ``O-RAN: Towards an Open and Smart RAN,'' O-RAN Alliance White Paper, Oct. 2018.
+
+\bibitem{sutton_barto_rl} R. S. Sutton and A. G. Barto, \emph{Reinforcement Learning: An Introduction}, 2nd ed. Cambridge, MA, USA: MIT Press, 2018.
+
+\bibitem{watkins_qlearning} C. J. C. H. Watkins and P. Dayan, ``Q-learning,'' \emph{Machine learning}, vol. 8, no. 3-4, pp. 279--292, 1992.
+
+\bibitem{rummery_sarsa} G. A. Rummery and M. Niranjan, ``On-line Q-learning using connectionist systems,'' University of Cambridge, Department of Engineering, Technical Report, 1994.
+
+\bibitem{Polese} M. Polese, L. Bonati, S. D'oro, S. Basagni, and T. Melodia, ``Understanding O-RAN: Architecture, interfaces, algorithms, security, and research challenges,'' \emph{IEEE Communications Surveys \& Tutorials}, vol. 25, no. 2, pp. 1376--1411, 2023.
+
+\bibitem{O-RAN1} O-RAN Alliance, ``O-RAN.WG1.TR.Use-Cases-Analysis-Report-R004-v15.00: Use Cases Analysis Report,'' O-RAN Alliance, 2024.
+
+\bibitem{O-RAN2} O-RAN Alliance, ``O-RAN.WG1.TS.Use-Cases-Detailed-Specification-R004-v15.00: Use Cases Detailed Specification,'' O-RAN Alliance, 2024.
+
+\bibitem{ntassah2024user} R. Ntassah, G. M. Dell'area, and F. Granelli, ``User Classification and Traffic Steering in O-RAN,'' \emph{IEEE Open Journal of the Communications Society}, 2024.
+
+\bibitem{Kavehmadavani} F. Kavehmadavani, V. D. Nguyen, T. X. Vu, and S. Chatzinotas, ``Intelligent traffic steering in beyond 5G open RAN based on LSTM traffic prediction,'' \emph{IEEE Transactions on Wireless Communications}, vol. 22, no. 11, pp. 7727--7742, 2023.
+
+\bibitem{Erdol} H. Erdol, X. Wang, P. Li, J. D. Thomas, R. Piechocki, G. Oikonomou, and S. Kapoor, ``Federated meta-learning for traffic steering in o-ran,'' in \emph{2022 IEEE 96th Vehicular Technology Conference (VTC2022-Fall)}, pp. 1--7, IEEE, 2022.
+
+\bibitem{Lacava} A. Lacava, M. Polese, R. Sivaraj, R. Soundrarajan, B. S. Bhati, T. Singh, and T. Melodia, ``Programmable and customized intelligence for traffic steering in 5G networks using open RAN architectures,'' \emph{IEEE Transactions on Mobile Computing}, vol. 23, no. 4, pp. 2882--2897, 2023.
+
+\bibitem{Priscoli} F. D. Priscoli, A. Giuseppi, F. Liberati, and A. Pietrabissa, ``Traffic steering and network selection in 5G networks based on reinforcement learning,'' in \emph{2020 European control conference (ECC)}, pp. 595--601, IEEE, 2020.
+
+\bibitem{Kavehmadavani3} F. Kavehmadavani, V. D. Nguyen, T. X. Vu, and S. Chatzinotas, ``Traffic steering for eMBB and uRLLC coexistence in open radio access networks,'' in \emph{2022 IEEE International Conference on Communications Workshops (ICC Workshops)}, pp. 242--247, IEEE, 2022.
+
+\bibitem{Zhang} N. Zhang, S. Zhang, S. Wu, J. Ren, J. W. Mark, and X. Shen, ``Beyond coexistence: Traffic steering in LTE networks with unlicensed bands,'' \emph{IEEE wireless communications}, vol. 23, no. 6, pp. 40--46, 2016.
+
+\bibitem{SuttonBarto2018} R. S. Sutton and A. G. Barto, \emph{Reinforcement Learning: An Introduction}, Second edition. Cambridge, MA: The MIT Press, 2018.
+
+\bibitem{vanSeijen2009expected} H. van Seijen, H. van Hasselt, S. Whiteson, and M. Wiering, ``A theoretical and empirical analysis of Expected Sarsa,'' in \emph{2009 IEEE Symposium on Adaptive Dynamic Programming and Reinforcement Learning}, Nashville, TN, USA, 2009, pp. 177--184.
+
+\bibitem{Sewak2019DQN} M. Sewak, ``Deep Q Network (DQN), Double DQN, and Dueling DQN: A Step Towards General Artificial Intelligence,'' in \emph{Foundations of Reinforcement Learning with Applications in Finance}, Singapore: Springer Singapore, 2019, ch. 8, pp. 111--127.
+
+\bibitem{Cao} Y. Cao, S. Y. Lien, Y. C. Liang, K. C. Chen, and X. Shen, ``User access control in open radio access networks: A federated deep reinforcement learning approach,'' \emph{IEEE Transactions on Wireless Communications}, vol. 21, no. 6, pp. 3721--3736, 2021.
+
+\bibitem{Shannon} C. E. Shannon, ``A mathematical theory of communication,'' \emph{The Bell system technical journal}, vol. 27, no. 3, pp. 379--423, 1948.
+
+\bibitem{Sharma_oran_ts_2025} A. Sharma, ``Reinforcement Learning based traffic steering in Open Radio Access Network (ORAN) - oran-ts GitHub Repository,'' figshare. Software, 2025. Available: https://doi.org/10.6084/m9.figshare.29262791
+
+\end{thebibliography}
+
+\end{document}

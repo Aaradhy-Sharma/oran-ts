@@ -14,10 +14,13 @@ from rl_agents.sarsa import SARSAAgent
 from rl_agents.expected_sarsa import ExpectedSARSAAgent
 from rl_agents.nstep_sarsa import NStepSARSAAgent
 
+import importlib
 try:
-    from rl_agents.dqn import DQNAgent
-    TF_AVAILABLE = True
-except ImportError:
+    # Import the module to inspect its TF availability flag rather than rely on import-time ImportError
+    dqn_module = importlib.import_module('rl_agents.dqn')
+    DQNAgent = getattr(dqn_module, 'DQNAgent', None)
+    TF_AVAILABLE = getattr(dqn_module, 'TF_AVAILABLE', False)
+except Exception:
     DQNAgent = None
     TF_AVAILABLE = False
 

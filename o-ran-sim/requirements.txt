@@ -1,5 +1,14 @@
-numpy
-matplotlib
-scipy
-pandas
-tensorflow
+# Core dependencies for O-RAN RL Traffic Steering Simulator
+numpy>=1.24.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Optional: Required for DQN agent (Deep Q-Network)
+# If not installed, the simulator will run without DQN agent
+tensorflow>=2.12.0
+
+# Optional: Required for advanced channel modeling with Sionna
+# If not installed, the simulator will use basic channel models
+# sionna>=0.14.0
