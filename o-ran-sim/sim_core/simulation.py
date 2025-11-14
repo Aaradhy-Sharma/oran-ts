@@ -24,6 +24,15 @@ except Exception:
     DQNAgent = None
     TF_AVAILABLE = False
 
+# Import fixed DQN agent
+try:
+    dqn_fixed_module = importlib.import_module('rl_agents.dqn_fixed')
+    DQNAgentFixed = getattr(dqn_fixed_module, 'DQNAgentFixed', None)
+    TF_AVAILABLE_FIXED = getattr(dqn_fixed_module, 'TF_AVAILABLE', False)
+except Exception:
+    DQNAgentFixed = None
+    TF_AVAILABLE_FIXED = False
+
 
 class Simulation:
     def __init__(self, params: SimParams, app_logger):
@@ -123,6 +132,18 @@ class Simulation:
             action_size = temp_dql.get_dql_action_space_size()
             del temp_dql
             return DQNAgent(
+                self.params, state_size, action_size, num_bss_act, self.log_message
+            )
+        elif agent_type == "DQNFixed" or agent_type == "DQN_Fixed":
+            if not TF_AVAILABLE_FIXED:
+                raise ImportError(
+                    "TensorFlow is required for DQNFixed agent but is not installed."
+                )
+            temp_dql = DQNAgentFixed(self.params, 10, 10, num_bss_act, self.log_message)
+            state_size = temp_dql.get_dql_state_size()
+            action_size = temp_dql.get_dql_action_space_size()
+            del temp_dql
+            return DQNAgentFixed(
                 self.params, state_size, action_size, num_bss_act, self.log_message
             )
         else:

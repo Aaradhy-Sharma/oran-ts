@@ -15,6 +15,7 @@ This project implements and compares various RL algorithms for optimizing traffi
   - Expected SARSA
   - N-Step SARSA
   - DQN (Deep Q-Network) - requires TensorFlow
+  - **DQNFixed** (Improved DQN with better stability) - requires TensorFlow
 
 - **Flexible Network Topology:**
   - Uniform placement
@@ -42,7 +43,8 @@ o-ran-sim/
 │   ├── sarsa.py        # SARSA algorithm
 │   ├── expected_sarsa.py  # Expected SARSA
 │   ├── nstep_sarsa.py  # N-Step SARSA
-│   └── dqn.py          # Deep Q-Network (requires TensorFlow)
+│   ├── dqn.py          # Deep Q-Network (requires TensorFlow)
+│   └── dqn_fixed.py    # Improved DQN with better stability
 ├── sim_core/           # Core simulation components
 │   ├── channel.py      # Channel modeling
 │   ├── entities.py     # Base Station and UE entities
@@ -63,6 +65,7 @@ o-ran-sim/
 ├── main.py             # GUI application entry point
 ├── gui.py              # Tkinter-based GUI
 ├── final_runner.py     # Batch simulation runner
+├── dqnFixedRunner.py   # DQN comparison experiment runner
 ├── run_all_experiments.py  # Comprehensive experiment suite
 └── requirements.txt    # Python dependencies
 ```
@@ -134,6 +137,27 @@ python run_all_experiments.py --placements PPP --steps 200
 python run_all_experiments.py --placements uniform PPP --steps 200
 ```
 
+### DQN Performance Comparison
+
+Compare original DQN vs improved DQN (DQNFixed) vs Baseline:
+
+```bash
+# Compare all DQN variants with uniform placement
+python dqnFixedRunner.py --placement uniform --steps 200 --runs 3
+
+# Compare with PPP placement
+python dqnFixedRunner.py --placement PPP --steps 300 --runs 5
+
+# Compare specific agents
+python dqnFixedRunner.py --agents Baseline DQNFixed --steps 200
+```
+
+This will generate:
+- Time-series plots (throughput, satisfaction, handovers, fairness, loss)
+- Final metrics comparison bar charts  
+- Summary CSV with statistics
+- Individual run metrics in JSON format
+
 ### Single Algorithm Test
 
 Run a specific RL algorithm:
@@ -193,6 +217,35 @@ Each experiment generates:
 - **Fairness Index**: Jain's fairness index for resource allocation
 - **Resource Utilization**: Average RB utilization per BS
 - **Learning Curves**: Cumulative rewards for RL agents
+
+## DQN Improvements (DQNFixed)
+
+The improved DQN agent (`DQNFixed`) addresses several performance issues in the original implementation:
+
+### Key Improvements:
+
+1. **Running State Normalization**: Uses exponential moving average of mean/variance instead of per-sample normalization for consistent feature scaling
+2. **Simplified Action Space**: Reduced from 72 to 27 actions for faster learning
+3. **Better Reward Scaling**: Scales rewards by 0.1 without aggressive clipping
+4. **Optimized Learning**: Constant learning rate (0.0003) instead of fast exponential decay
+5. **Larger Batch Size**: 128 instead of 64 for more stable gradient updates
+6. **Improved Target Updates**: Soft updates every step (tau=0.01) instead of hard updates every 1000 steps
+7. **Prioritized Experience Replay**: With proper importance sampling weights
+8. **Double DQN**: Reduces overestimation bias in Q-value estimates
+
+### Performance Comparison:
+
+Run the comparison script to see the improvements:
+
+```bash
+python dqnFixedRunner.py --placement uniform --steps 200 --runs 3
+```
+
+Expected improvements:
+- **Higher throughput** due to better exploration-exploitation balance
+- **Better satisfaction rates** from improved learning stability
+- **Lower training loss** from optimized hyperparameters
+- **Faster convergence** from simplified action space
 
 ## Contributing
 
