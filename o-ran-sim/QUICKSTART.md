@@ -63,7 +63,20 @@ python run_all_experiments.py --placements uniform --steps 200
 # - Visualization plots (PNG)
 ```
 
-### 4. Run Tests
+### 4. Compare DQN Variants
+
+```bash
+# Compare original DQN vs improved DQNFixed
+python dqnFixedRunner.py --placement uniform --steps 200 --runs 3
+
+# This generates:
+# - Time-series comparison plots
+# - Final metrics bar charts
+# - Training loss comparison
+# - Summary statistics CSV
+```
+
+### 5. Run Tests
 
 ```bash
 # Quick smoke test
@@ -151,11 +164,41 @@ The simulator includes:
 4. **Expected SARSA**: On-policy with expectation
 5. **N-Step SARSA**: N-step lookahead
 6. **DQN**: Deep Q-Network (requires TensorFlow)
+7. **DQNFixed**: Improved DQN with better stability (requires TensorFlow)
 
 To compare all algorithms:
 
 ```bash
 python run_all_experiments.py --placements uniform PPP --steps 200
+```
+
+To compare DQN variants specifically:
+
+```bash
+# Quick comparison
+python dqnFixedRunner.py --placement uniform --steps 200 --runs 3
+
+# Extended comparison with more runs
+python dqnFixedRunner.py --placement PPP --steps 300 --runs 5
+
+# Compare only specific agents
+python dqnFixedRunner.py --agents Baseline DQNFixed --steps 200 --runs 3
+```
+
+## DQN Performance Tips
+
+If you're experiencing poor DQN performance, try the **DQNFixed** agent which includes:
+- Running state normalization for consistent learning
+- Simplified action space (27 vs 72 actions)
+- Better reward scaling
+- Optimized hyperparameters
+- Soft target network updates
+
+Example:
+```bash
+# In GUI: Select "DQNFixed" from agent dropdown
+# In CLI: 
+python dqnFixedRunner.py --agents DQNFixed --steps 200
 ```
 
 ## Troubleshooting
